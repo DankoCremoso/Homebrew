@@ -25,7 +25,7 @@
 	"class": [
 		{
 			"name": "Shielder",
-			"source": "DanteLegendaryArcanumRepo",
+			"source": "DLA",
 			"foundryImg": "https://github.com/DankoCremoso/Homebrew-Assets/blob/e0ca5447c67d08bb6c9914faeca9e640cda1111e/img/Shielder.png",
 			"primaryAbility": [
 				{
