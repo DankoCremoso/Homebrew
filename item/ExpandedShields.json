@@ -1,10 +1,10 @@
-{
-	"_meta": {
+{"_meta": {
 		"sources": [
 			{
 				"json": "DanteLegendaryArcanumRepo",
 				"abbreviation": "DLA",
 				"full": "Dante's Legendary Arcanum",
+                "sourceType": "homebrew",
 				"authors": [
 					"Daniel 'DanteL' Acosta"
 				],
