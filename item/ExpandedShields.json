@@ -41,7 +41,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop L}",
+                "{@itemProperty light}",
                 "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} or {@classFeature Tough Resistance|Shielder|DLA|1} feature, this stacks onto your existing bonus and does not require a reaction.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform actions that do not require fine movement or tight confines. You can hold a {@filter light simple weapon|items|property=L|category=simple weapon} in this hand. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
             ]
@@ -68,7 +68,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop L}",
+                "{@itemProperty light}",
                 "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} or {@classFeature Tough Resistance|Shielder|DLA|1} feature, this stacks onto your existing bonus and does not require a reaction.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform actions that do not require fine movement or tight confines. You can hold a {@filter light simple weapon|items|property=L|category=simple weapon} in this hand. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
             ]
@@ -95,7 +95,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop L}",
+                "{@itemProperty light}",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform actions that do not require fine movement or tight confines. You can hold a {@filter light simple weapon|items|property=L|category=simple weapon} in this hand. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
             ]
             }
@@ -122,10 +122,10 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop L}",
-                "{@prop F}",
+                "{@itemProperty light}",
+                "{@itemProperty finesse}",
                 "{@b Returning Throw.} This shield has the {@property T|Thrown} property with a range of 30/90 feet. As a part of the attack, you can brace the shield to ricochet; if the attack hits, the shield bounces back toward you, and you can catch it as a part of the same action if you have a free hand.",
-				"{@prop STB}"
+				"{@itemProperty Stable|DLA}"
             ]
             }
             ]
@@ -150,7 +150,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop STB}"
+                "{@itemProperty Stable|DLA}"
             ]
             }
             ]
@@ -165,7 +165,6 @@
 			"weight": 4,
 			"value": 1500,
 			"weaponCategory": "simple",
-			"property": ["STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
 			"weaponMastery": "sap",
@@ -191,7 +190,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop PRY}"
+                "{@itemProperty Parrying|DLA}"
             ]
             }
             ]
@@ -217,7 +216,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop MD}"
+                "{@itemProperty Mounted Defense|DLA}"
             ]
             }
             ]
@@ -244,7 +243,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop SWL}"
+                "{@itemProperty Shield Wall|DLA}"
             ]
             }
             ]
@@ -271,8 +270,8 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop H}",
-                "{@prop MD}"
+                "{@itemProperty heavy}",
+                "{@itemProperty Mounted Defense|DLA}"
             ]
             }
             ]
@@ -299,7 +298,7 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop SWL}"
+                "{@itemProperty Shield Wall|DLA}"
             ]
             }
             ]
@@ -326,9 +325,9 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop BLK}",
-                "{@prop H}",
-                "{@prop SWL}"
+                "{@itemProperty Bulky|DLA}",
+                "{@itemProperty heavy}",
+                "{@itemProperty Shield Wall|DLA}"
             ]
             }
             ]
@@ -355,9 +354,9 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop BLK}",
-                "{@prop H}",
-                "{@prop DPL}"
+                "{@itemProperty Bulky|DLA}",
+                "{@itemProperty heavy}",
+                "{@itemProperty Deployable|DLA}"
             ]
             }
             ]
@@ -384,9 +383,9 @@
             "type": "entries",
             "name": "Properties",
             "entries": [
-                "{@prop DPL}",
-                "{@prop H}",
-                "{@prop 2H}"
+                "{@itemProperty Deployable|DLA}",
+                "{@itemProperty heavy}",
+                "{@itemProperty two-handed}"
             ]
             }
             ]
