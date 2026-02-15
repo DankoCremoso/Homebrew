@@ -1,0 +1,10 @@
+{
+  "name": "Dante's Legendary Arcanum",
+  "author": "Daniel 'DanteL' Acosta",
+  "items": [
+    "https://raw.githubusercontent.com/.../DLA_Items.json"
+  ],
+  "class": [
+    "https://raw.githubusercontent.com/.../Shielder_Class.json"
+  ]
+}
