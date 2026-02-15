@@ -36,10 +36,7 @@
 			"dmgType": "B",
 			"weaponMastery": "nick",
 			"entries": [
-                "A small, lightweight shield usually strapped to the forearm.",
-                "{@itemProperty light}",
-                "{@itemProperty Parrying|DLA}",
-                "{@itemProperty Stable|DLA}"
+                "A small, lightweight shield usually strapped to the forearm."
             ]
 		},
         {
@@ -391,7 +388,7 @@
 			"source": "DLA",
 			"name": "Bulky",
 			"entries": [
-            "This shield is exceptionally cumbersome and massive, imposing the following constraints:",
+            "{@b Bulky.} This shield is exceptionally cumbersome and massive, imposing the following constraints:",
             {
                 "type": "list",
                 "items": [
@@ -409,7 +406,7 @@
 			"source": "DLA",
 			"name": "Deployable",
 			"entries": [
-            "This massive shield is designed with spikes or a folding base to be anchored into the ground.",
+            "{@b Deployable.} This massive shield is designed with spikes or a folding base to be anchored into the ground.",
             {
                 "type": "list",
                 "items": [
@@ -425,7 +422,7 @@
 			"source": "DLA",
 			"name": "Mounted Defense",
 			"entries": [
-				"The AC this shield provides also applies to your mount."
+				"{@b Mounted Defense.} The AC this shield provides also applies to your mount."
 			]
 		},
         {
@@ -433,7 +430,7 @@
 			"source": "DLA",
 			"name": "Parrying",
 			"entries": [
-				"When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss.",
+				"{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss.",
             "If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
 			]
 		},
@@ -442,7 +439,7 @@
 			"source": "DLA",
 			"name": "Shield Wall",
 			"entries": [
-				"This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing.",
+				"{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing.",
             "Using this shield while riding a mount imposes disadvantage on your attacks."
 			]
 		},
@@ -451,7 +448,7 @@
 			"source": "DLA",
 			"name": "Stable",
 			"entries": [
-				"The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines.",
+				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines.",
             "The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
 			]
 		}
