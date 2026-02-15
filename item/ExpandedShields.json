@@ -37,7 +37,8 @@
 			"weaponMastery": "nick",
 			"entries": [
                 "A small, lightweight shield usually strapped to the forearm.",
-                "Properties: {@itemProperty light}, {@itemProperty Parrying|DLA}, {@itemProperty Stable|DLA}"
+                "Properties: {@itemProperty light}, {@itemProperty Parrying|DLA}, {@itemProperty Stable|DLA}",
+                "{@mastery nick}"
             ]
 		},
         {
