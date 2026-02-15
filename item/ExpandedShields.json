@@ -42,8 +42,8 @@
             "name": "Properties",
             "entries": [
                 "{@itemProperty light}",
-                "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} or {@classFeature Tough Resistance|Shielder|DLA|1} feature, this stacks onto your existing bonus and does not require a reaction.",
-                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform actions that do not require fine movement or tight confines. You can hold a {@filter light simple weapon|items|property=L|category=simple weapon} in this hand. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
+                "{@itemProperty Parrying|DLA}",
+                "{@itemProperty Stable|DLA}"
             ]
             }
             ]
@@ -69,8 +69,8 @@
             "name": "Properties",
             "entries": [
                 "{@itemProperty light}",
-                "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} or {@classFeature Tough Resistance|Shielder|DLA|1} feature, this stacks onto your existing bonus and does not require a reaction.",
-                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform actions that do not require fine movement or tight confines. You can hold a {@filter light simple weapon|items|property=L|category=simple weapon} in this hand. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
+                "{@itemProperty Parrying|DLA}",
+                "{@itemProperty Stable|DLA}"
             ]
             }
             ]
@@ -96,7 +96,7 @@
             "name": "Properties",
             "entries": [
                 "{@itemProperty light}",
-                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform actions that do not require fine movement or tight confines. You can hold a {@filter light simple weapon|items|property=L|category=simple weapon} in this hand. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
+                "{@itemProperty Stable|DLA}"
             ]
             }
             ]
@@ -458,7 +458,7 @@
 			"name": "Stable",
 			"entries": [
 				"The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines.",
-            "The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@property 2H|Two-Handed} property, it does not provide a bonus to AC."
+            "The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
 			]
 		}
 	]
