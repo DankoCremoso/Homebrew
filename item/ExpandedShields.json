@@ -24,9 +24,9 @@
 		{
 			"name": "Wooden Buckler",
 			"source": "DLA",
-			"type": "S",
+			"type": "M",
             "rarity": "none",
-			"armor": true,
+			"weapon": true,
 			"ac": 0,
 			"weight": 2,
 			"value": 500,
@@ -36,7 +36,8 @@
 			"dmgType": "B",
 			"weaponMastery": "nick",
 			"entries": [
-                "A small, lightweight shield usually strapped to the forearm. 2.0"
+                "A small, lightweight shield usually strapped to the forearm.",
+                "Properties: {@itemProperty light}, {@itemProperty Parrying|DLA}, {@itemProperty Stable|DLA}"
             ]
 		},
         {
