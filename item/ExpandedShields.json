@@ -1,7 +1,8 @@
-{"_meta": {
+{
+    "_meta": {
 		"sources": [
 			{
-				"json": "DanteLegendaryArcanumRepo",
+				"json": "ExpandedShields",
 				"abbreviation": "DLA",
 				"full": "Dante's Legendary Arcanum",
                 "sourceType": "homebrew",
