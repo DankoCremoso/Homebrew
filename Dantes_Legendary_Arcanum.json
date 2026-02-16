@@ -1,0 +1,27 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "DLA",
+                "abbreviation": "DLA",
+                "full": "Dante's Legendary Arcanum",
+                "authors": [
+                    "Daniel 'DanteL' Acosta"
+                ],
+                "version": "1.1.0",
+                "sourceType": "homebrew",
+                "url": "https://docs.google.com/document/d/1abm6fJi6jso16pQXeH50VZt84g0ZK0ZQAMdpyze-xik/edit?usp=sharing",
+                "color": "0f5585"
+            }
+        ],
+        "dateAdded": 1707912000,
+        "includes": {
+            "item": [
+                "https://raw.githubusercontent.com/DankoCremoso/Homebrew/refs/heads/main/item/ExpandedShields.json"
+            ],
+            "class": [
+                "https://raw.githubusercontent.com/DankoCremoso/Homebrew/refs/heads/main/class/Shielder.json"
+            ]
+        }
+    }
+}
