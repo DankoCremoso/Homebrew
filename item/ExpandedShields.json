@@ -24,9 +24,9 @@
 		{
 			"name": "Wooden Buckler",
 			"source": "DLA",
-			"type": "M",
+			"type": "S",
             "rarity": "none",
-			"weapon": true,
+			"armor": true,
 			"ac": 0,
 			"weight": 2,
 			"value": 500,
@@ -38,7 +38,9 @@
 			"entries": [
                 "A small, lightweight shield usually strapped to the forearm.",
                 "Properties: {@itemProperty Light}, {@itemProperty Parrying|DLA}, {@itemProperty Stable|DLA}",
-                "{@b Mastery: Nick.} When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+                "{@b Mastery: Nick.} When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+                "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)",
+                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
             ]
 		},
         {
@@ -117,7 +119,7 @@
             "entries": [
                 "{@itemProperty light}",
                 "{@itemProperty finesse}",
-                "{@b Returning Throw.} This shield has the {@property T|Thrown} property with a range of 30/90 feet. As a part of the attack, you can brace the shield to ricochet; if the attack hits, the shield bounces back toward you, and you can catch it as a part of the same action if you have a free hand.",
+                "{@b Returning Throw.} This shield has the {@itemProperty thrown} property with a range of 30/90 feet. As a part of the attack, you can brace the shield to ricochet; if the attack hits, the shield bounces back toward you, and you can catch it as a part of the same action if you have a free hand.",
 				"{@itemProperty Stable|DLA}"
             ]
             }
@@ -432,8 +434,7 @@
 			"source": "DLA",
 			"name": "Parrying",
 			"entries": [
-				"{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss.",
-            "If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
+				"{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
 			]
 		},
         {
@@ -450,8 +451,7 @@
 			"source": "DLA",
 			"name": "Stable",
 			"entries": [
-				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines.",
-            "The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
+				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
 			]
 		}
 	]
