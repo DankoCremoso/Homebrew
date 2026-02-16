@@ -50,6 +50,7 @@
             "rarity": "none",
 			"armor": true,
 			"ac": 1,
+            "bonusAc": "+1",
 			"weight": 3,
 			"value": 1500,
 			"weaponCategory": "simple",
