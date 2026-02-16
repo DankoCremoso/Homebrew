@@ -14,14 +14,421 @@
                 "color": "0f5585"
             }
         ],
-        "dateAdded": 1707912000,
-        "includes": {
-            "item": [
-                "https://raw.githubusercontent.com/DankoCremoso/Homebrew/refs/heads/main/item/ExpandedShields.json"
-            ],
-            "class": [
-                "https://raw.githubusercontent.com/DankoCremoso/Homebrew/refs/heads/main/class/Shielder.json"
+        "dateAdded": 1707912000
+    },
+    "item": [
+        {
+			"name": "Wooden Buckler",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 0,
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": ["L", "PRY", "STB"],
+			"dmg1": "1",
+			"dmgType": "B",
+			"weaponMastery": "nick",
+			"entries": [
+                "A small, lightweight shield usually strapped to the forearm.",
+                "Properties: {@itemProperty Light}, {@itemProperty Parrying|DLA}, {@itemProperty Stable|DLA}",
+                "{@b Mastery: Nick.} When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+                "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)",
+                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
             ]
-        }
-    }
+		},
+        {
+			"name": "Metal Buckler",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 1,
+			"weight": 3,
+			"value": 1500,
+			"weaponCategory": "simple",
+			"property": ["L", "PRY", "STB"],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"weaponMastery": "slow",
+			"entries": [
+                "A light shield designed for parrying while leaving your hand free.",
+                "Properties: {@itemProperty Light}, {@itemProperty Parrying|DLA}, {@itemProperty Stable|DLA}",
+                "{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by this property, the Speed reduction doesn't stack.",
+                "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)",
+                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
+            ]
+		},
+        {
+			"name": "Small Wooden Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 1,
+			"weight": 3,
+			"value": 1000,
+			"weaponCategory": "simple",
+			"property": ["L", "STB"],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"weaponMastery": "sap",
+			"entries": [
+                "A light and maneuverable shield, often made of reinforced wood and bound with leather.",
+                "Properties: {@itemProperty Light}, {@itemProperty Stable|DLA}",
+                "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
+            ]
+		},
+        {
+			"name": "Throwing Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 1,
+			"weight": 4,
+			"value": 2000,
+			"weaponCategory": "simple",
+			"property": ["L", "F", "T", "STB"],
+            "range": "30/90",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"weaponMastery": "nick",
+			"entries": [
+                "A circular shield with a weighted, aerodynamic rim or sharpened edges, specifically balanced for flight. It is strapped to the arm with a quick-release mechanism.",
+                "Properties: {@itemProperty Light}, {@itemProperty Finesse}, {@itemProperty Thrown} (30/90), {@itemProperty Stable|DLA}",
+                "{@b Mastery: Nick.} When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
+            ]
+		},
+        {
+			"name": "Small Metal Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 2,
+			"weight": 4,
+			"value": 2000,
+			"weaponCategory": "simple",
+			"property": ["STB"],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"weaponMastery": "slow",
+			"entries": [
+                "Forged from iron or steel. While heavier than its wooden counterpart, its rigid edge makes it a more reliable tool for deflecting heavy blades.",
+                "Properties: {@itemProperty Stable|DLA}",
+                "{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by this property, the Speed reduction doesn't stack.",
+                "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
+            ]
+		},
+        {
+			"name": "Medium Wooden Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 2,
+			"weight": 4,
+			"value": 1500,
+			"weaponCategory": "simple",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"weaponMastery": "sap",
+			"entries": [
+                "A classic round or heater shield made of thick oak or pine. It offers a perfect balance between weight and protection for the everyday adventurer.",
+                "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn."
+            ]
+		},
+        {
+			"name": "Medium Metal Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 2,
+			"weight": 6,
+			"value": 2500,
+			"weaponCategory": "simple",
+			"property": ["PRY"],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"weaponMastery": "vex",
+			"entries": [
+                "A standard infantry shield made of steel. It is remarkably durable and capable of weathering a storm of arrows or rhythmic melee strikes.",
+                "Properties: {@itemProperty Parrying|DLA}",
+                "{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to it, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+                "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
+            ]
+		},
+        {
+			"name": "Large Wooden Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 2,
+            "stealth": true,
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "simple",
+			"property": ["MD"],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"weaponMastery": "push",
+			"entries": [
+                "A tall, curved shield that covers the torso. While it is more cumbersome than a medium shield, its surface area makes it much harder for enemies to find a gap in your guard.",
+                "Properties: {@itemProperty Mounted Defense|DLA}",
+                "{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller.",
+                "{@b Mounted Defense.} The AC this shield provides also applies to your mount."
+            ]
+		},
+        {
+			"name": "Wooden Aspis",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 2,
+            "stealth": true,
+			"weight": 8,
+			"value": 2000,
+			"weaponCategory": "martial",
+            "strength": "11",
+			"property": ["SWL"],
+			"dmg1": "2d4",
+			"dmgType": "B",
+			"weaponMastery": "cleave",
+			"entries": [
+                "A deeply dished circular shield favored by order warriors. The bronze-rimmed wood is designed to be tucked into the shoulder",
+                "Properties: {@itemProperty Shield Wall|DLA}",
+                "{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+                "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
+            ]
+		},
+        {
+			"name": "Large Metal Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 3,
+            "stealth": true,
+			"weight": 11,
+			"value": 3000,
+			"weaponCategory": "martial",
+            "strength": "12",
+			"property": ["H", "MD"],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"weaponMastery": "push",
+			"entries": [
+                "A heavy kite shield or heater shield made of solid metal. It provides formidable defense but requires significant strength to maneuver without tiring the arm.",
+                "Properties: {@itemProperty Heavy}, {@itemProperty Mounted Defense|DLA}",
+                "{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller.",
+                "{@b Mounted Defense.} The AC this shield provides also applies to your mount."
+            ]
+		},
+        {
+			"name": "Metal Aspis",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 2,
+            "stealth": true,
+			"weight": 10,
+			"value": 3000,
+			"weaponCategory": "martial",
+            "strength": "12",
+			"property": ["SWL"],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"weaponMastery": "graze",
+			"entries": [
+                "A heavy bronze or steel circular shield. Its weight makes it an incredible offensive tool during a charge, though it is taxing to use for extended periods.",
+                "Properties: {@itemProperty Shield Wall|DLA}",
+                "{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+                "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
+            ]
+		},
+        {
+			"name": "Wooden Tower Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 3,
+            "stealth": true,
+			"weight": 18,
+			"value": 5000,
+			"weaponCategory": "martial",
+            "strength": "15",
+			"property": ["BLK", "H", "SWL"],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"weaponMastery": "topple",
+			"entries": [
+                "A rectangular slab of reinforced wood. It is essentially portable cover, though it lacks the sheer stopping power of its metal counterpart.",
+                "Properties: {@itemProperty Bulky|DLA}, {@itemProperty Heavy}, {@itemProperty Shield Wall|DLA}",
+                "{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your {@b Proficiency Bonus}). On a failed save, the creature has the {@b Prone} condition.",
+                "{@b Bulky.} This shield is exceptionally cumbersome and massive, imposing the following constraints:",
+            {
+                "type": "list",
+                "items": [
+                    "You have {@b disadvantage} on Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
+                    "You cannot {@b squeeze} into spaces smaller than your size and you cannot ride a {@b mount}.",
+                    "While wielding this shield in one hand, your speed is reduced by 10 feet.",
+                    "Switching between wielding this shield with one hand or two hands requires an {@b object interaction}."
+                ]
+            },
+            "If you take the {@action Dodge} action while this shield is donned, you gain {@b half cover} until the start of your next turn.",
+                "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
+            ]
+		},
+        {
+			"name": "Metal Tower Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 3,
+            "stealth": true,
+			"weight": 22,
+			"value": 7500,
+			"weaponCategory": "martial",
+            "strength": "15",
+			"property": ["BLK", "H", "DPL"],
+			"dmg1": "1d10",
+			"dmgType": "B",
+			"weaponMastery": "topple",
+			"entries": [
+                "A massive wall of steel. It is nearly impossible to pierce, allowing anyone to stand their ground against even the most terrifying foes.",
+                "Properties: {@itemProperty Bulky|DLA}, {@itemProperty Heavy}, {@itemProperty Deployable|DLA}",
+                "{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your {@b Proficiency Bonus}). On a failed save, the creature has the {@b Prone} condition.",
+                "{@b Bulky.} This shield is exceptionally cumbersome and massive, imposing the following constraints:",
+            {
+                "type": "list",
+                "items": [
+                    "You have {@b disadvantage} on Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
+                    "You cannot {@b squeeze} into spaces smaller than your size and you cannot ride a {@b mount}.",
+                    "While wielding this shield in one hand, your speed is reduced by 10 feet.",
+                    "Switching between wielding this shield with one hand or two hands requires an {@b object interaction}."
+                ]
+            },
+            "If you take the {@action Dodge} action while this shield is donned, you gain {@b half cover} until the start of your next turn.",
+                "{@b Deployable.} This massive shield is designed with spikes or a folding base to be anchored into the ground.",
+            {
+                "type": "list",
+                "items": [
+                    "{@b Deployment:} As an {@action action}, you can doff this shield and deploy it in an unoccupied space within 5 feet. It provides {@b three-quarters cover} to a creature of your size standing directly behind it.",
+                    "{@b Stats:} While deployed, the shield is an object with {@b 15 AC} and {@b 18 hit points}. If it reaches 0 HP, a mundane shield is destroyed, while a magical one becomes mundane and loses its properties for {@dice 1d6} hours.",
+                    "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
+                ]
+            }
+            ]
+		},
+        {
+			"name": "Grand Tower Shield",
+			"source": "DLA",
+			"type": "S",
+            "rarity": "none",
+			"armor": true,
+			"ac": 4,
+            "stealth": true,
+			"weight": 25,
+			"value": 10000,
+			"weaponCategory": "martial",
+            "strength": "18",
+			"property": ["DPL", "H", "2H"],
+			"dmg1": "1d12",
+			"dmgType": "B",
+			"weaponMastery": "topple",
+			"entries": [
+                "An enormous, master-crafted bastion of metal. It is designed to protect not just the wielder, but an entire line of allies behind them.",
+                "Properties: {@itemProperty Deployable|DLA}, {@itemProperty Heavy}, {@itemProperty Two-handed}",
+                "{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your {@b Proficiency Bonus}). On a failed save, the creature has the {@b Prone} condition.",
+                "{@b Deployable.} This massive shield is designed with spikes or a folding base to be anchored into the ground.",
+            {
+                "type": "list",
+                "items": [
+                    "{@b Deployment:} As an {@action action}, you can doff this shield and deploy it in an unoccupied space within 5 feet. It provides {@b three-quarters cover} to a creature of your size standing directly behind it.",
+                    "{@b Stats:} While deployed, the shield is an object with {@b 15 AC} and {@b 18 hit points}. If it reaches 0 HP, a mundane shield is destroyed, while a magical one becomes mundane and loses its properties for {@dice 1d6} hours.",
+                    "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
+                ]
+            }
+            ]
+		}
+    ],
+    "itemProperty": [
+        {
+			"abbreviation": "BLK",
+			"source": "DLA",
+			"name": "Bulky",
+			"entries": [
+            "{@b Bulky.} This shield is exceptionally cumbersome and massive, imposing the following constraints:",
+            {
+                "type": "list",
+                "items": [
+                    "You have {@b disadvantage} on Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
+                    "You cannot {@b squeeze} into spaces smaller than your size and you cannot ride a {@b mount}.",
+                    "While wielding this shield in one hand, your speed is reduced by 10 feet.",
+                    "Switching between wielding this shield with one hand or two hands requires an {@b object interaction}."
+                ]
+            },
+            "If you take the {@action Dodge} action while this shield is donned, you gain {@b half cover} until the start of your next turn."
+        ]
+		},
+        {
+			"abbreviation": "DPL",
+			"source": "DLA",
+			"name": "Deployable",
+			"entries": [
+            "{@b Deployable.} This massive shield is designed with spikes or a folding base to be anchored into the ground.",
+            {
+                "type": "list",
+                "items": [
+                    "{@b Deployment:} As an {@action action}, you can doff this shield and deploy it in an unoccupied space within 5 feet. It provides {@b three-quarters cover} to a creature of your size standing directly behind it.",
+                    "{@b Stats:} While deployed, the shield is an object with {@b 15 AC} and {@b 18 hit points}. If it reaches 0 HP, a mundane shield is destroyed, while a magical one becomes mundane and loses its properties for {@dice 1d6} hours.",
+                    "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
+                ]
+            }
+        ]
+		},
+        {
+			"abbreviation": "MD",
+			"source": "DLA",
+			"name": "Mounted Defense",
+			"entries": [
+				"{@b Mounted Defense.} The AC this shield provides also applies to your mount."
+			]
+		},
+        {
+			"abbreviation": "PRY",
+			"source": "DLA",
+			"name": "Parrying",
+			"entries": [
+				"{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
+			]
+		},
+        {
+			"abbreviation": "SWL",
+			"source": "DLA",
+			"name": "Shield Wall",
+			"entries": [
+				"{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
+			]
+		},
+        {
+			"abbreviation": "STB",
+			"source": "DLA",
+			"name": "Stable",
+			"entries": [
+				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty two-handed} property, it does not provide a bonus to AC."
+			]
+		}
+    ]
 }
