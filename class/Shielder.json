@@ -2,7 +2,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "DanteLegendaryArcanumRepo",
+				"json": "DLA",
 				"abbreviation": "DLA",
 				"full": "Dante's Legendary Arcanum",
 				"sourceType": "homebrew",
@@ -80,156 +80,107 @@
 					{
 						"A": [
 							{
-								"item": "club|xphb"
+								"item": "shield|XPHB"
 							},
 							{
-								"item": "handaxe|xphb"
+								"item": "mace|XPHB"
 							},
 							{
-								"equipmentType": "setGaming"
+								"item": "studded leather armor|XPHB"
 							},
 							{
-								"item": "dungeoneer's pack|xphb"
+								"item": "explorer's pack|XPHB"
 							},
 							{
-								"value": 3100
+								"value": 1000
 							}
 						],
 						"B": [
 							{
-								"value": 5000
+								"value": 8000
 							}
 						]
 					}
 				],
 				"entries": [
-					"{@i Choose A or B:} (A) {@item Club|XPHB}, {@item Handaxe|XPHB}, {@item Gaming Set|XPHB} (chosen for the tool proficiency above), {@item Dungeoneer's Pack|XPHB}, and 31 GP; or (B) 50 GP"
+					"{@i Choose A or B:} (A) {@item Shield|XPHB}, {@item Mace|XPHB}, {@item Studded Leather Armor|XPHB}, {@item Explorer's Pack|XPHB}, and 10 GP; or (B) 80 GP"
 				]
 			},
 			"classFeatures": [
-				"Fisticuffs|Pugilist|Pugilist2024|1",
-				"Iron Chin|Pugilist|Pugilist2024|1",
-				"Moxie|Pugilist|Pugilist2024|2",
-				"Bloodied But Unbowed|Pugilist|Pugilist2024|2",
-				"Swagger Streak|Pugilist|Pugilist2024|2",
-				"Heavy Hitter|Pugilist|Pugilist2024|3",
+				"Tough Resistance|Shielder|DLA|1",
+				"Protective Focus|Shielder|DLA|1",
+				"Weapon Mastery|Shielder|DLA|1",
+				"Shield Adept|Shielder|DLA|2",
 				{
-					"classFeature": "Pugilist Subclass|Pugilist|Pugilist2024|3",
+					"classFeature": "Shielder Subclass|Shielder|DLA|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Pugilist|Pugilist2024|4",
-				"Dig Deep|Pugilist|Pugilist2024|4",
-				"Extra Attack|Pugilist|Pugilist2024|5",
-				"Haymaker|Pugilist|Pugilist2024|5",
-				"Moxie-Fueled Fists|Pugilist|Pugilist2024|6",
+				"Ability Score Improvement|Shielder|DLA|4",
+				"Mocking Taunt|Shielder|DLA|5",
+				"Entrenched|Shielder|DLA|6",
 				{
-					"classFeature": "Subclass Feature|Pugilist|Pugilist2024|6",
+					"classFeature": "Shielder Subclass|Shielder|DLA|7",
 					"gainSubclassFeature": true
 				},
-				"Down But Not Out|Pugilist|Pugilist2024|7",
-				"Ability Score Improvement|Pugilist|Pugilist2024|8",
-				"School of Hard Knocks|Pugilist|Pugilist2024|9",
-				"Herculean|Pugilist|Pugilist2024|10",
-				"Shake It Off|Pugilist|Pugilist2024|10",
+				"Ability Score Improvement|Shielder|DLA|8",
+				"Coverage|Shielder|DLA|9",
+				"Rally of Resistance|Shielder|DLA|10",
+				"Defensive Study|Shielder|DLA|11",
+				"Ability Score Improvement|Shielder|DLA|12",
+				"Grounded Bastion|Shielder|DLA|13",
+				"Body and Mind|Shielder|DLA|14",
 				{
-					"classFeature": "Subclass Feature|Pugilist|Pugilist2024|11",
+					"classFeature": "Shielder Subclass|Shielder|DLA|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Pugilist|Pugilist2024|12",
-				"Dig Deeper|Pugilist|Pugilist2024|13",
-				"Unbreakable|Pugilist|Pugilist2024|14",
-				"Pugnacious|Pugilist|Pugilist2024|15",
-				"Ability Score Improvement|Pugilist|Pugilist2024|16",
+				"Ability Score Improvement|Shielder|DLA|16",
+				"Safe Aura|Shielder|DLA|17",
+				"Adamantine Constitution|Shielder|DLA|18",
+				"Epic Boon|Shielder|DLA|19",
 				{
-					"classFeature": "Subclass Feature|Pugilist|Pugilist2024|17",
+					"classFeature": "Shielder Subclass|Shielder|DLA|20",
 					"gainSubclassFeature": true
-				},
-				"Fighting Spirit|Pugilist|Pugilist2024|18",
-				"Epic Boon|Pugilist|Pugilist2024|19",
-				"Peak Physical Condition|Pugilist|Pugilist2024|20"
+				}
 			],
 			"multiclassing": {
 				"requirements": {
 					"str": 13,
-					"con": 13
+					"wis": 13
 				},
 				"proficienciesGained": {
-					"armor": [
-						"light"
-					],
-					"weapons": [
-						"improvised"
-					]
+					"armor": ["light", "medium", "heavy", "shield"],
+					"weapons": ["simple"]
 				}
 			},
-			"subclassTitle": "Subclass Feature",
+			"subclassTitle": "Shielder Paths",
 			"hasFluff": true,
 			"foundryAdvancement": [
 				{
 					"type": "ScaleValue",
-					"title": "Fisticuffs Die",
+					"title": "Tough Resistance Die",
 					"configuration": {
-						"identifier": "fisticuffs",
+						"identifier": "tough-resistance",
 						"type": "dice",
 						"scale": {
 							"1": {
 								"n": 1,
-								"die": 8
+								"die": 4
 							},
 							"5": {
 								"n": 1,
+								"die": 6
+							},
+							"9": {
+								"n": 1,
+								"die": 8
+							},
+							"13": {
+								"n": 1,
 								"die": 10
 							},
-							"11": {
+							"17": {
 								"n": 1,
 								"die": 12
-							},
-							"17": {
-								"n": 2,
-								"die": 6
-							}
-						}
-					}
-				},
-				{
-					"type": "ScaleValue",
-					"title": "Moxie Points",
-					"configuration": {
-						"identifier": "moxie",
-						"type": "number",
-						"scale": {
-							"2": {
-								"value": 2
-							},
-							"4": {
-								"value": 3
-							},
-							"6": {
-								"value": 4
-							},
-							"8": {
-								"value": 5
-							},
-							"10": {
-								"value": 6
-							},
-							"12": {
-								"value": 7
-							},
-							"14": {
-								"value": 8
-							},
-							"16": {
-								"value": 9
-							},
-							"18": {
-								"value": 10
-							},
-							"19": {
-								"value": 11
-							},
-							"20": {
-								"value": 12
 							}
 						}
 					}
@@ -239,434 +190,246 @@
 	],
 	"classFeature": [
 		{
-			"name": "Iron Chin",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Tough Resistance",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 1,
 			"entries": [
-				"While you are wearing Light or no armor and not wielding a {@item Shield|XPHB}, your base {@variantrule Armor Class|XPHB} equals 12 plus your Constitution modifier."
+				"Being trained in the art of defense, many seemingly hurtful attacks are blocked by your use of shields and physical resistance. When you are hit by an attack, you can take a {@variantrule Reaction|XPHB} to roll one of your Tough Resistance dice and add the result to your {@variantrule Armor Class|XPHB} for that attack, potentially causing the attack to miss you. You can use this feature a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. You regain any expended uses when you finish a Long Rest.",
+            	"Your Tough Resistance die changes when you reach certain levels in this class, as shown in the Tough Resistance column of the Shielder table."
 			]
 		},
 		{
-			"name": "Fisticuffs",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Protective Focus",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 1,
 			"entries": [
-				"Your years of fighting in back alleys and taverns have given you mastery over combat styles that use {@variantrule Unarmed Strike|XPHB|Unarmed Strikes} and Pugilist weapons, which are the following:",
+				"Being centered in defense allows you to be more aware of the enemy's moves and react accordingly. While you are not wielding a weapon and are using a {@item Shield|XPHB}, your {@variantrule Armor Class|XPHB} can instead be equal to your {@b Shielder DC} (8 + your {@variantrule Proficiency|XPHB|Proficiency Bonus} + your Wisdom modifier) plus the AC bonus provided by that shield."
+			]
+		},
+		{
+			"name": "Weapon Mastery",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 1,
+			"entries": [
+				"Your training with shields allows you to use the mastery properties of all {@filter shields|items|type=shield=sand} and one {@filter simple weapon|items|type=simple weapon=sand} of your choice with which you have proficiency, such as Shortbows or Daggers.",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can change the kind of weapon you chose. For example, you could switch to using the mastery properties from {@item Mace|XPHB} to {@item Handaxe|XPHB}."
+			]
+		},
+		{
+			"name": "Shield Adept",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 2,
+			"entries": [
+				"Starting at 2nd level, you have got used to your shield as your offensive and defensive tool. You gain the following benefits while you are wearing a shield:",
 				{
 					"type": "list",
 					"items": [
-						"{@filter Simple Melee Weapons|items|type=simple weapon;melee weapon=sand}",
-						"{@variantrule Improvised Weapons|XPHB}"
-					]
-				},
-				"You gain the following benefits while you are unarmed or wielding only Pugilist weapons and you are wearing Light or no armor and are not wielding a {@item Shield|XPHB}.",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Bonus Unarmed Strike",
-							"entries": [
-								"You can make an {@variantrule Unarmed Strike|XPHB} as a {@variantrule Bonus Action|XPHB}."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Fisticuffs Die",
-							"entries": [
-								"You can roll {@dice 1d8} in place of the normal damage of your {@variantrule Unarmed Strike|XPHB} or Pugilist weapons. This die changes as you gain Pugilist levels, as shown in the Fisticuffs column of the Pugilist Features table."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Improved Improvisation",
-							"entries": [
-								"Your talent for turning everything into a weapon allows you to use the mastery properties of {@variantrule Improvised Weapons|XPHB}. All Improvised Weapons count as having the {@itemMastery Sap|XPHB} mastery property for you."
-							]
-						}
+						"When you {@action Shove|XPHB} a creature with your shield, you can push them 10 feet instead of 5, or knock them {@condition Prone|XPHB} and reduce their speed to 0 until the start of your next turn.",
+						"If you aren't {@condition incapacitated|XPHB}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you."
 					]
 				}
 			]
 		},
 		{
-			"name": "Moxie",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 2,
-			"entries": [
-				"Your experiences of beating the odds have given you a moxie you can channel in the midst of battle. This swagger is represented by a number of Moxie Points. Your Pugilist level determines the maximum number of points you have, as shown in the Moxie Points column of the Pugilist Features table.",
-				"You can spend these points to enhance or fuel certain Pugilist features. You start knowing three such features: Brace Up, One-Two Punch, and Stick and Move, each of which is detailed below.",
-				"When you expend a Moxie Point, it is unavailable until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, at the end of which you regain all your expended points.",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Brace Up",
-							"entries": [
-								"You can use a {@variantrule Bonus Action|XPHB} and expend 1 Moxie Point to brace for attacks. When you do so, roll your Fisticuffs die, and gain a number of {@variantrule Temporary Hit Points|XPHB} equal to the number rolled plus your Pugilist level and your Constitution modifier. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain after 10 minutes."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "One-Two Punch",
-							"entries": [
-								"You can expend 1 Moxie Point to make two {@variantrule Unarmed Strike|XPHB|Unarmed Strikes} as a {@variantrule Bonus Action|XPHB}."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Stick and Move",
-							"entries": [
-								"You can use a {@variantrule Bonus Action|XPHB} and expend 1 Moxie Point to make an {@variantrule Unarmed Strike|XPHB} and take the {@action Dash|XPHB} or {@action Disengage|XPHB} action."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Bloodied But Unbowed",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 2,
-			"entries": [
-				"When you take damage, you can take a {@variantrule Reaction|XPHB} to regain all your expended {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Points}. If you are {@status Bloodied|XPHB} when you take this {@variantrule Reaction|XPHB}, you also gain {@variantrule Temporary Hit Points|XPHB} equal to four times your Pugilist level. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when you finish a {@variantrule Short Rest|XPHB}.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
-			]
-		},
-		{
-			"name": "Swagger Streak",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 2,
-			"entries": [
-				"When you fail a Strength, Dexterity, Constitution, or Charisma check, you can expend a {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to attempt to swagger your way to success. Roll your Fisticuffs die and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
-			]
-		},
-		{
-			"name": "Heavy Hitter",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Shielder Subclass",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 3,
 			"entries": [
-				"When you hit a creature with an {@variantrule Unarmed Strike|XPHB}, you can use both the Damage and your choice of the Grapple or Shove option."
-			]
-		},
-		{
-			"name": "Pugilist Subclass",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 3,
-			"entries": [
-				"You gain a Pugilist subclass of your choice. A subclass is a specialization that grants you features at certain Pugilist levels. For the rest of your career, you gain each of your subclass's features that are of your Pugilist level or lower."
+				"At 3rd level, you choose the way you want to manifest your desire for protecting others. Each path gives you powers to defend what you desire in different ways."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 4,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
 			]
 		},
 		{
-			"name": "Dig Deep",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 4,
-			"entries": [
-				"You can use a {@variantrule Bonus Action|XPHB} to dig deep. For 10 minutes, you have {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage and you ignore the effects of {@condition Exhaustion|XPHB} levels less than 6.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you gain 1 {@condition Exhaustion|XPHB} level (no action required by you) to restore your use of it."
-			]
-		},
-		{
-			"name": "Extra Attack",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Mocking Taunt",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 5,
 			"entries": [
-				"You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn."
+				"Beginning at 5th level, you learn to provoke enemies, unleashing insults and offenses, effectively manipulating them to attack you. As an {@variantrule Action|XPHB}, you may choose creatures up to your Proficiency bonus that are within 30 feet of you. As long as the target can hear you, each creature must succeed in a Wisdom saving throw against your {@b Shielder DC} or have {@variantrule Disadvantage|XPHB} on all attack rolls against creatures other than you. When attacked by someone other than you or at the end of its turn, the creature can reroll the saving throw ending the effect on a success. This feature also ends early if you get the {@condition Incapacitated|XPHB} condition. You can use this feature a number of times equal to your Wisdom modifier (a minimum of 1). You regain all expended uses after you finish a {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
-			"name": "Haymaker",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 5,
-			"entries": [
-				"When you make an attack with an {@variantrule Unarmed Strike|XPHB} or Pugilist weapon, you can expend 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to swing with wild abandon. On a hit, regain the expended Moxie Point and you deal maximum damage with that attack."
-			]
-		},
-		{
-			"name": "Moxie-Fueled Fists",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Entrenched",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 6,
 			"entries": [
-				"Whenever you deal damage with your {@variantrule Unarmed Strike|XPHB} or an attack with an improvised weapon, it can deal your choice of Force damage or its normal damage type."
+				"By 6th level, you learn to adopt a defensive stance where there aren't many who can break past it. When you finish your turn with remaining movement greater or equal to your {@variantrule Speed|XPHB}, you enter a defensive stance. While in this stance, all attacks done against you have {@variantrule Disadvantage|XPHB}. Using your movement removes you from your defensive stance.",
+				"At 11th level, you may move up to 10 feet in your turn without losing your defensive stance, and at 17th level, you may move 20 feet. Using more movement removes you from your defensive stance."
 			]
 		},
 		{
-			"name": "Subclass Feature",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 6,
-			"entries": [
-				"You gain a feature from your Pugilist Subclass."
-			]
-		},
-		{
-			"name": "Down But Not Out",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Shielder Subclass",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 7,
 			"entries": [
-				"When you use your {@classFeature Bloodied But Unbowed|Pugilist|Pugilist2024|2} while you are {@status Bloodied|XPHB}, you can add a bonus to the damage of your {@variantrule Unarmed Strike|XPHB|Unarmed Strikes} and attacks with Pugilist weapons for the next minute. This bonus equals your Constitution modifier plus the number of levels of {@condition Exhaustion|XPHB} you have.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+				"You gain a feature from your Shielder Subclass."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 8,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
 			]
 		},
 		{
-			"name": "School of Hard Knocks",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Coverage",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 9,
 			"entries": [
-				"Once per turn, you can deal an extra {@damage 1d12} damage when you hit with an {@variantrule Unarmed Strike|XPHB} or attack with a Pugilist weapon. This damage is the same type dealt by the weapon or {@variantrule Unarmed Strike|XPHB}. You can forgo this extra damage to apply one of the following effects.",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Endanger",
-							"entries": [
-								"The next time the creature is hit by an attack, the attack deals the maximum result of the attack's damage dice rather than rolling."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Provoke",
-							"entries": [
-								"The creature has {@variantrule Disadvantage|XPHB} on attack rolls against creatures other than you until the end of your next turn."
-							]
-						}
-					]
-				}
+				"Beginning at 9th level, you can provide cover to allies near you. When a creature that is within 5 ft of you is attacked, you can impose {@variantrule Disadvantage|XPHB} on the attack roll (no action required)."
 			]
 		},
 		{
-			"name": "Herculean",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Rally of Resistance",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 10,
 			"entries": [
-				"You gain the following benefits.",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Heavy Lifter",
-							"entries": [
-								"Your Strength score is doubled when determining your carrying capacity."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Pillar Breaker",
-							"entries": [
-								"When you hit an object with an {@variantrule Unarmed Strike|XPHB}, the hit is a {@variantrule Critical Hit|XPHB}."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Unmatched Athlete",
-							"entries": [
-								"Your jump distance is doubled."
-							]
-						}
-					]
-				}
+				"Starting at 10th level, the clash of your shield with the enemy's weapons gives inner strength to your allies. As a {@variantrule Bonus Action|XPHB}, you can choose a creature you can see within 60 feet of you other than yourself and give it one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice. Once within the next 10 minutes, when the creature is attacked, it can use a {@variantrule Reaction|XPHB} to roll the die and gain a bonus to AC for that attack equal to the result of the roll or add the result as a bonus to a saving throw of its choice. When an ally rolls a Tough Resistance die this way, they get {@variantrule Temporary Hit Points|XPHB} equal to the result.",
+				"Additionally, you recover all expended Tough Resistance die at the end of a {@variantrule Short Rest|XPHB}."
 			]
 		},
 		{
-			"name": "Shake It Off",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 10,
-			"entries": [
-				"With unflappable resolve, you can remove one of the following conditions from yourself at the start of each of your turns: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, one level of {@condition Exhaustion|XPHB}, {@condition Frightened|XPHB}, {@condition Paralyzed|XPHB}, {@condition Poisoned|XPHB}, {@condition Restrained|XPHB}, or {@condition Stunned|XPHB}.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you take a level of {@condition Exhaustion|XPHB} (no action required by you) to restore your use of it."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Defensive Study",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 11,
 			"entries": [
-				"You gain a feature from your Pugilist Subclass."
+				"At 11th level, you learn to analyze a foe at any moment, especially in the heat of battle. If you spend at least 1 minute outside of battle {@action Study|PXHB|studying} a creature, or as your {@variantrule Bonus Action|XPHB} in combat, you can discern certain strengths and weaknesses of a creature you can see within 30 feet of yourself; you know whether that creature has any {@variantrule Immunity|XPHB|Immunities}, {@variantrule Resistance|XPHB|Resistances}, or {@variantrule Vulnerability|XPHB|Vulnerabilities}, and if the creature has any, you know what they are.",
+				"Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB} and you may only use it once per creature."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 12,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
 			]
 		},
 		{
-			"name": "Dig Deeper",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Grounded Bastion",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 13,
 			"entries": [
-				"You can use a {@variantrule Bonus Action|XPHB} to dig deeper. For 1 minute, you have all the benefits of your {@classFeature Dig Deep|Pugilist|Pugilist2024|4|Pugilist2024} and can use your {@classFeature School of Hard Knocks|Pugilist|Pugilist2024|9|Pugilist2024} twice per turn instead of once.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. Starting at level 20, you can use it twice before a {@variantrule Long Rest|XPHB}."
+				"Beginning 13th level, you are able to protect yourself while standing your ground, being difficult to take down. You gain {@variantrule Advantage|XPHB} against effects that push you or give you the {@condition Prone|XPHB} or {@condition Grappled|XPHB} condition.",
+				"Additionally, when in your defensive stance you are immune to effects that push you, or give you the prone condition and have advantage in all Strength saving throws and contests."
 			]
 		},
 		{
-			"name": "Unbreakable",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Body and Mind",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 14,
 			"entries": [
-				"You have {@variantrule Advantage|XPHB} on Strength, Dexterity, and Constitution saving throws.",
-				"Additionally, whenever you make a saving throw and fail, you can expend 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to reroll it, and you must use the new roll."
+				"By 14th level, your mind has grown as strong as your body. When you have to roll for a Wisdom saving throw or use your Wisdom modifier, you can use your Constitution ability modifier instead and vice versa. If you are already proficient in the saving throw you are making, you can add your {@variantrule Proficiency|XPHB|Proficiency Bonus} twice. You also gain {@variantrule Advantage|XPHB} against being {@condition Frightened|XPHB}."
 			]
 		},
 		{
-			"name": "Pugnacious",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Shielder Subclass",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 15,
 			"entries": [
-				"When you roll {@variantrule Initiative|XPHB}, you can remove one level of {@condition Exhaustion|XPHB} on yourself and regain your uses of {@classFeature Down But Not Out|Pugilist|Pugilist2024|7|Pugilist2024}, {@classFeature Dig Deep|Pugilist|Pugilist2024|4|Pugilist2024}, and {@classFeature Shake It Off|Pugilist|Pugilist2024|10|Pugilist2024}.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+				"You gain a feature from your Shielder Subclass."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 16,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
 			]
 		},
 		{
-			"name": "Subclass Feature",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Safe Aura",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 17,
 			"entries": [
-				"You gain a feature from your Pugilist Subclass."
+				"At 17th level, your presence brings comfort to your allies. As an {@variantrule Action|XPHB}, choose up to 6 friendly creatures within 30 feet of you. For 1 minute, as long as they are within this range, they gain a +2 bonus to their {@variantrule Armor Class|XPHB|AC} (as long as it does not surpass 18). You and the chosen creatures gain {@variantrule Immunity|XPHB} against being {@condition Frightened|XPHB} as long as they remain in the area. You regain this feature after a {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
-			"name": "Fighting Spirit",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Adamantine Constitution",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 18,
 			"entries": [
-				"When you are reduced to 0 {@variantrule Hit Points|XPHB} but not killed outright, you can drop to 1 {@variantrule Hit Points|XPHB|Hit Point} instead. When you do, you gain {@variantrule Temporary Hit Points|XPHB} equal to half of your maximum {@variantrule Hit Points|XPHB}, regain all your expended {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Points}, and have {@variantrule Resistance|XPHB} to all damage except Force for the next minute.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+				"By 18th level, you gain a constitution similar to that of adamantine. You gain {@variantrule Resistance|XPHB} to all non-magical damage and {@variantrule Immunity|XPHB}, to {@variantrule Critical Hit|XPHB|critical hits}."
 			]
 		},
 		{
 			"name": "Epic Boon",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 19,
 			"entries": [
-				"You gain an {@filter Epic Boon feat|feats|category=EB} or another feat of your choice for which you qualify. {@feat Boon of Combat Prowess|XPHB} is recommended."
+				"You gain an {@filter Epic Boon feat|feats|category=EB} or another feat of your choice for which you qualify. {@feat Boon of Recovery|XPHB} is recommended."
 			]
 		},
 		{
-			"name": "Peak Physical Condition",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Shielder Subclass",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 20,
 			"entries": [
-				"Your strength and resilience are the stuff of legends. You gain the following benefits.",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Hale and Hearty",
-							"entries": [
-								"Your Strength and Constitution scores increase by 2, to a maximum of 23."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Sleep It Off",
-							"entries": [
-								"When you finish a {@variantrule Long Rest|XPHB} and you have the {@condition Exhaustion|XPHB} condition, you lose all levels of {@condition Exhaustion|XPHB}."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Vim and Vigor",
-							"entries": [
-								"When you finish a {@variantrule Short Rest|XPHB}, you regain {@variantrule Hit Points|XPHB} equal to twice your Pugilist level."
-							]
-						}
-					]
-				}
+				"You gain a feature from your Shielder Subclass."
 			]
 		}
 	],
 	"subclass": [
 		{
-			"name": "Sweet Science",
-			"source": "Pugilist2024",
-			"shortName": "Sweet Science",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Defender",
+			"source": "DLA",
+			"shortName": "Defender",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"subclassFeatures": [
 				"Sweet Science|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|3",
 				"Combo Maker|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|6",
