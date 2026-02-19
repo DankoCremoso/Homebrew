@@ -27,7 +27,7 @@
 		{
 			"name": "Shielder",
 			"source": "DLA",
-			"foundryImg": "https://github.com/DankoCremoso/Homebrew-Assets/blob/e0ca5447c67d08bb6c9914faeca9e640cda1111e/img/Shielder.png",
+			"foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Shielder.png",
 			"primaryAbility": [
 				{
 					"wis": true
@@ -431,113 +431,358 @@
 			"className": "Shielder",
 			"classSource": "DLA",
 			"subclassFeatures": [
-				"Sweet Science|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|3",
-				"Combo Maker|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|6",
-				"Combo Breaker|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|11",
-				"Knock Out|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|17"
+				"Defender|Shielder|DLA|Defender|DLA|3",
+				"Guardian Angel|Shielder|DLA|Defender|DLA|7",
+				"Damage Absorption|Shielder|DLA|Defender|DLA|15",
+				"Indestructible Defense|Shielder|DLA|Defender|DLA|20"
 			],
 			"hasFluffImages": true,
-			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Sweet Science.webp"
+			"foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Defender.png"
 		},
 		{
-			"name": "Squared Circle",
-			"source": "Pugilist2024",
-			"shortName": "Squared Circle",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Master of All Shields",
+			"source": "DLA",
+			"shortName": "Master of All Shields",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"subclassFeatures": [
-				"Squared Circle|Pugilist|Pugilist2024|Squared Circle|Pugilist2024|3",
-				"Meat Shield|Pugilist|Pugilist2024|Squared Circle|Pugilist2024|6",
-				"Heavyweight|Pugilist|Pugilist2024|Squared Circle|Pugilist2024|11",
-				"Clean Finish|Pugilist|Pugilist2024|Squared Circle|Pugilist2024|17"
+				"Master of All Shields|Shielder|DLA|Master of All Shields|DLA|3",
+				"Preventive Backup|Shielder|DLA|Master of All Shields|DLA|7",
+				"Increased Armory|Shielder|DLA|Master of All Shields|DLA|15",
+				"Enhanced Armament|Shielder|DLA|Master of All Shields|DLA|20"
 			],
 			"hasFluffImages": true,
-			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Squared Circle.webp"
+			"foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/MasterOfAllShields.png"
 		},
 		{
-			"name": "Street Saint",
-			"source": "Pugilist2024",
-			"shortName": "Street Saint",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassFeatures": [
-				"Street Saint|Pugilist|Pugilist2024|Street Saint|Pugilist2024|3",
-				"Ravaged But Resolute|Pugilist|Pugilist2024|Street Saint|Pugilist2024|6",
-				"Aura of Resilience|Pugilist|Pugilist2024|Street Saint|Pugilist2024|11",
-				"Hallowed Hands|Pugilist|Pugilist2024|Street Saint|Pugilist2024|17"
-			],
-			"hasFluffImages": true,
-			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Street Saint.webp"
-		},
-		{
-			"name": "Piss and Vinegar",
-			"source": "Pugilist2024",
-			"shortName": "Piss and Vinegar",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassFeatures": [
-				"Piss and Vinegar|Pugilist|Pugilist2024|Piss and Vinegar|Pugilist2024|3",
-				"Dirty Tricks|Pugilist|Pugilist2024|Piss and Vinegar|Pugilist2024|6",
-				"Mean Old Cuss|Pugilist|Pugilist2024|Piss and Vinegar|Pugilist2024|11",
-				"Dirtier Tricks|Pugilist|Pugilist2024|Piss and Vinegar|Pugilist2024|17"
-			],
-			"hasFluffImages": true,
-			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Piss and Vinegar.webp"
-		},
-		{
-			"name": "Hand of Dread",
-			"source": "Pugilist2024",
-			"shortName": "Hand of Dread",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassFeatures": [
-				"Hand of Dread|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|3",
-				"Deal with the Devil|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|6",
-				"Grotesque Growth|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|11",
-				"Fountain of Viscera|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|17"
-			],
-			"additionalSpells": [
+			"name": "Arcane Protector",
+			"source": "DLA",
+			"shortName": "Arcane Protector",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/3",
+			"subclassSpells": [
 				{
-					"name": "Black Magic",
-					"ability": "con",
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Warlock"
-									}
-								]
-							}
-						}
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Warlock",
-								"count": 2
-							}
-						]
-					}
+					"className": "Wizard",
+					"classSource": "XPHB"
 				}
 			],
-			"hasFluffImages": true,
-			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Hand of Dread.webp"
-		},
-		{
-			"name": "Dog and Hound",
-			"source": "Pugilist2024",
-			"shortName": "Dog and Hound",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Arcane Protector",
+							"source": "DLA"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=wizard}",
+						"{@filter Spells Known|spells|class=wizard}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcane Protector",
+							"source": "DLA"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=wizard}",
+						"{@filter 2nd|spells|level=2|class=wizard}",
+						"{@filter 3rd|spells|level=3|class=wizard}",
+						"{@filter 4th|spells|level=4|class=wizard}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
 			"subclassFeatures": [
-				"Dog and Hound|Pugilist|Pugilist2024|Dog and Hound|Pugilist2024|3",
-				"Coordinated Attack|Pugilist|Pugilist2024|Dog and Hound|Pugilist2024|6",
-				"Hound's Best Friend|Pugilist|Pugilist2024|Dog and Hound|Pugilist2024|11",
-				"Off the Chain|Pugilist|Pugilist2024|Dog and Hound|Pugilist2024|17"
+				"Arcane Protector|Shielder|DLA|Arcane Protector|DLA|3",
+				"Arcane Armor|Shielder|DLA|Arcane Protector|DLA|7",
+				"Magical Endurance|Shielder|DLA|Arcane Protector|DLA|15",
+				"Spell Devourer|Shielder|DLA|Arcane Protector|DLA|20"
 			],
 			"hasFluffImages": true,
-			"foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Dog and Hound.webp"
+			"foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/ArcaneProtector.png"
+		},
+		{
+			"name": "Guardian of Life",
+			"source": "DLA",
+			"shortName": "Guardian of Life",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassFeatures": [
+				"Guardian of Life|Shielder|DLA|Guardian of Life|DLA|3",
+				"Lifeline|Shielder|DLA|Guardian of Life|DLA|7",
+				"Improved Bond|Shielder|DLA|Guardian of Life|DLA|15",
+				"Sanctuary of Life|Shielder|DLA|Guardian of Life|DLA|20"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/GuardianOfLife.png"
+		},
+		{
+			"name": "Warden",
+			"source": "DLA",
+			"shortName": "Warden",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassFeatures": [
+				"Warden|Shielder|DLA|Warden|DLA|3",
+				"Restraining Prison|Shielder|DLA|Warden|DLA|7",
+				"Patrol of the Damned|Shielder|DLA|Warden|DLA|15",
+				"Cursed Confinement|Shielder|DLA|Warden|DLA|20"
+			],
+			"hasFluffImages": true,
+			"foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Warden.png"
 		}
 	],
 	"subclassFeature": [
