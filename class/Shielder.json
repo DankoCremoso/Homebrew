@@ -1269,1695 +1269,600 @@
 			]
 		}
 	],
-	"baseitem": [
+	"optionalfeature": [
 		{
-			"name": "Brass Knuckles",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "M|XPHB",
-			"weapon": true,
-			"weaponCategory": "simple",
-			"rarity": "none",
-			"value": 100,
-			"weight": 1,
-			"property": [
-				"L|XPHB"
-			],
-			"mastery": [
-				"Push|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"hasFluffImages": true
-		},
-		{
-			"name": "Hand Claws",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "M|XPHB",
-			"weapon": true,
-			"weaponCategory": "simple",
-			"rarity": "none",
-			"value": 300,
-			"weight": 2,
-			"property": [
-				"F|XPHB",
-				"L|XPHB"
-			],
-			"mastery": [
-				"Vex|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "S"
-		},
-		{
-			"name": "Punch Knife",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "M|XPHB",
-			"weapon": true,
-			"weaponCategory": "simple",
-			"rarity": "none",
-			"value": 200,
-			"weight": 3,
-			"mastery": [
-				"Sap|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "P"
-		}
-	],
-	"item": [
-		{
-			"name": "Bonebreakers",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "Brass Knuckles|pugilist2024",
-			"rarity": "legendary",
-			"reqAttune": "by a pugilist",
-			"reqAttuneTags": [
+			"name": "Chain Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"class": "pugilist"
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
 				}
 			],
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"property": [
-				"L|XPHB"
-			],
-			"mastery": [
-				"Push|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"bonusWeapon": "+3",
 			"entries": [
-				"These unremarkable brass knuckles appear well used if not well loved. They are covered in dings and scratches accompanied by the odd stain.",
-				"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature with this weapon, you can attempt to maim them. When you do so, the creature must succeed on a DC 19 Constitution saving throw or be maimed in one of the following ways of your choice. The creature remains maimed until it is targeted by a {@spell Greater Restoration|XPHB} spell or similar magic. Once this property is used, it can't be used again until the next dawn.",
+				"Your shield transforms into a shield with an embedded 50 ft long metal chain. As an {@variantrule Action|XPHB}, you can extend or retract the chain embedded within your shield. Also as an action, you can try to grapple a creature with the chain of your shield. Make a ranged attack against a Large or smaller creature within 30 ft of you. If the attack hits, the creature is {@condition Grappled|XPHB}. At the start of each of its turns, the creature can do a saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC} to break free. You can't use this ability if you already have a grappled creature. While grappling a creature, you may not move more than 30 feet away from it. As a {@variantrule Bonus Action|XPHB}, you can pull the creature up to 30 ft straight towards you if it is of the same size or smaller than you, or you can pull yourself up to 30 ft straight to the target if its size is larger than yours.",
 				{
 					"type": "entries",
-					"name": "Broken Arm",
+					"name": "Enhanced Armament",
 					"entries": [
-						"The creature has {@variantrule Disadvantage|XPHB} on attack rolls with weapons and {@variantrule Unarmed Strike|XPHB|Unarmed Strikes}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Broken Leg",
-					"entries": [
-						"The creature's {@variantrule Speed|XPHB} is halved."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Broken Ribs",
-					"entries": [
-						"The creature has {@variantrule Disadvantage|XPHB} on Strength and Dexterity ability checks and saving throws."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Broken Skull",
-					"entries": [
-						"The creature has {@variantrule Disadvantage|XPHB} on Intelligence and Wisdom ability checks and saving throws."
-					]
-				}
-			]
-		},
-		{
-			"name": "Mugfist Knuckles",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "brass knuckles|Pugilist2024",
-			"rarity": "uncommon",
-			"reqAttune": true,
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"property": [
-				"L|XPHB"
-			],
-			"mastery": [
-				"Push|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"bonusWeapon": "+1",
-			"entries": [
-				"These brass knuckles are plated with cheap faux gold that wouldn't fool even the most casual observer.",
-				"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you score a {@variantrule Critical Hit|XPHB} against an enemy with this magic weapon, you gain GP equal to the creature's {@variantrule Challenge Rating|XPHB} (or level if it does not have a {@variantrule Challenge Rating|XPHB}). Creatures with a {@variantrule Challenge Rating|XPHB} less than 1 count as 0."
-			]
-		},
-		{
-			"name": "Mage Mashers",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "brass knuckles|Pugilist2024",
-			"rarity": "very rare",
-			"reqAttune": true,
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"property": [
-				"L|XPHB"
-			],
-			"mastery": [
-				"Push|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"bonusWeapon": "+2",
-			"entries": [
-				"These brass knuckles are forged from a dull black ore that sparkles with a prism of colors when held to light. They feel heavier than they look like they should be, especially to creatures capable of casting spells.",
-				"You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature that can cast at least one spell, that creature takes an extra {@damage 1d6} Force damage. Additionally when you deal damage to a creature that is {@status Concentration|XPHB|Concentrating} using this weapon, it has {@variantrule Disadvantage|XPHB} on the saving throw it makes to maintain {@status Concentration|XPHB}."
-			]
-		},
-		{
-			"name": "Penitent Pummelers",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "brass knuckles|Pugilist2024",
-			"rarity": "rare",
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"property": [
-				"L|XPHB"
-			],
-			"mastery": [
-				"Push|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"bonusWeapon": "+1",
-			"entries": [
-				"These brass knuckles are made of gold and etched with a holy symbol over each knuckle. You gain a +1 to attack rolls and damage rolls with this magic weapon.",
-				"When you hit a Fiend or Undead with this weapon, that creature takes an extra {@damage 1d12} Radiant damage."
-			]
-		},
-		{
-			"name": "Ferguson's Talons",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "hand claws|Pugilist2024",
-			"rarity": "very rare",
-			"reqAttune": true,
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"property": [
-				"F|XPHB",
-				"L|XPHB"
-			],
-			"mastery": [
-				"Vex|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "S",
-			"bonusWeapon": "+2",
-			"charges": 9,
-			"entries": [
-				"Legend has it these hand claws were crafted from the talons of a fabled feline. You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.",
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"While you are holding this magic weapon, you have {@sense Darkvision|XPHB} with a range of 60 feet."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Feline Form",
-					"entries": [
-						"While you are holding this magic weapon, you can cast {@spell Polymorph|XPHB} from it. When you do, the spell targets only yourself and the only form you can take is a Cat."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Nine Lives",
-					"entries": [
-						"The weapon has 9 charges. While holding it, when you fail a {@variantrule Death Saving Throw|XPHB} you can expend 1 charge (no action required) to succeed on it instead. The weapon loses this property if it has no charges."
+						"Your shield's chain extends and it's able to split to cover multiple targets. The chain's length becomes 300ft and you are able to try to grapple multiple creatures with it, independently of size. Make a range attack against up to 6 creatures (Huge creatures count as 3 and Gargantuan as 6). If the attack hits, the creature is grappled and follows the same rules as grappling a creature normally with your chain shield. Additionally, as a bonus action, you can pull or pull yourself towards a single creature of your choice. If that would put you more than 30 ft away from another grappled creature, the grappled creatures move enough to stay 30 ft from you."
 					]
 				}
 			],
-			"attachedSpells": [
-				"polymorph|xphb"
+			"featureType": [
+				"DLA:SM"
 			]
 		},
 		{
-			"name": "Ratbite",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "hand claws|Pugilist2024",
-			"rarity": "legendary",
-			"reqAttune": true,
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"property": [
-				"F|XPHB",
-				"L|XPHB"
+			"name": "Thorn Shield",
+			"source": "DLA",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
 			],
-			"mastery": [
-				"Vex|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "S",
-			"bonusWeapon": "+3",
 			"entries": [
-				"These pungent weapons are made of leather of dubious origin with clumps of fur still attached. The leather grip fits snugly over the knuckles, with rat teeth and bits of bone sticking out the outward facing side. It gives off an unpleasant odor.",
-				"You gain a +3 bonus to attack rolls and damage rolls made with these magic weapons. While you are attuned to these weapons, you have {@variantrule Immunity|XPHB} to magical contagions. Any creature who takes damage from this Constitution saving throw or contract Sewer Plague. When you score a {@variantrule Critical Hit|XPHB} against a creature with these magic weapons, it takes an extra {@damage 2d4} Necrotic damage and has {@variantrule Disadvantage|XPHB} on saving throws against magical contagions for seven days."
-			]
-		},
-		{
-			"name": "Ramuh's Katar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "punch knife|Pugilist2024",
-			"rarity": "very rare",
-			"reqAttune": true,
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"mastery": [
-				"Sap|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "P",
-			"bonusWeapon": "+2",
-			"entries": [
-				"This punch knife style weapon is carved from a single chunk of superconductive dark violet metal that binds to the fist and forearm with black leather straps.",
-				"You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you score a {@variantrule Critical Hit|XPHB} against a creature with this magic weapon, that creature takes an extra {@damage 2d6} Lightning damage. Additionally, while you are attuned to this magical weapon, you have {@variantrule Advantage|XPHB} on {@variantrule Initiative|XPHB} rolls and you can cast {@spell Jump|XPHB} on yourself."
-			],
-			"attachedSpells": [
-				"jump|xphb"
-			]
-		},
-		{
-			"name": "Yggdrasil's Tap",
-			"source": "Pugilist2024",
-			"page": 0,
-			"baseItem": "punch knife|Pugilist2024",
-			"rarity": "rare",
-			"type": "M|XPHB",
-			"weaponCategory": "simple",
-			"mastery": [
-				"Sap|XPHB"
-			],
-			"dmg1": "1d4",
-			"dmgType": "P",
-			"bonusWeapon": "+1",
-			"entries": [
-				"This punch knife stands out from others being made of a dark wood that's harder than iron.",
-				"You gain a +1 bonus to attack rolls and damage rolls with this magic weapon. When you hit a creature with this weapon, you can roll and expend a {@variantrule Hit Point Dice|XPHB|Hit Point Die}. The target takes extra Piercing damage equal to the roll, and you regain the same number of {@variantrule Hit Points|XPHB}."
-			]
-		},
-		{
-			"name": "Bottle of Brew Tasting",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "rare",
-			"wondrous": true,
-			"entries": [
-				"This magic item is a glass bottle with a blank label on its front. When a potion or other liquid is poured into the bottle, the contents and effects of the liquid will appear, written in Common, on the label. This writing fades when the bottle is emptied of its contents."
-			]
-		},
-		{
-			"name": "Bottomless Box of Treats",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "rare",
-			"wondrous": true,
-			"recharge": "dawn",
-			"rechargeAmount": "{@dice 1d4}",
-			"charges": 5,
-			"entries": [
-				"This wondrous item has 5 charges. When you reach inside this box, you can expend a charge to pull out a treat. A Beast that eats the snack regains {@dice 3d4 + 3} {@variantrule Hit Points|XPHB} and removes one level of {@condition Exhaustion|XPHB} or ends one condition on it: {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Frightened|XPHB}, or {@condition Paralyzed|XPHB}.",
-				"The box regains {@dice 1d4} expended charges daily at dawn."
-			]
-		},
-		{
-			"name": "Last Rites Rum",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "uncommon",
-			"entries": [
-				"When you drink this potion, you take {@damage 2d4} Necrotic damage. For 1 hour, you have {@variantrule Resistance|XPHB} to Radiant damage, and whenever you deal damage with your {@variantrule Unarmed Strike|XPHB}, it can deal your choice of Necrotic damage or its normal damage type.",
-				"This potion is thin and gray. It smells vaguely unpleasant but tastes like nothing at all."
-			],
-			"miscTags": [
-				"CNS"
-			]
-		},
-		{
-			"name": "Loaded Dice",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "very rare",
-			"reqAttune": true,
-			"wondrous": true,
-			"recharge": "dawn",
-			"rechargeAmount": "{@dice 1d6}",
-			"charges": 6,
-			"entries": [
-				"This set of six-sided dice is indistinguishable from nonmagical dice. While attuned to the dice, you gain the following benefits.",
+				"Your shield is transformed into a green plant-like shield covered in thorns. Whenever a creature makes a melee attack on you and fails, that creature receives piercing damage equal to one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice. As an {@variantrule Action|XPHB}, the ground in a 10-foot radius centered on a point within range twists and sprouts hard spikes and thorns. This space becomes {@variantrule Difficult Terrain|XPHB}. You can choose any number of creatures, and whenever another creature starts its turn or moves through this area, they take piercing damage equal to one of your Tough Resistance dice for each 5 ft it travels. The vines wither after an hour. You can use this feature again after a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
 				{
 					"type": "entries",
-					"name": "Luck",
+					"name": "Enhanced Armament",
 					"entries": [
-						"The dice have 6 charges and regain {@dice 1d6} charges daily at dawn. When you fail a {@variantrule D20 Test|XPHB}, you can expend 1 charge to reroll the test if you don't have the {@condition Incapacitated|XPHB} condition. You must use the new roll."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Loaded",
-					"entries": [
-						"When you use this magic item to play a dice game, you have {@variantrule Advantage|XPHB} on ability checks made to determine the winner of the game."
+						"Choose up to 6 creatures within 30 feet of you. They are affected by the {@spell Entangle|XPHB} spell. The DC for the spell is 20.",
+						"Additionally you can make the ground in a 30-foot radius centered on you twist and sprout hard spikes and thorns like those from your Thorn Shield.",
+						"Until you finish a long rest, the damage from your Thorn shield increases by {@dice 1d12}."
 					]
 				}
 			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Medallion of Mettle",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "uncommon",
-			"reqAttune": true,
-			"wondrous": true,
-			"entries": [
-				"This ostentatious medallion draws the eye of even casual onlookers. Whenever you gain {@variantrule Temporary Hit Points|XPHB}, you gain an additional {@dice 1d6} {@variantrule Temporary Hit Points|XPHB}."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Poundwise Porter",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "very rare",
-			"bonusWeapon": "+3",
-			"entries": [
-				"For 1 minute after you drink this potion, you gain a +3 bonus to attack rolls and damage rolls with your {@variantrule Unarmed Strike|XPHB|Unarmed Strikes}.",
-				"This potion is thick and dark brown topped with a cream colored froth."
-			],
-			"miscTags": [
-				"CNS"
+			"featureType": [
+				"DLA:SM"
 			]
 		},
 		{
-			"name": "Salamander Sauce",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "uncommon",
-			"entries": [
-				"When you drink this potion, you take {@damage 2d4} Fire damage. For 1 hour, you have {@variantrule Resistance|XPHB} to Cold damage and whenever you deal damage with your {@variantrule Unarmed Strike|XPHB}, it can deal your choice of Fire damage or its normal damage type.",
-				"This potion is bright red and smells of hot peppers and spices. It is typically drizzled on food prior to eating but it is possible to consume it straight from the bottle."
+			"name": "Summoner Shield",
+			"source": "DLA",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
 			],
-			"miscTags": [
-				"CNS"
-			]
-		},
-		{
-			"name": "Coin of Easy Living",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "common",
-			"wondrous": true,
 			"entries": [
-				"This Gold Piece appears mundane but, when flipped, always lands on the side you call while it is in the air. Additionally, you can summon it to your palm at will as a {@variantrule Bonus Action|XPHB}."
-			]
-		},
-		{
-			"name": "Everfull Stein",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "common",
-			"wondrous": true,
-			"entries": [
-				"This large ceramic stein is decorated with dwarven glyphs and topped with a brass lid that can be opened by thumb lever. While the lid is closed and the stein is empty, you can name a nonmagical ale, beer, or mead as a {@variantrule Bonus Action|XPHB} and the stein fills with that liquid."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "+1 Leather Jerkin",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "rare",
-			"wondrous": true,
-			"bonusAc": "+1",
-			"entries": [
-				"You have a +1 bonus to {@variantrule Armor Class|XPHB} while you aren't wearing armor and wearing this garment. You can use a {@item Shield|XPHB} and still gain the benefit of this magic item."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "+2 Leather Jerkin",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "very rare",
-			"wondrous": true,
-			"bonusAc": "+2",
-			"entries": [
-				"You have a +2 bonus to {@variantrule Armor Class|XPHB} while you aren't wearing armor and wearing this garment. You can use a {@item Shield|XPHB} and still gain the benefit of this magic item."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "+3 Leather Jerkin",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "legendary",
-			"wondrous": true,
-			"bonusAc": "+3",
-			"entries": [
-				"You have a +3 bonus to {@variantrule Armor Class|XPHB} while you aren't wearing armor and wearing this garment. You can use a {@item Shield|XPHB} and still gain the benefit of this magic item."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "+1 Spiked Collar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "uncommon",
-			"wondrous": true,
-			"bonusWeapon": "+1",
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a +1 bonus to its attack rolls and damage rolls while wearing this collar."
-			]
-		},
-		{
-			"name": "+2 Spiked Collar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "rare",
-			"wondrous": true,
-			"bonusWeapon": "+2",
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a +2 bonus to its attack rolls and damage rolls while wearing this collar."
-			]
-		},
-		{
-			"name": "+3 Spiked Collar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "very rare",
-			"wondrous": true,
-			"bonusWeapon": "+3",
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a +3 bonus to its attack rolls and damage rolls while wearing this collar."
-			]
-		},
-		{
-			"name": "+1 Studded Collar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "uncommon",
-			"wondrous": true,
-			"bonusAc": "+1",
-			"bonusSavingThrow": "+1",
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a +1 bonus to {@variantrule Armor Class|XPHB} and saving throws while wearing this collar."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "+2 Studded Collar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "rare",
-			"wondrous": true,
-			"bonusAc": "+2",
-			"bonusSavingThrow": "+2",
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a +2 bonus to {@variantrule Armor Class|XPHB} and saving throws while wearing this collar."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "+3 Studded Collar",
-			"source": "Pugilist2024",
-			"page": 0,
-			"rarity": "very rare",
-			"wondrous": true,
-			"bonusAc": "+3",
-			"bonusSavingThrow": "+3",
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a +3 bonus to {@variantrule Armor Class|XPHB} and saving throws while wearing this collar."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Animated Inks",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "varies",
-			"reqAttune": true,
-			"entries": [
-				"When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum {@variantrule Challenge Rating|XPHB} is determined by the potion's rarity, as shown in the table below.",
-				"You can take the {@action Magic|XPHB} action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your {@variantrule Initiative|XPHB} count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 {@variantrule Hit Points|XPHB}, it returns to your body as a tattoo. Once you have used a {@action Magic|XPHB} action to animate this tattoo, it can't be used again until 3 days pass.",
-				"If you end or lose {@variantrule Attunement|XPHB} to this magic item, the tattoo disappears and all other effects of this potion end.",
+				"Your shield transforms into a shield with an embedded ancient summoning book. As an {@variantrule Action|XPHB}, you can summon a creature to be at your service. You can summon any creature that has a CR lower than ½. This CR limitation increases as you gain more levels in this class. The creature you summoned is friendly towards you and your allies, and it follows every command you give. The summoned creature takes its turn immediately after yours. This creature vanishes, leaving no physical form behind, when its {@variantrule Hit Points|XPHB} reach 0 or after an hour. You may use this feature again after a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
 				{
 					"type": "table",
-					"colLabels": [
-						"Rarity",
-						"Maximum Challenge Rating"
-					],
 					"colStyles": [
-						"col-3 text-center",
-						"col-9 text-center"
+						"col-6 text-center",
+						"col-6 text-center"
 					],
 					"rows": [
 						[
-							"{@item Animated Inks (Uncommon)|Pugilist2024|Uncommon}",
-							"1"
+							"3rd Level",
+							"Max CR: 1/2"
 						],
 						[
-							"{@item Animated Inks (Rare)|Pugilist2024|Rare}",
-							"3"
+							"5th Level",
+							"Max CR: 1"
 						],
 						[
-							"{@item Animated Inks (Very Rare)|Pugilist2024|Very Rare}",
-							"7"
+							"10th Level",
+							"Max CR: 2"
+						],
+						[
+							"15th Level",
+							"Max CR: 3"
+						],
+						[
+							"20th Level",
+							"Max CR: 4"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Armament",
+					"entries": [
+						"The summoning book in your shield overflows with power. You can summon any creature with a CR of 10 or lower, even if you have already summoned a creature. The creature still follows all other limitations of this shield."
 					]
 				}
 			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Animated Inks (Uncommon)",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "uncommon",
-			"reqAttune": true,
-			"entries": [
-				"When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum {@variantrule Challenge Rating|XPHB} is 1.",
-				"You can take the {@action Magic|XPHB} action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your {@variantrule Initiative|XPHB} count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 {@variantrule Hit Points|XPHB}, it returns to your body as a tattoo. Once you have used a {@action Magic|XPHB} action to animate this tattoo, it can't be used again until 3 days pass.",
-				"If you end or lose {@variantrule Attunement|XPHB} to this magic item, the tattoo disappears and all other effects of this potion end."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Animated Inks (Rare)",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "rare",
-			"reqAttune": true,
-			"entries": [
-				"When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum {@variantrule Challenge Rating|XPHB} is 3.",
-				"You can take the {@action Magic|XPHB} action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your {@variantrule Initiative|XPHB} count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 {@variantrule Hit Points|XPHB}, it returns to your body as a tattoo. Once you have used a {@action Magic|XPHB} action to animate this tattoo, it can't be used again until 3 days pass.",
-				"If you end or lose {@variantrule Attunement|XPHB} to this magic item, the tattoo disappears and all other effects of this potion end."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Animated Inks (Very Rare)",
-			"source": "Pugilist2024",
-			"page": 0,
-			"type": "P|XPHB",
-			"rarity": "very rare",
-			"reqAttune": true,
-			"entries": [
-				"When you drink this potion, a type of creature you are thinking of appears as a tattoo on your skin. You choose the type of creature but its maximum {@variantrule Challenge Rating|XPHB} is 7.",
-				"You can take the {@action Magic|XPHB} action to cause the tattoo to animate and move off your body, appearing in an unoccupied space of your choice within 60 feet. For the next 10 minutes, it uses the stat block of the chosen creature. During this time, the creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your {@variantrule Initiative|XPHB} count. If you issue no commands, the creature defends itself but takes no other action. At the end of the 10 minutes, or when the creature is reduced to 0 {@variantrule Hit Points|XPHB}, it returns to your body as a tattoo. Once you have used a {@action Magic|XPHB} action to animate this tattoo, it can't be used again until 3 days pass.",
-				"If you end or lose {@variantrule Attunement|XPHB} to this magic item, the tattoo disappears and all other effects of this potion end."
-			],
-			"hasFluffImages": true
-		}
-	],
-	"itemGroup": [
-		{
-			"name": "Leather Jerkin",
-			"source": "Pugilist2024",
-			"wondrous": true,
-			"rarity": "varies",
-			"items": [
-				"+1 Leather Jerkin|Pugilist2024",
-				"+2 Leather Jerkin|Pugilist2024",
-				"+3 Leather Jerkin|Pugilist2024"
-			],
-			"entries": [
-				"You have a bonus to {@variantrule Armor Class|XPHB} while you aren't wearing armor and wearing this garment. This bonus is determined by its rarity. You can use a {@item Shield|XPHB} and still gain the benefit of this magic item."
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Spiked Collar",
-			"source": "Pugilist2024",
-			"wondrous": true,
-			"rarity": "varies",
-			"items": [
-				"+1 Spiked Collar|Pugilist2024",
-				"+2 Spiked Collar|Pugilist2024",
-				"+3 Spiked Collar|Pugilist2024"
-			],
-			"entries": [
-				"This collar comes in a variety of colors and sizes, all with metal spikes protruding around the outside of the collar. A Beast wearing this magic item gains a bonus to its attack rolls and damage rolls while wearing this collar. The bonus is determined by its rarity."
+			"featureType": [
+				"DLA:SM"
 			]
 		},
 		{
-			"name": "Studded Collar",
-			"source": "Pugilist2024",
-			"wondrous": true,
-			"rarity": "varies",
-			"items": [
-				"+1 Studded Collar|Pugilist2024",
-				"+2 Studded Collar|Pugilist2024",
-				"+3 Studded Collar|Pugilist2024"
+			"name": "Mirror Shield",
+			"source": "DLA",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
 			],
 			"entries": [
-				"This collar comes in a variety of colors and sizes, all with crystalline studs decorating the outside of the collar. A Beast wearing this wondrous item gains a bonus to {@variantrule Armor Class|XPHB} and saving throws while wearing this collar. The bonus is determined by its rarity."
-			],
-			"hasFluffImages": true
-		}
-	],
-	"magicvariant": [
-		{
-			"name": "Club of Unconsciousness",
-			"type": "GV|XDMG",
-			"requires": [
+				"Your shield transforms into a magical reflective mirror that allows you to create illusory reflections of yourself. As an {@variantrule Action|XPHB}, you create a perfect illusion of yourself that lasts for 10 minutes, until you use this feature again, or until you or the illusion receive damage. The illusion has your same {@variantrule Armor Class|XPHB|AC}. The illusion appears in an unoccupied space that you can see within 30 feet of you. As a {@variantrule Bonus Action|XPHB} on your turn, you can move the illusion up to 30 feet to a space you can see, but they must remain within 120 feet of you.",
+				"For the duration, you can cast spells and use your {@classFeature Mocking Taunt|Shielder|DLA|5} and {@classFeature Coverage|Shielder|DLA|9} features as though you were in the illusion's space, but you must use your own senses.",
 				{
-					"name": "Club",
-					"source": "XPHB"
-				},
-				{
-					"name": "Greatclub",
-					"source": "XPHB"
+					"type": "entries",
+					"name": "Enhanced Armament",
+					"entries": [
+						"You create 2 more illusions that last for 10 minutes or until you or the illusion takes damage. They appear in an unoccupied space you can see within 30 feet of you. You and your copies then receive the effects of the {@spell Mirror Image|XPHB} spell."
+					]
 				}
 			],
-			"inherits": {
-				"namePrefix": "Club of Unconsciousness ",
-				"source": "Pugilist2024",
-				"page": 0,
-				"rarity": "rare",
-				"reqAttune": true,
-				"bonusWeapon": "+1",
-				"entries": [
-					"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you score a {@variantrule Critical Hit|XPHB} with this weapon, the target must succeed on a DC 15 Constitution saving throw or forget everything it saw and heard for the past minute and have the {@condition Unconscious|XPHB} condition for 1 minute. This condition ends early if the target takes damage or someone within 5 feet uses an action to wake it up."
-				]
-			}
+			"featureType": [
+				"DLA:SM"
+			]
 		},
 		{
-			"name": "Punchdrunk Punters",
-			"type": "GV|XDMG",
-			"requires": [
+			"name": "Storm Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"name": "Brass Knuckles",
-					"source": "Pugilist2024"
-				},
-				{
-					"name": "Hand Claws",
-					"source": "Pugilist2024"
-				},
-				{
-					"name": "Punch Knife",
-					"source": "Pugilist2024"
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
 				}
 			],
-			"inherits": {
-				"namePrefix": "Punchdrunk Punters ",
-				"source": "Pugilist2024",
-				"page": 0,
-				"rarity": "rare",
-				"bonusWeapon": "+1",
-				"entries": [
-					"These beat up and well worn weapons smell as if they've spent a week at the bottom of a forgotten cask in a busy tavern.",
-					"You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. Each time you deal damage to a creature, it gains one Toxin Point for 1 hour, to a maximum of 10 Toxin Points. As a {@action Magic|XPHB} action, you can cause a creature you can see to take {@damage 1d8} Poison damage for each Toxin Point it has, then it loses all Toxin Points."
-				]
-			}
-		}
-	],
-	"monster": [
-		{
-			"name": "Hound",
-			"source": "Pugilist2024",
-			"summonedByClass": "Pugilist|Pugilist2024",
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Creatures/Tokens/Hound.webp"
-			},
-			"size": [
-				"M"
-			],
-			"type": "beast",
-			"alignment": [
-				"N"
-			],
-			"ac": [
+			"entries": [
+				"Your shield transforms into a cloud-shaped shield that appears darker and expels sparks of electricity as it accumulates damage. Each time someone attacks you but fails, you store a charge of static energy. You store 5 points of damage per miss, up to 30. As an {@variantrule Action|XPHB}, you can release all the absorbed damage into powerful lightning strikes. Choose a creature within 60 ft of you. Make a ranged spell attack against the target, Wisdom is your spellcasting ability modifier. If it hits, it deals damage equal to the absorbed damage and the target is shoved {@condition Prone|XPHB} 10ft backwards. When you finish a {@variantrule Long Rest|XPHB}, all absorbed damage resets.",
+				"Additionally, you gain a {@variantrule Fly Speed|XPHB} equal to your {@variantrule Speed|XPHB|walking speed}. You instantly descend to the ground if you finish your turn in the air.",
 				{
-					"special": "12 plus your Constitution modifier"
-				}
-			],
-			"hp": {
-				"special": "5 plus five times your Pugilist level (the hound has a number of Hit Dice [d8s] equal to your Pugilist level)"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 14,
-			"dex": 14,
-			"con": 15,
-			"int": 3,
-			"wis": 12,
-			"cha": 13,
-			"save": {
-				"str": "+2+PB",
-				"dex": "+2+PB",
-				"con": "+2+PB",
-				"int": "-4+PB",
-				"wis": "+1+PB",
-				"cha": "+1+PB"
-			},
-			"senses": [
-				"Darkvision 60 ft."
-			],
-			"passive": 11,
-			"languages": [
-				"understands the languages you know"
-			],
-			"pbNote": "equals your Proficiency Bonus",
-			"trait": [
-				{
-					"name": "Pack Bond",
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"Add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check or saving throw the beast makes."
+						"You create a powerful thunderstorm and a lighting bolt strikes where you stand charging completely your absorbed damage. Choose up to 6 creatures. Make a separate attack roll for each as you release lighting strikes to each of them. Until your next long rest, each missed attack gives you 5 more points of damage stored and your maximum damage you can absorb increases by 30.",
+						"Additionally, for an hour, your flying speed increases by 10 feet and you can hover while wearing this shield until you finish a long rest."
 					]
 				}
 			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atkr m} Bonus equals your Constitution modifier plus your {@variantrule Proficiency|XPHB|Proficiency Bonus}, reach 5 ft. {@h}{@damage 2d4 + 2} plus your Constitution modifier Piercing damage. If the target is a creature Large or smaller, it must succeed on a Strength saving throw (DC equals 8 plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or one of the following effects of your choice occur: the target has the {@condition Grappled|XPHB} condition, it has the {@condition Prone|XPHB} condition, or it is pushed 5 feet away from the hound."
-					]
-				}
-			],
-			"senseTags": [
-				"D"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"conditionInflict": [
-				"grappled",
-				"prone"
-			],
-			"hasFluffImages": true
+			"featureType": [
+				"DLA:SM"
+			]
 		},
 		{
-			"name": "Streetfighter",
-			"source": "Pugilist2024",
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Creatures/Tokens/Brawler.webp"
-			},
-			"page": 0,
-			"size": [
-				"S",
-				"M"
-			],
-			"type": "humanoid",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				14
-			],
-			"hp": {
-				"average": 13,
-				"formula": "2d8 + 4"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 15,
-			"dex": 11,
-			"con": 14,
-			"int": 10,
-			"wis": 9,
-			"cha": 12,
-			"skill": {
-				"athletics": "+5"
-			},
-			"passive": 9,
-			"languages": [
-				"Common"
-			],
-			"cr": "1/2",
-			"gear": [
-				"brass knuckles|Pugilist2024"
-			],
-			"environment": [
-				"any"
-			],
-			"treasure": [
-				"individual"
-			],
-			"action": [
+			"name": "Ember Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"name": "Fisticuffs",
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your shield becomes decorated with flames and becomes a heat source. Your shield sheds bright light in a 15-foot radius and dim light another 15 feet. You gain {@variantrule Resistance|XPHB} to fire damage and your melee weapon attacks with your shield do an additional {@dice 1d6} fire damage. Once per {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can overheat your shield. For the next minute, or until you dismiss it (no action required), every creature within 15 feet of you receives {@dice 1d6} fire damage at the start of its turns and when entering this area for the first time.",
+				{
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Bludgeoning damage."
+						"You overheat your shield to the point where you set objects and people ablaze. For 1 hour, you gain {@variantrule Immunity|XPHB} to fire damage. For a minute, or until you dismiss it (no action required), A wall of fire circles 30 feet around you. Creatures inside suffer from the {@spell Wall of Fire|XPHB} effects. Additionally, any creature wearing or holding metal items are affected by the {@spell Heat Metal|XPHB} spell."
 					]
 				}
 			],
-			"bonus": [
-				{
-					"name": "Brace Up",
-					"entries": [
-						"The streetfighter gains 9 ({@dice 2d8}) {@variantrule Temporary Hit Points|XPHB}."
-					]
-				},
-				{
-					"name": "Combo",
-					"entries": [
-						"The streetfighter makes one Fisticuffs attack."
-					]
-				}
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			"featureType": [
+				"DLA:SM"
+			]
 		},
 		{
-			"name": "Wrestler",
-			"source": "Pugilist2024",
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Creatures/Tokens/Brawler.webp"
-			},
-			"page": 0,
-			"size": [
-				"S",
-				"M"
-			],
-			"type": "humanoid",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				15
-			],
-			"hp": {
-				"average": 52,
-				"formula": "7d8 + 21"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 10,
-			"con": 17,
-			"int": 12,
-			"wis": 11,
-			"cha": 13,
-			"save": {
-				"str": "+6",
-				"con": "+5"
-			},
-			"skill": {
-				"athletics": "+6"
-			},
-			"passive": 10,
-			"languages": [
-				"Common"
-			],
-			"cr": "3",
-			"gear": [
-				"leather armor|xphb"
-			],
-			"environment": [
-				"any"
-			],
-			"treasure": [
-				"individual"
-			],
-			"action": [
+			"name": "Frost Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"name": "Grasping Strike",
-					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 16})."
-					]
-				},
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your shield is covered in never melting ice. You can cast the {@spell Shape Water|XGE} cantrip. You gain {@variantrule Resistance|XPHB} to cold damage and your melee weapon attacks with your shield do an additional {@dice 1d6} cold damage. You can create a non-magical wall of solid ice that is 30 feet wide and 10 feet tall. If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a DC 15 Dexterity saving throw. On a failed save, the creature takes 3 of your {@classFeature Tough Resistance|Shielder|DLA|1} dice cold damage, or half as much damage on a successful save. The wall is an object that can be damaged and thus breached. It has {@variantrule Armor Class|XPHB|AC} 12 and {@variantrule Hit Points|XPHB} equal to 3 times your Shielder level, and it is {@variantrule Vulnerability|XPHB|vulnerable} to fire damage. You may use this feature a number of times equal to your Wisdom modifier (minimum of 1).",
 				{
-					"name": "Punch Down",
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+						"You absorb all heat surrounding you, using the cold to protect your allies. For 1 hour, you gain {@variantrule Immunity|XPHB} to cold damage. You and up to 6 creatures within 30 feet of you get the effects of a 6th level {@spell Armor of Agathys|XPHB}. Additionally, choose any other number of creatures within range and they must succeed a DC 20 Constitution saving throw or have their {@variantrule Speed|XPHB} reduced to 0 until the end of their next turn."
 					]
 				}
 			],
-			"bonus": [
-				{
-					"name": "Brace Up",
-					"entries": [
-						"The wrestler gains 9 ({@dice 2d8}) {@variantrule Temporary Hit Points|XPHB}."
-					]
-				},
-				{
-					"name": "Combo",
-					"entries": [
-						"The wrestler makes one Grasping Strike or Punch Down attack."
-					]
-				}
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"conditionInflict": [
-				"grappled",
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			"featureType": [
+				"DLA:SM"
+			]
 		},
 		{
-			"name": "Belligerent Brawler",
-			"source": "Pugilist2024",
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Creatures/Tokens/Brawler.webp"
-			},
-			"page": 0,
-			"size": [
-				"S",
-				"M"
-			],
-			"type": "humanoid",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				16
-			],
-			"hp": {
-				"average": 105,
-				"formula": "14d8 + 42"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 11,
-			"con": 14,
-			"int": 13,
-			"wis": 10,
-			"cha": 15,
-			"save": {
-				"str": "+6",
-				"con": "+4"
-			},
-			"skill": {
-				"athletics": "+6",
-				"intimidation": "+6"
-			},
-			"passive": 10,
-			"languages": [
-				"Common"
-			],
-			"cr": "4",
-			"gear": [
-				"leather armor|xphb"
-			],
-			"environment": [
-				"any"
-			],
-			"treasure": [
-				"individual"
-			],
-			"action": [
+			"name": "Poison Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The brawler makes two attacks, using Grasping Strike or Punch Down in any combination."
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your shield is imbued with a mixture of dangerous poisons that come out of your shield. You gain {@variantrule Resistance|XPHB} to poison damage and {@variantrule Immunity|XPHB} to being {@condition Poisoned|XPHB}. If you already have the poisoned condition, it is not neutralized but suppressed. Whenever you hit an attack with your shield you may try to poison the target. The target must succeed on a Constitution Saving Throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC}. On a failure, choose one of the following:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Obnoxious Venom:} The creature is poisoned for 1 minute. The creature may repeat the saving throw at the end of its turns, ending the effect on a success.",
+						"{@b Viper's venom:} The creature receives poison damage equal to 3 of your {@classFeature Tough Resistance|Shielder|DLA|1} dice.",
+						"{@b Corroding Venom:} Until the end of its next turn, all attacks against the creature are made with {@variantrule Advantage|XPHB}."
 					]
 				},
+				"Additionally, any ally within 5ft of you may use their {@variantrule Bonus Action|XPHB} to coat a weapon or piece of ammunition with your poison. For 10 minutes, the next attack they do with the coated item gets the effect of your Poison Shield attacks.",
 				{
-					"name": "Grasping Strike",
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 16})."
-					]
-				},
-				{
-					"name": "Punch Down",
-					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+						"Your resistance to poison increases as your poison gets more potent. For an hour, you and allies within 30 ft of you have immunity to poison damage and the poisoned condition, as well as neutralizing any poison afflicting you.",
+						"Additionally, the DC of your shield's poison increases to 20, your shield's poison damage and poisoned condition ignore resistances, and if you choose the Corroding Venom option, the target is instead {@condition Paralyzed|XPHB}."
 					]
 				}
 			],
-			"bonus": [
-				{
-					"name": "Brace Up",
-					"entries": [
-						"The brawler gains 13 ({@dice 3d8}) {@variantrule Temporary Hit Points|XPHB}."
-					]
-				},
-				{
-					"name": "Combo",
-					"entries": [
-						"The brawler makes one Grasping Strike or Punch Down attack."
-					]
-				},
-				{
-					"name": "Enraging Insult",
-					"entries": [
-						"{@actSave wis} {@dc 12}, one creature that can see or hear the brawler within 30 feet. {@actSaveFail} 6 ({@damage 1d8 + 2}) Psychic damage, and the target has {@variantrule Disadvantage|XPHB} on attack rolls against creatures other than the brawler until the start of the brawler's next turn."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"Y"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"conditionInflict": [
-				"grappled",
-				"prone"
-			],
-			"savingThrowForced": [
-				"wisdom"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			"featureType": [
+				"DLA:SM"
+			]
 		},
 		{
-			"name": "Boxer",
-			"source": "Pugilist2024",
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Creatures/Tokens/Brawler.webp"
-			},
-			"page": 0,
-			"size": [
-				"S",
-				"M"
-			],
-			"type": "humanoid",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				16
-			],
-			"hp": {
-				"average": 102,
-				"formula": "12d8 + 48"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 20,
-			"dex": 14,
-			"con": 18,
-			"int": 10,
-			"wis": 13,
-			"cha": 12,
-			"save": {
-				"str": "+8",
-				"con": "+7"
-			},
-			"skill": {
-				"athletics": "+8"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "6",
-			"environment": [
-				"any"
-			],
-			"treasure": [
-				"individual"
-			],
-			"action": [
+			"name": "Lantern Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The boxer makes three attacks, using Grasping Strike or Punch Down in any combination."
-					]
-				},
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"The center of your shield shed bright light as if a bright lantern was in its place. As a {@variantrule Bonus Action|XPHB}, your shield can shed bright light in a 30-foot radius and dim light another 30 feet. In a 10-foot radius centered on you, you can even see in magical darkness and as an {@variantrule Action|XPHB} you can focus your sight and see illusions for what they are. As a {@variantrule Reaction|XPHB} to being hit with a melee attack, you can cause the attacker to succeed on a Constitution saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC} or be {@condition Blinded|XPHB} until the end of their next turn.",
 				{
-					"name": "Grasping Strike",
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 16})."
-					]
-				},
-				{
-					"name": "Punch Down",
-					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+						"You shed bright light in a 60-foot radius and dim light another 30 feet. In this area, all magical darkness and illusions are dispelled, and you and your allies' weapon attacks do an extra {@dice 3d6} radiant damage."
 					]
 				}
 			],
-			"bonus": [
+			"featureType": [
+				"DLA:SM"
+			]
+		},
+		{
+			"name": "Shadow Shield",
+			"source": "DLA",
+			"prerequisite": [
 				{
-					"name": "Brace Up",
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your shield seems to now be cloaked in shadows extending all around you too. You and allies within 5 feet of you have {@variantrule Advantage|XPHB} on Dexterity (Stealth) checks. As a {@variantrule Bonus Action|XPHB}, if you are standing in dim light or complete darkness, you can teleport up to 60 feet to another dim light or dark area you can see. Once per {@variantrule Long Rest|XPHB}, you may also cast {@spell Invisibility|XPHB} on yourself without spending a spell slot.",
+				{
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"The boxer gains 18 ({@dice 4d8}) {@variantrule Temporary Hit Points|XPHB}."
+						"You and up to 6 creatures gain the benefits of the Invisibility spell, except not even blindsight can see you. If you or those creatures attack while still in this Invisibility spell, you do a {@variantrule Critical Hit|XPHB}."
+					]
+				}
+			],
+			"featureType": [
+				"DLA:SM"
+			]
+		},
+		{
+			"name": "Void Shield",
+			"source": "DLA",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your shield cracks showing a reek to an infinite abyss. As an {@variantrule Action|XPHB}, you can send a creature you can see within 30-feet of you to the void. The target must succeed on a Wisdom saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC} (the target can choose to fail); On a failure, you can send the creature to the void, a harmless demiplane, for up to 1 minute. The creature can repeat the saving throw at the end of its turns to end the effect on a success and return to a harmless unoccupied space near where it was. Alternatively, on a failure you may choose to teleport the target to an unoccupied space of your choice that you can see within range. You may use this feature a number of times equal to your Wisdom modifier. You regain expended uses after finishing a long rest.",
+				{
+					"type": "entries",
+					"name": "Enhanced Armament",
+					"entries": [
+						"Choose any number of creatures within 30 feet of you. They must succeed on the Constitution saving throw or be sent to the void. The time limit is increased to 1 hour."
+					]
+				}
+			],
+			"featureType": [
+				"DLA:SM"
+			]
+		},
+		{
+			"name": "Sacrificial Shield",
+			"source": "DLA",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Shielder"
+						},
+						"subclass": {
+							"name": "Master of All Shields",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your shield adopts an ominous appearance and aura, and feeds from your pain, blood, sorrow and tears. You have {@variantrule Resistance|XPHB} to necrotic damage and {@variantrule Immunity|XPHB} to effects that would reduce your maximum {@variantrule Hit Points|XPHB}. Melee attacks with your shield deal additional bludgeoning or necrotic (your choice) damage based on the amount of missing hit points, as shown on the table below:",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"1 - 5 missing hit points",
+							"{@dice 1d4} bonus damage"
+						],
+						[
+							"6 - 15 missing hit points",
+							"{@dice 1d6} bonus damage"
+						],
+						[
+							"16 - 30 missing hit points",
+							"{@dice 2d6} bonus damage"
+						],
+						[
+							"31 - 50 missing hit points",
+							"{@dice 2d8} bonus damage"
+						],
+						[
+							"51 - 75 missing hit points",
+							"{@dice 3d8} bonus damage"
+						],
+						[
+							"75+ missing hit points",
+							"{@dice 3d10} bonus damage"
+						]
 					]
 				},
 				{
-					"name": "Combo",
+					"type": "entries",
+					"name": "Enhanced Armament",
 					"entries": [
-						"The boxer makes one Grasping Strike or Punch Down attack."
+						"You gain immunity to necrotic damage. You receive damage equal to half of your remaining hitpoints, charging your shield in the process. Make a melee attack roll with {@variantrule Advantage|XPHB} against a creature you can see within 30 feet of you. If it hits, you deal additional necrotic damage equal to the amount of hit points you are missing."
 					]
 				}
 			],
-			"reaction": [
-				{
-					"name": "Cross Counter",
-					"entries": [
-						"{@actTrigger} The boxer is hit by a melee attack made by a creature. {@actResponse} The boxer reduces the damage it takes by 18 ({@dice 4d8}) and deals that much Bludgeoning damage to the target if it is within 5 feet."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MA"
-			],
-			"conditionInflict": [
-				"grappled",
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			"featureType": [
+				"DLA:SM"
+			]
 		}
 	],
 	"classFluff": [
 		{
-			"name": "Pugilist",
-			"source": "Pugilist2024",
+			"name": "Shielder",
+			"source": "DLA",
 			"entries": [
+				"Between the party of adventurers, returning from their last journey, stands a human amongst all of them. The bulky complexion of his clothes and the immense shield he drags with him serve as the party's best defense.",
+				"In front of the mighty red dragon stands a young dwarf. Holding a small shield, as cold as an ice dragon's breath. Challenging, she stands in front of the dragon, waiting for the lizard's next breath to use her best weapon, her shield.",
+				"A tiefling stands in front of the horde of skeletons, pushing them back. The tiefling resists hit after hit, holding the shield as strong as possible. After a while, the tiefling gets up, grins, pitifully, at the skeletons. The tiefling gained enough time to release a devastating spell.",
+				"Shielders sacrifice all of their offensive capabilities to gain enormous defensive ones, often supporting a party protecting them, or gaining enough time to strike the necessary blows or even to prepare the right spell. Being a shielder does not only mean being tough to take out but the desire to protect something, a place, your party, or even your own life.",
 				{
-					"name": "Pugilist",
-					"source": "Pugilist2024",
-					"type": "section",
+					"name": "Defensive Specialists",
+					"source": "DLA",
+					"type": "entries",
 					"entries": [
-						"{@i A Streetfighter with Swagger to Spare}",
-						"Pugilists live a rough and tumble life that leaves them full of determination and recklessness, either from overconfidence or desperation. In a fight, they channel this strength of character to dig deep and snatch victory from the jaws of defeat, even when outarmed and outnumbered. Even when they ultimately fail, Pugilists go down swinging.",
-						"Pugilists tap into their inner strength in the form of moxie. This is not an esoteric or mystical energy that flows through the multiverse, but the result of self-confidence and determination forged over a lifetime of hardship with a never-say-die attitude. Anyone can be taught how to fist fight but accessing the strength and resilience of the Pugilist can't. The secret of mastering moxie doesn't come from disciplined study or rigorous training, it comes from years of wanting and needing.",
-						"In back alleys, underground fight clubs, and poorer quarters, Pugilists don't have time to consider the lofty ideals of philosophy or ponder the mysteries of the universe. They spend their days chasing down their next meal or, if they're fortunate enough to have that, their next drink, bedfellow, or flophouse. For Pugilists, becoming an adventurer might be the only way out of whatever miserable situation they've been stuck in since infancy. For others, getting lost out in the world is an escape from the tangled web of debt or enemies they've piled up. But some Pugilists are happy just with the promise of ample opportunities to bloody their knuckles."
+						"Shielders are not less than any other warrior. They sacrifice all their offensive capabilities to gain resistance to any type of attack and be able to protect anything. They spend their entire lives training the art of using a shield. They might use other weapons, but a shield will always be their top choice.",
+						"Opposed to any other shield-bearer, Shielders excel at being resistant, and able to make the most catastrophic attack into a kid's punch. Fighting in the front lines to protect their unit, or in the rearguard to gain time for their fellows, shielders support their party with protection. Where others see shields as extras, Shielders know that is all they need."
+					]
+				},
+				{
+					"name": "Guardians",
+					"source": "DLA",
+					"type": "entries",
+					"entries": [
+						"Like any other being, Shielders often have something they want to protect, and if it is not their own lives, they would often risk themselves protecting it. They might guard a city, hidden treasure, an artifact, or those beloved to them. A shielder with nothing to protect is often a husk of a once-great defender, a rare sight, but not impossible.",
+						"To achieve their goals, it is common to see shielders being supported by individuals with higher offensive capabilities. However, some rare shielders might take their objectives without the help of anyone, isolating themselves from others. In any case, most shielders have the same goal; to guard and protect something important."
+					]
+				},
+				{
+					"name": "Creating a Shielder",
+					"source": "DLA",
+					"type": "entries",
+					"entries": [
+						"Shielders exist to protect something. Think about what your character might be protecting. It can be as simple as protecting someone, or as complex as to be the protector of an idea or concept. Talk with your DM to determine what type of connection your character has with the protected. Don’t forget to come up with the reason your character is protecting something; a traumatic event, a promise, a childhood experience, or even a strong personality are all reasons Shielders decide to be more defense-focused.",
+						"Shielders tend to have a really big moral compass and strong ideals. Discuss with your DM what personality might your character take, either following the idea of strong morale or taking a different approach with your character."
+					]
+				},
+				{
+					"name": "Quick Build",
+					"source": "DLA",
+					"type": "entries",
+					"entries": [
+						"You can make a shielder quickly by following these suggestions. First, put your highest ability score in Wisdom, followed by Strength. Second, choose the soldier background."
 					]
 				}
+
 			],
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Class/Pugilist.webp"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Shielder.png"
 					},
-					"credit": "Fil Cieplak"
+					"credit": "AI Generated"
 				}
 			]
 		}
 	],
 	"subclassFluff": [
 		{
-			"name": "Sweet Science",
-			"source": "Pugilist2024",
-			"shortName": "Sweet Science",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Defender",
+			"source": "DLA",
+			"shortName": "Defender",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Sweet Science.webp"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Defender.png"
 					},
-					"credit": "Spelljammer"
+					"credit": "AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Squared Circle",
-			"source": "Pugilist2024",
-			"shortName": "Squared Circle",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Master of All Shields",
+			"source": "DLA",
+			"shortName": "Master of All Shields",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Squared Circle.webp"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/MasterOfAllShields.png"
 					},
-					"credit": "Jonathan Simard"
+					"credit": "AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Street Saint",
-			"source": "Pugilist2024",
-			"shortName": "Street Saint",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Arcane Protector",
+			"source": "DLA",
+			"shortName": "Arcane Protector",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Street Saint.webp"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/ArcaneProtector.png"
 					},
-					"credit": "Vagelio Kaliva"
+					"credit": "AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Piss and Vinegar",
-			"source": "Pugilist2024",
-			"shortName": "Piss and Vinegar",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Guardian of Life",
+			"source": "DLA",
+			"shortName": "Guardian of Life",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Piss and Vinegar.webp"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/GuardianOfLife.png"
 					},
-					"credit": "Vagelio Kaliva"
+					"credit": "AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Hand of Dread",
-			"source": "Pugilist2024",
-			"shortName": "Hand of Dread",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Warden",
+			"source": "DLA",
+			"shortName": "Warden",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Hand of Dread.webp"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Warden.png"
 					},
-					"credit": "Rick Hershey"
+					"credit": "AI Generated"
 				}
 			]
-		},
-		{
-			"name": "Dog and Hound",
-			"source": "Pugilist2024",
-			"shortName": "Dog and Hound",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Dog and Hound.webp"
-					},
-					"credit": "Jonathan Reincke"
-				}
-			]
-		}
-	],
-	"itemFluff": [
-		{
-			"name": "Brass Knuckles",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Brass Knuckles.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Animated Inks",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Animated Inks.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Animated Inks (Uncommon)",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Animated Inks.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Animated Inks (Rare)",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Animated Inks.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Animated Inks (Very Rare)",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Animated Inks.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Everfull Stein",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Everfull Stein.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Leather Jerkin",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Leather Jerkin.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "+1 Leather Jerkin",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Leather Jerkin.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "+2 Leather Jerkin",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Leather Jerkin.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "+3 Leather Jerkin",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Leather Jerkin.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Loaded Dice",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Loaded Dice.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Medallion of Mettle",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Medallion of Mettle.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "Studded Collar",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Studded Collar.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "+1 Studded Collar",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Studded Collar.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "+2 Studded Collar",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Studded Collar.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		},
-		{
-			"name": "+3 Studded Collar",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Items/Studded Collar.webp"
-					},
-					"credit": "Nathanael Roux"
-				}
-			]
-		}
-	],
-	"monsterFluff": [
-		{
-			"name": "Hound",
-			"source": "Pugilist2024",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Dog and Hound.webp"
-					},
-					"credit": "Jonathan Reincke"
-				}
-			]
-		},
-		{
-			"name": "Brawlers",
-			"source": "Pugilist2024",
-			"entries": [
-				{
-					"type": "section",
-					"name": "Brawlers",
-					"entries": [
-						"{@i Rowdies and Ruffians}",
-						"Loud and brash, brawlers look for a good time or a fight but preferably both. Most brawlers are laborers and crafters who blow off steam carousing when they can scrap up the funds and scrapping when they run out. Particularly skilled brawlers can make a living fighting for the entertainment of others."
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Creatures/Brawlers-full.webp"
-					},
-					"credit": "Fil Cieplak"
-				}
-			]
-		},
-		{
-			"name": "Streetfighter",
-			"source": "Pugilist2024",
-			"_copy": {
-				"name": "Brawlers",
-				"source": "Pugilist2024",
-				"_mod": {
-					"entries": {
-						"mode": "prependArr",
-						"items": [
-							{
-								"type": "section",
-								"name": "Streetfighter",
-								"entries": [
-									"Streetfighters can be found hanging around shady establishments and shaking down easy marks in alleys. They aren't the type to take orders from a boss unless the threat of violence is involved."
-								]
-							}
-						]
-					}
-				}
-			}
-		},
-		{
-			"name": "Wrestler",
-			"source": "Pugilist2024",
-			"_copy": {
-				"name": "Brawlers",
-				"source": "Pugilist2024",
-				"_mod": {
-					"entries": {
-						"mode": "prependArr",
-						"items": [
-							{
-								"type": "section",
-								"name": "Wrestler",
-								"entries": [
-									"Wrestlers are trained athletes that grapple competitively for money and sometimes glory."
-								]
-							}
-						]
-					}
-				}
-			}
-		},
-		{
-			"name": "Belligerent Brawler",
-			"source": "Pugilist2024",
-			"_copy": {
-				"name": "Brawlers",
-				"source": "Pugilist2024",
-				"_mod": {
-					"entries": {
-						"mode": "prependArr",
-						"items": [
-							{
-								"type": "section",
-								"name": "Belligerent Brawler",
-								"entries": [
-									"There's not a belligerent brawler in every tavern but every belligerent brawler can be found in one. They smell strongly of whatever drink they're carrying in their flask."
-								]
-							}
-						]
-					}
-				}
-			}
-		},
-		{
-			"name": "Boxer",
-			"source": "Pugilist2024",
-			"_copy": {
-				"name": "Brawlers",
-				"source": "Pugilist2024",
-				"_mod": {
-					"entries": {
-						"mode": "prependArr",
-						"items": [
-							{
-								"type": "section",
-								"name": "Boxer",
-								"entries": [
-									"Boxers get paid to beat people up and get beaten up in return. It's generally best to avoid being within arm's reach of one in a fight."
-								]
-							}
-						]
-					}
-				}
-			}
 		}
 	],
 	"foundryClassFeature": [
@@ -4496,312 +3401,6 @@
 						}
 					],
 					"transfer": true
-				}
-			]
-		}
-	],
-	"book": [
-		{
-			"name": "The Pugilist Class (2024)",
-			"id": "Pugilist2024",
-			"source": "Pugilist2024",
-			"group": "supplement-alt",
-			"cover": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/cover.webp"
-			},
-			"published": "2026-02-03",
-			"author": "Benjamin Huffman",
-			"contents": [
-				{
-					"name": "Pugilist"
-				},
-				{
-					"name": "Pugilist Subclasses"
-				},
-				{
-					"name": "Appendix A: New Weapons and Magic Items",
-					"headers": [
-						"New Weapons",
-						"New Magic Items"
-					]
-				},
-				{
-					"name": "Appendix B: New Creatures"
-				},
-				{
-					"name": "Credits"
-				}
-			]
-		}
-	],
-	"bookData": [
-		{
-			"id": "Pugilist2024",
-			"source": "Pugilist2024",
-			"data": [
-				{
-					"type": "section",
-					"name": "Pugilist",
-					"id": "000",
-					"entries": [
-						{
-							"type": "gallery",
-							"images": [
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Class/Pugilist.webp"
-									},
-									"title": "{@class Pugilist|Pugilist2024}",
-									"credit": "Fil Cieplak"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "section",
-					"name": "Pugilist Subclasses",
-					"id": "001",
-					"entries": [
-						"A Pugilist subclass is a specialization that grants you features at certain levels, as specified in the subclass.",
-						{
-							"type": "gallery",
-							"images": [
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Dog and Hound.webp"
-									},
-									"title": "{@subclass Dog and Hound|Pugilist|Pugilist2024|Pugilist2024}",
-									"maxHeight": 375,
-									"credit": "Jonathan Reincke"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Hand of Dread.webp"
-									},
-									"title": "{@subclass Hand of Dread|Pugilist|Pugilist2024|Pugilist2024}",
-									"maxHeight": 375,
-									"credit": "Rick Hershey"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Piss and Vinegar.webp"
-									},
-									"title": "{@subclass Piss and Vinegar|Pugilist|Pugilist2024|Pugilist2024}",
-									"maxHeight": 375,
-									"credit": "Vagelio Kaliva"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Street Saint.webp"
-									},
-									"title": "{@subclass Street Saint|Pugilist|Pugilist2024|Pugilist2024}",
-									"maxHeight": 375,
-									"credit": "Vagelio Kaliva"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Squared Circle.webp"
-									},
-									"title": "{@subclass Squared Circle|Pugilist|Pugilist2024|Pugilist2024}",
-									"maxHeight": 375,
-									"credit": "Jonathan Simard"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "external",
-										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Subclasses/Sweet Science.webp"
-									},
-									"title": "{@subclass Sweet Science|Pugilist|Pugilist2024|Pugilist2024}",
-									"maxHeight": 375,
-									"credit": "Spelljammer"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "section",
-					"name": "Appendix A: New Weapons and Magic Items",
-					"id": "002",
-					"entries": [
-						"Presented in this appendix are new weapons and magic items.",
-						{
-							"type": "entries",
-							"name": "New Weapons",
-							"entries": [
-								"The Weapons table in this section expands on the game's main weapons.",
-								{
-									"type": "table",
-									"caption": "Weapons",
-									"colLabels": [
-										"Name",
-										"Damage",
-										"Properties",
-										"Mastery",
-										"Weight",
-										"Cost"
-									],
-									"colStyles": [
-										"col-3 text-center",
-										"col-3 text-center",
-										"col-3 text-center",
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center"
-									],
-									"rows": [
-										[
-											"{@item Brass Knuckles|Pugilist2024}",
-											"1d4 Bludgeoning",
-											"{@itemProperty L|XPHB|Light}",
-											"{@itemMastery Push|XPHB}",
-											"1 lb.",
-											"1 GP"
-										],
-										[
-											"{@item Hand Claws|Pugilist2024}",
-											"1d4 Slashing",
-											"{@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
-											"{@itemMastery Vex|XPHB}",
-											"2 lb.",
-											"3 GP"
-										],
-										[
-											"{@item Punch Knife|Pugilist2024}",
-											"1d4 Piercing",
-											"\u2014",
-											"{@itemMastery Sap|XPHB}",
-											"3 lb.",
-											"2 GP"
-										]
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "New Magic Items",
-							"entries": [
-								"Magic items are presented in alphabetical order.",
-								{
-									"type": "list",
-									"columns": 3,
-									"items": [
-										"{@item Animated Inks|Pugilist2024}",
-										"{@item Bonebreakers|Pugilist2024}",
-										"{@item Bottle of Brew Tasting|Pugilist2024}",
-										"{@item Bottomless Box of Treats|Pugilist2024}",
-										"{@item Club of Unconsciousness|Pugilist2024}",
-										"{@item Coin of Easy Living|Pugilist2024}",
-										"{@item Everfull Stein|Pugilist2024}",
-										"{@item Ferguson's Talons|Pugilist2024}",
-										"{@item Last Rites Rum|Pugilist2024}",
-										"{@item Leather Jerkin|Pugilist2024}",
-										"{@item Loaded Dice|Pugilist2024}",
-										"{@item Mage Mashers|Pugilist2024}",
-										"{@item Medallion of Mettle|Pugilist2024}",
-										"{@item Mugfist Knuckles|Pugilist2024}",
-										"{@item Penitent Pummelers|Pugilist2024}",
-										"{@item Poundwise Porter|Pugilist2024}",
-										"{@item Punchdrunk Punters|Pugilist2024}",
-										"{@item Ramuh's Katar|Pugilist2024}",
-										"{@item Ratbite|Pugilist2024}",
-										"{@item Salamander Sauce|Pugilist2024}",
-										"{@item Spiked Collar|Pugilist2024}",
-										"{@item Studded Collar|Pugilist2024}",
-										"{@item Yggdrasil's Tap|Pugilist2024}"
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "section",
-					"name": "Appendix B: New Creatures",
-					"id": "003",
-					"entries": [
-						{
-							"type": "list",
-							"columns": 2,
-							"items": [
-								"{@creature Streetfighter|Pugilist2024}",
-								"{@creature Wrestler|Pugilist2024}",
-								"{@creature Belligerent Brawler|Pugilist2024}",
-								"{@creature Boxer|Pugilist2024}"
-							]
-						}
-					]
-				},
-				{
-					"type": "section",
-					"name": "Credits",
-					"id": "004",
-					"entries": [
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"type": "item",
-									"name": "Product Lead:",
-									"entries": [
-										"Benjamin Huffman, Sterling Vermin Co."
-									]
-								},
-								{
-									"type": "item",
-									"name": "Editors:",
-									"entries": [
-										"Benjamin Ghita, Mike Holik"
-									]
-								},
-								{
-									"type": "item",
-									"name": "Layout & Graphic Design:",
-									"entries": [
-										"Nathanaël Roux"
-									]
-								},
-								{
-									"type": "item",
-									"name": "Cover Illustrator:",
-									"entries": [
-										"Fil Cieplak"
-									]
-								},
-								{
-									"type": "item",
-									"name": "Interior Illustrators:",
-									"entries": [
-										"Nathanaël Roux, Fil Cieplak, Jonathan Reincke, Jonathan Simard, Some artwork © 2015 Vagelio Kaliva, used with permission. All rights reserved, Rick Hershey, and Spelljammer."
-									]
-								}
-							]
-						},
-						{
-							"type": "hr"
-						},
-						"Sterling Vermin Adventuring Co., and their associated logos are trademarks of Sterling Vermin Adventuring Co. (R) © 2014 Sterling Vermin Adventuring Co. All Rights Reserved.",
-						"Product Identity: The following items are hereby identified as Product Identity, as defined in the Open Game License version 1.0a, Section 1(e), and are not Open Content: All trademarks, registered trademarks, proper names (characters, deities, etc.), dialogue, plots, storylines, locations, characters, artwork, and trade dress. (Elements that have previously been designated as Open Game Content or are in the public domain are not included in this declaration.)",
-						"Open Content: Except for material designated as Product Identity (see above), the game mechanics of this Sterling Vermin Adventuring Co. game product are Open Game Content, as defined in the Open Gaming License version 1.0a Section 1(d). No portion of this work other than the material designated as Open Game Content may be reproduced in any form without written permission.",
-						"The Pugilist Class is published by Sterling Vermin Adventuring Co. under the Open Game License version 1.0a. Copyright 2014 Sterling Vermin Adventuring Co. All Rights Reserved."
-					]
 				}
 			]
 		}
