@@ -18,7 +18,7 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"SM:DLA": "Shield Morph Options"
+			"DLA:SM": "Shield Morph"
 		},
 		"edition": "one",
 		"dateAdded": 1707912000
@@ -787,738 +787,485 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "Sweet Science",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Sweet Science",
-			"subclassSource": "Pugilist2024",
+			"name": "Defender",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Defender",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"{@i Float Like a Butterfly, Sting Like a Bee}",
-				"Pugilists who practice the Sweet Science hit hard, fast, and often. These Pugilists sometimes battle for the entertainment of the upper classes, but just as often duke it out in back alleys and bars where their next breath depends on a knockout.",
+				"{@i Be the indestructible shield others need}",
+				"These shielders prefer to take protection issues into their own hands, often sacrificing themselves on the front line for others. They train their bodies to resist attacks that would vaporize others, and often use these abilities to protect their allies.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bare Knuckle Boxer|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|3"
+					"subclassFeature": "Complete Protection|Shielder|DLA|Defender|DLA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Cross Counter|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|3"
+					"subclassFeature": "Careful Awareness|Shielder|DLA|Defender|DLA|3"
 				}
 			]
 		},
 		{
-			"name": "Bare Knuckle Boxer",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Sweet Science",
-			"subclassSource": "Pugilist2024",
+			"name": "Complete Protection",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Defender",
+			"subclassSource": "DLA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Your attacks with {@variantrule Unarmed Strike|XPHB|Unarmed Strikes} can score a {@variantrule Critical Hit|XPHB} on a roll of 19 or 20 on the {@dice d20}."
+				"When you decide the Defender Path at 3rd level, you learn to protect yourself more efficiently. When rolling a Dexterity saving throw you can use your Constitution ability modifier rather than your Dexterity.",
+				"Additionally if you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your {@variantrule Reaction|XPHB} to take no damage if you succeed on the saving throw, or half damage if you fail, interposing your shield between yourself and the source of the effect."
 			]
 		},
 		{
-			"name": "Cross Counter",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Sweet Science",
-			"subclassSource": "Pugilist2024",
+			"name": "Careful Awareness",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Defender",
+			"subclassSource": "DLA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You can block the brunt of an attack and launch one of your own in the same fluid motion. When you take damage from a melee attack, you can take a {@variantrule Reaction|XPHB} and expend 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to reduce the damage dealt to you by that attack by {@dice 1d10} plus your Strength modifier and Pugilist level.",
-				"If you reduce the damage to 0, you can make an {@variantrule Unarmed Strike|XPHB} or attack with a Pugilist weapon against a creature within your reach as part of the same {@variantrule Reaction|XPHB}."
+				"Also at 3rd level, you are always careful to a certain measure, allowing you to be prepared for an ambush. At the start of combat, you gain {@variantrule Resistance|XPHB|resistance} to Bludgeoning, Piercing, and Slashing damage and {@variantrule Advantage|XPHB} in Dexterity saving throws until the start of your first turn.",
+				"At 18th level, you instead gain {@variantrule Immunity|XPHB|immunity} to Bludgeoning, Piercing, and Slashing damage and advantage to all saving throws until the start of your first turn."
 			]
 		},
 		{
-			"name": "Combo Maker",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Sweet Science",
-			"subclassSource": "Pugilist2024",
-			"level": 6,
+			"name": "Guardian Angel",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Defender",
+			"subclassSource": "DLA",
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"When you deal damage with an {@variantrule Unarmed Strike|XPHB} against a creature, instead of also choosing the Grapple or Shove option with your {@classFeature Heavy Hitter|Pugilist|Pugilist2024|3|Pugilist2024}, you can give yourself {@variantrule Advantage|XPHB} on attack rolls you make against that target before the start of your next turn."
+				"By 7th level, you can move at incredible speeds to protect those who matter to you. When a friendly creature within an area equal to your {@variantrule Speed|XPHB} is attacked, you can use your {@variantrule Reaction|XPHB} to instantaneously move in front of them, and interpose your {@variantrule Armor Class|XPHB|AC} in the attack. If the attack roll is lower than your AC, you block the attack successfully. Otherwise, you take the hit instead of the creature. You can only use this feature once before a {@variantrule Long Rest|XPHB}.",
+				"At 15th level, you may use it 2 times before resting. At 20th level, 3 times before a long rest."
 			]
 		},
 		{
-			"name": "Combo Breaker",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Sweet Science",
-			"subclassSource": "Pugilist2024",
-			"level": 11,
+			"name": "Damage Absorption",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Defender",
+			"subclassSource": "DLA",
+			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you use your {@subclassFeature Cross Counter|Pugilist|Pugilist2024|Sweet Science|Pugilist2024|3} and reduce the triggering damage to 0, you regain 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point}."
+				"By 15th level, you are willing to sacrifice yourself before others. As an {@variantrule Action|XPHB}, you can choose up to 5 friendly creatures within 30 feet of you. For the next 3 turns, these creatures are {@variantrule Immunity|XPHB|immune} to all forms of damage, and the damage they receive instead goes to you. You can dismiss it anytime (no action required), and it ends early if you fall unconscious. You may use this feature once before a {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
-			"name": "Knock Out",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Sweet Science",
-			"subclassSource": "Pugilist2024",
-			"level": 17,
+			"name": "Indestructible Defense",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Defender",
+			"subclassSource": "DLA",
+			"level": 20,
 			"header": 2,
 			"entries": [
-				"You gain the following benefits.",
-				{
-					"type": "entries",
-					"name": "Coldcock",
-					"entries": [
-						"When you score a {@variantrule Critical Hit|XPHB} against a creature, it must make a Constitution saving throw (DC 8 plus your Strength modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, it has the {@condition Unconscious|XPHB} condition for 1 minute or until it takes any damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Uppercut",
-					"entries": [
-						"When you hit a creature with an {@variantrule Unarmed Strike|XPHB} you can take a {@variantrule Reaction|XPHB} and expend 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to make the attack a {@variantrule Critical Hit|XPHB}. Once you take this {@variantrule Reaction|XPHB}, you can't do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
-					]
-				}
+				"At 20th level, you are able to resist any attack and become indestructible for a short period of time. At the start of your turn, you can use your {@variantrule Action|XPHB} to reduce your {@variantrule Speed|XPHB} to 0 for the rest of the turn and become still in place, granting you {@variantrule Immunity|XPHB} to all damage and harmful effects until the start of your next turn. This feature can be instead used as a {@variantrule Reaction|XPHB} to receiving damage or a harmful effect. If you do so, you become {@condition Incapacitated|XPHB} and can't move until the end of your next turn. You may use this feature once before a {@variantrule Long Rest|XPHB}. However, you may use it extra times or extend the duration by another turn. For every extra use before a long rest, you gain 2 {@condition Exhaustion|XPHB} levels at the end of the effect."
 			]
 		},
 		{
-			"name": "Squared Circle",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Squared Circle",
-			"subclassSource": "Pugilist2024",
+			"name": "Master of All Shields",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Master of All Shields",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"{@i Drop and Lock Your Foes}",
-				"Pugilists who fight in the Squared Circle know the fastest way to win a fight is to force a submission. These wrestlers focus on controlling their most powerful opponents with chokeholds and arm bars, forcing the enemy to fight on the Pugilist's terms.",
+				"{@i A Dungeon, an Ambush or a Last Stand. Your morphed shield prepares you for anything.}",
+				"These shielders often have finished harsh training on shield usage and can harness a magical or supernatural power to morph different shields to suit their necessities. These shielders usually come prepared for any situation and are either of great value to their party, or are often seen distant from the world.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Groundwork|Pugilist|Pugilist2024|Squared Circle|Pugilist2024|3"
+					"subclassFeature": "Shield Mastery|Shielder|DLA|Master of All Shields|DLA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Muscle Mass|Pugilist|Pugilist2024|Squared Circle|Pugilist2024|3"
+					"subclassFeature": "Shield Morph|Shielder|DLA|Master of All Shields|DLA|3"
 				}
 			]
 		},
 		{
-			"name": "Groundwork",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Squared Circle",
-			"subclassSource": "Pugilist2024",
+			"name": "Shield Mastery",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Master of All Shields",
+			"subclassSource": "DLA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You gain the following benefits.",
-				{
-					"type": "entries",
-					"name": "Compression Lock",
-					"entries": [
-						"When you start your turn with one or more creatures {@condition Grappled|XPHB}, you can deal Bludgeoning damage to each creature you have {@condition Grappled|XPHB} (no action required). The damage equals one roll of your Fisticuffs die plus your Strength modifier."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Inescapable",
-					"entries": [
-						"When a creature makes a saving throw or ability check against your grapple or shove DC, you can expend 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to give that roll {@variantrule Disadvantage|XPHB}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Stop and Drop",
-					"entries": [
-						"When you hit a creature with an {@variantrule Unarmed Strike|XPHB} and don't use a mastery property as part of the attack, you can use both the Grapple and Shove option."
-					]
-				}
+				"When you decide on the Master of All Shields Path at 3rd level, your expertise with shields helps you block attacks more easily. {@filter Shields|items|type=shield=sand} you wear give an extra +1 bonus to {@variantrule Armor Class|XPHB|AC}.",
+				"Additionally, large shields no longer give you a disadvantage on stealth checks, but tower and grand towers shields still do."
 			]
 		},
 		{
-			"name": "Muscle Mass",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Squared Circle",
-			"subclassSource": "Pugilist2024",
+			"name": "Shield Morph",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Master of All Shields",
+			"subclassSource": "DLA",
 			"level": 3,
 			"header": 1,
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"acrobatics",
-							"athletics"
-						],
-						"count": 1
-					}
-				}
-			],
 			"entries": [
-				"Choose the {@skill Acrobatics|XPHB} or {@skill Athletics|XPHB} skill. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain {@variantrule Expertise|XPHB} in it."
+				"Also at 3rd level, you can morph any shield you wear into a magical shield with special properties. Choose 3 {@filter Shield Morph Options|optionalfeatures|feature type=dla:sm} of your choice. As an {@variantrule Action|XPHB}, you can morph your shield into one of the selected shields. You can change your list of prepared shields whenever you finish a {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
-			"name": "Meat Shield",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Squared Circle",
-			"subclassSource": "Pugilist2024",
-			"level": 6,
+			"name": "Preventive Backup",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Master of All Shields",
+			"subclassSource": "DLA",
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"While you have a creature {@condition Grappled|XPHB}, you gain {@variantrule Cover|XPHB|Half Cover} against attacks made by creatures you aren't {@variantrule Grappling|XPHB}. When a creature you aren't {@variantrule Grappling|XPHB} misses you with an attack roll, you can take a {@variantrule Reaction|XPHB} and expend 1 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Point} to force that creature make the same attack with a new attack roll against a creature you are {@variantrule Grappling|XPHB}."
+				"By 7th level, you become familiar with several shields, becoming prepared for unexpected situations with a backup shield. As a {@variantrule Bonus Action|XPHB}, you can morph your shield into any of the {@filter Shield Morph Options|optionalfeatures|feature type=dla:sm} even if you don't have that option selected until you change your shield again or until you finish a {@variantrule Long Rest|XPHB}. You can only use this feature once before a long rest.",
+				"At 15th level, you may use it 2 times before resting. At 20th level, 3 times before a long rest."
 			]
 		},
 		{
-			"name": "Heavyweight",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Squared Circle",
-			"subclassSource": "Pugilist2024",
-			"level": 11,
+			"name": "Increased Armory",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Master of All Shields",
+			"subclassSource": "DLA",
+			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you use the Grapple or Shove option of your {@variantrule Unarmed Strike|XPHB}, you count as being one size larger. Additionally, you don't have to spend extra movement to move a creature {@condition Grappled|XPHB} by you if the creature is your size or smaller."
+				"By 15th level, you are able to prepare more shields to morph, expanding your armory and possibilities. Whenever you choose shields to prepare from your {@subclassFeature Shield Morph|Shielder|DLA|Master of All Shields|DLA|3} feature, you can now choose up to 5 shields to prepare instead of 3.",
+				"Additionally, whenever you prepare shields to morph, you can add one of the following Weapon Mastery Properties to your morphed shield: {@itemMastery Push|XPHB}, {@itemMastery Sap|XPHB}, or {@itemMastery Slow|XPHB}. At 20th level, you may add any weapon mastery to your morphed shield."
 			]
 		},
 		{
-			"name": "Clean Finish",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Squared Circle",
-			"subclassSource": "Pugilist2024",
-			"level": 17,
+			"name": "Enhanced Armament",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Master of All Shields",
+			"subclassSource": "DLA",
+			"level": 20,
 			"header": 2,
 			"entries": [
-				"When a creature ends its turn {@condition Grappled|XPHB} by you, you can take a {@variantrule Reaction|XPHB} to force it to make a Constitution saving throw against your grapple's escape DC or have the {@condition Incapacitated|XPHB} condition until the end of its next turn. If the creature is {@status Bloodied|XPHB} and already {@condition Incapacitated|XPHB} by this feature, its {@variantrule Hit Points|XPHB} are reduced to 0 instead.",
-				"Once you use this feature to reduce a creature to 0 {@variantrule Hit Points|XPHB}, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+				"At 20th level, you are able to unleash the full power of the shields you are able to morph. As an {@variantrule Action|XPHB}, you may use the {@b Enhanced Armament} ability of the shield you are currently using, which is detailed in your {@filter Shield Morph Options|optionalfeatures|feature type=dla:sm}. You may use this feature once before a {@variantrule Long Rest|XPHB}. However, you may use it extra times or extend the duration by another turn. For every extra use before a long rest, you gain 2 {@condition Exhaustion|XPHB} levels at the end of the effect."
 			]
 		},
 		{
-			"name": "Street Saint",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Street Saint",
-			"subclassSource": "Pugilist2024",
+			"name": "Arcane Protector",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Arcane Protector",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"{@i Devote Yourself to Prayer and Pummeling}",
-				"Pugilists rise above the adversity they face. Those known as Street Saints do so with the aid of their deep and abiding faith in the gods. These Pugilists were tested and came out the other side with their righteous resolve to live in service to the gods strengthened. A resolve their gods have taken note of.",
+				"{@i Protect the weave, and the weave shall protect what you desire most}",
+				"These shielders might not be experts of close quarters combat, but excel at preparing spells both devastating and useful for many situations. They use their abilities to gain time to release the best spell for every situation.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity|Pugilist|Pugilist2024|Street Saint|Pugilist2024|3"
+					"subclassFeature": "Spellcasting|Shielder|DLA|Arcane Protector|DLA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Lay On Hands|Pugilist|Pugilist2024|Street Saint|Pugilist2024|3"
+					"subclassFeature": "Eldritch Resistance|Shielder|DLA|Arcane Protector|DLA|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Street Saint",
-			"subclassSource": "Pugilist2024",
+			"name": "Spellcasting",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Arcane Protector",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with two such effects: Fists of Faith and Grace of the Gods. Each time you use this subclass's Channel Divinity, you choose which effect from this subclass to create.",
-				"Once you use this subclass's Channel Divinity, you can't use it again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"When you decide on the Arcane Protector Path at 3rd level, you gain the ability to cast minor arcane spells, much like a wizard.",
 				{
 					"type": "entries",
-					"name": "Fists of Faith",
+					"name": "Cantrips",
 					"entries": [
-						"As a {@variantrule Bonus Action|XPHB}, you can imbue your fists with righteous fury. For the next minute, your {@variantrule Unarmed Strike|XPHB|Unarmed Strikes} deal an extra {@damage 1d4} Radiant damage or {@dice 2d4} if the target is a Fiend or Undead."
+						"You know two cantrips of your choice from the {@filter Wizard|spells|level=0|class=wizard} spell list. Whenever you gain a Shielder level, you can replace one of this feature's cantrips with another cantrip of your choice from the Wizard spell list.",
+						"When you reach level 10 in this class, you learn another Wizard cantrip of your choice."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Grace of the Gods",
+					"name": "Spell Slots",
 					"entries": [
-						"As a {@variantrule Bonus Action|XPHB}, you beseech the gods for their grace. For the next minute, you have {@variantrule Resistance|XPHB} to Necrotic damage and when you make a saving throw you can roll {@dice 1d4} and add it to the result."
+						"The Arcane Protector Spellcasting table shows how many spell slots you have to cast your spells of level 1 and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Prepared Spells of Level 1+",
+					"entries": [
+						"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the {@filter Wizard|spells|level=1|class=wizard} spell list. {@spell Jump|XPHB}, {@spell Shield|XPHB}, and {@spell Sleep|XPHB} are recommended.",
+						"The number of spells on your list increases as you gain Shielder levels, as shown in the Prepared Spells column of the Arcane Protector Spellcasting table. Whenever that number increases, choose additional spells from the {@filter Wizard|spells|class=wizard} spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Shielder, your list of prepared spells can include six spells of levels 1 and 2, in any combination."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Changing your Prepared Spells",
+					"entries": [
+						"Whenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice. The new spell must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your Arcane Protector spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use an Arcane Focus or a {@filter Shield|items|type=shield=sand} as a {@filter Spellcasting Focus|items|type=spellcasting focus=sand} for the spells you prepare for this subclass."
 					]
 				}
 			]
 		},
 		{
-			"name": "Lay On Hands",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Street Saint",
-			"subclassSource": "Pugilist2024",
+			"name": "Eldritch Resistance",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Arcane Protector",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a {@variantrule Long Rest|XPHB}. With that pool, you can restore a total number of {@variantrule Hit Points|XPHB} equal to three times your Pugilist level.",
-				"As a {@variantrule Bonus Action|XPHB}, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of {@variantrule Hit Points|XPHB} to that creature, up to the maximum amount remaining in the pool.",
-				"You can also expend 5 {@variantrule Hit Points|XPHB} from the pool of healing power to remove the {@condition Poisoned|XPHB} condition from the creature; those points don't also restore {@variantrule Hit Points|XPHB} to the creature."
+				"Also at 3rd level, your physical resistance and training give you an edge on maintaining spells where other spellcasters can't. When you fail a {@status Concentration|XPHB} check, you may spend one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice and add the result to the concentration check."
 			]
 		},
 		{
-			"name": "Ravaged But Resolute",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Street Saint",
-			"subclassSource": "Pugilist2024",
-			"level": 6,
+			"name": "Arcane Armor",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Arcane Protector",
+			"subclassSource": "DLA",
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"When you use your {@classFeature Bloodied But Unbowed|Pugilist|Pugilist2024|2}, you can fully replenish your {@subclassFeature Lay On Hands|Pugilist|Pugilist2024|Street Saint|Pugilist2024|3} healing pool.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+				"By 7th level, you have learned to fluctuate the weave around you as a guard against other magical effects. Whenever you fail a saving throw against a spell or magical effect, you may use your {@variantrule Reaction|XPHB} and choose to succeed instead. You can only use this feature once before a {@variantrule Long Rest|XPHB}.",
+				"At 15th level, you may use it 2 times before resting. At 20th level, 3 times before a long rest."
 			]
 		},
 		{
-			"name": "Aura of Resilience",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Street Saint",
-			"subclassSource": "Pugilist2024",
-			"level": 11,
+			"name": "Magical Endurance",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Arcane Protector",
+			"subclassSource": "DLA",
+			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you use your {@classFeature Dig Deep|Pugilist|Pugilist2024|4|Pugilist2024}, you can radiate a protective, unseeable aura in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that originates from you for the next 10 minutes. The aura is inactive while you have the {@condition Incapacitated|XPHB} condition. Your allies within the aura gain {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage.",
-				"Once you use this feature, you must finish a {@variantrule Long Rest|XPHB} before you can use it again."
+				"By 15th level, you have mastered the arcane arts to bolster your defensive capabilities, gaining you and your allies more chance at surviving difficult situations. You may spend a spell slot to recover a number of your {@classFeature Tough Resistance|Shielder|DLA|1} die equal to the level of the spell slot used (up to a maximum equal to your Wisdom modifier; No action required)."
 			]
 		},
 		{
-			"name": "Hallowed Hands",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Street Saint",
-			"subclassSource": "Pugilist2024",
-			"level": 17,
+			"name": "Spell Devourer",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Arcane Protector",
+			"subclassSource": "DLA",
+			"level": 20,
 			"header": 2,
 			"entries": [
-				"Once on each of your turns when you hit a creature with an {@variantrule Unarmed Strike|XPHB} or Pugilist weapon, you can expend a number of points from your {@subclassFeature Lay On Hands|Pugilist|Pugilist2024|Street Saint|Pugilist2024|3} healing pool to deal extra Radiant damage to the target, to a maximum of your Pugilist level. The damage equals the number of points expended, or twice as much if the target is a Fiend or Undead."
+				"At 20th level, you have learned the intricacies and complexity of magic, letting you absorb the weave around you and use it as a source of power and determination. As a {@variantrule Reaction|XPHB} when you see a creature within 60 feet of you casting a spell, you can interrupt the creature casting the spell, making its spell fail and have no effect. Alternatively, as an {@variantrule Action|XPHB}, choose one spell on a creature, object, or magical effect within range. The spell on the target ends.",
+				"Additionally, you recover {@variantrule Hit Points|XPHB} equal to 5 times the level of the spell and you recover expended spell slots that have a combined level that is equal to or less than the level of the spell. For example, if the target is a 4th-level spell, you can recover up to four levels worth of spell slots. You can recover either two 2nd-level spell slots or four 1st-level spell slots. You may use this feature once before a {@variantrule Long Rest|XPHB}. However, you may use it extra times. For every extra use before a long rest, you gain 2 {@condition Exhaustion|XPHB} levels at the end of the effect."
 			]
 		},
 		{
-			"name": "Piss and Vinegar",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
+			"name": "Guardian of Life",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Guardian of Life",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"{@i Throw Barbs and Hands}",
-				"Some Pugilists revel in their reputations as heels, happily playing up their bad behavior for notoriety. Despised by their enemies for their obscene curses and dirty tricks, these Pugilists take pride in their ability to provoke and willingness to win fights at any cost.",
+				"{@i Staying alive is tough, but you are tougher}",
+				"All life is precious and must be valued, and protected. This is often the ideal behind many shielders who found their will in this path. They are no experts in healing, but they do know a thing or two about lessening injuries and keeping you alive.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bad Attitude|Pugilist|Pugilist2024|Piss and Vinegar|Pugilist2024|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Salty Salute|Pugilist|Pugilist2024|Piss and Vinegar|Pugilist2024|3"
-				}
-			]
-		},
-		{
-			"name": "Bad Attitude",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
-			"level": 3,
-			"skillProficiencies": [
-				{
-					"intimidation": true
-				}
-			],
-			"entries": [
-				"You gain proficiency in the {@skill Intimidation|XPHB} skill if you don't have it already. Additionally, you gain a bonus to checks using this skill equal to your Strength modifier (minimum bonus of +1)."
-			]
-		},
-		{
-			"name": "Salty Salute",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
-			"level": 3,
-			"entries": [
-				"You have mastered the art of the enraging insult. As a {@variantrule Bonus Action|XPHB}, you can provoke a creature within 60 feet that can see or hear you. That creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have {@variantrule Disadvantage|XPHB} on any attack rolls it makes against creatures other than you until the start of your next turn.",
-				"The saving throw DC for this and all other features from this subclass equals 8 plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}."
-			]
-		},
-		{
-			"name": "Dirty Tricks",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"You have a few tricks up your sleeve to even the odds when the going gets tough. You can use one of the following Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can't use that trick again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
-				{
-					"type": "entries",
-					"name": "Heelstomper",
-					"entries": [
-						"When you deal damage to a creature with an {@variantrule Unarmed Strike|XPHB} or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its {@variantrule Speed|XPHB} is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Low Blow",
-					"entries": [
-						"When you deal damage to a creature with an {@variantrule Unarmed Strike|XPHB} or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have {@variantrule Advantage|XPHB} until the end of your next turn."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Pocket Sand",
-					"entries": [
-						"As a {@variantrule Bonus Action|XPHB}, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the {@condition Blinded|XPHB} condition until the end of its next turn."
-					]
-				}
-			]
-		},
-		{
-			"name": "Mean Old Cuss",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
-			"level": 11,
-			"header": 2,
-			"entries": [
-				"You can offend every creature in the room with the flick of a wrist and a few curt words. As a {@variantrule Bonus Action|XPHB}, you can choose a number of targets within 30 feet of yourself that can see or hear you up to your level in this class. Each chosen creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have {@variantrule Disadvantage|XPHB} on attack rolls it makes against creatures other than you until the start of your next turn.",
-				"Once you use this feature, you must finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} before you use it again. You can also restore your use of it by expending 3 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Points} (no action required)."
-			]
-		},
-		{
-			"name": "Dirtier Tricks",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"You gain the following additional Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can't use that trick again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
-				{
-					"type": "entries",
-					"name": "Rabbit Punch",
-					"entries": [
-						"When you hit a creature with an {@variantrule Unarmed Strike|XPHB} or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses {@variantrule Resistance|XPHB} to Psychic damage if it has it and has {@variantrule Disadvantage|XPHB} on saving throws."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Sucker Punch",
-					"entries": [
-						"When you hit a creature with an {@variantrule Unarmed Strike|XPHB} or Pugilist weapon, you can turn the hit into a {@variantrule Critical Hit|XPHB}. For this {@variantrule Critical Hit|XPHB}, you roll the attack's damage dice three times and add them together, instead of twice as normal."
-					]
-				}
-			]
-		},
-		{
-			"name": "Hand of Dread",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Hand of Dread",
-			"subclassSource": "Pugilist2024",
-			"level": 3,
-			"entries": [
-				"{@i Dabble With Dread Powers}",
-				"In your darkest hour, you pleaded for the strength to take what you wanted from the world and a dread power took notice. At first, you may have relished the cathartic rush that came with channeling your eldritch might to claim what you felt you deserved, but this pact came with strings attached. In times of distress you hear the entity whispering in the back of your mind, urging you to indulge your most base impulses.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Black Magic|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|3"
+					"subclassFeature": "Bond of the Martyr|Shielder|DLA|Guardian of Life|DLA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dread Hand|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|3"
+					"subclassFeature": "Sudden Vitality|Shielder|DLA|Guardian of Life|DLA|3"
 				}
 			]
 		},
 		{
-			"name": "Black Magic",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Hand of Dread",
-			"subclassSource": "Pugilist2024",
+			"name": "Bond of the Martyr",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Guardian of Life",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"As a result of your relationship with your dread power, you gain the following benefits.",
-				{
-					"type": "entries",
-					"name": "Two Cantrips",
-					"entries": [
-						"You learn two cantrips of your choice from the Warlock spell list. Constitution is your spellcasting ability for your Black Magic spells."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Level 1 Spell",
-					"entries": [
-						"Choose a level 1 spell from the Warlock spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spell Change",
-					"entries": [
-						"Whenever you gain a new level, you can replace one of the spells you chose with this feature with a different spell of the same level from the Warlock spell list."
-					]
-				}
+				"When you decide on the Guardian of Life Path at 3rd level, you've learned to connect with other creatures through pain, loss, and sacrifice. As an {@variantrule Action|XPHB}, you bind with up to a number of creatures within 30 feet of you that you can see equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. These creatures are bound to you for 1 minute, until they are reduced to 0 {@variantrule Hit Points|XPHB|hit points}, until they are farther than 60 feet from you, or until you dismiss it (no action required).",
+				"As a {@variantrule Reaction|XPHB} to seeing a bounded creature take damage, you can reduce that damage by half and the bounded creature gains {@variantrule Temporary Hit Points|XPHB} equal to the damage they received. Then, you take an amount of Force damage equal to the damage they took."
 			]
 		},
 		{
-			"name": "Dread Hand",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Hand of Dread",
-			"subclassSource": "Pugilist2024",
+			"name": "Sudden Vitality",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Guardian of Life",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"When you take the {@action Attack|XPHB} action on your turn, you can manifest the evidence of your foul pledge to otherworldly powers. When you do, one of your limbs transmogrifies into a monstrous appearance reminiscent of your dread power and you gain the benefits below for 1 minute. Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
-				{
-					"type": "entries",
-					"name": "Revenging Strike",
-					"entries": [
-						"When you are hit by a melee attack, you can take a {@variantrule Reaction|XPHB} to make an {@variantrule Unarmed Strike|XPHB} against the creature that attacked you if it is within reach."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Unslakeable Bloodlust",
-					"entries": [
-						"When you hit a target with an {@variantrule Unarmed Strike|XPHB}, you can roll the attack's damage dice twice and use either roll against the target."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Whirlwind of Violence",
-					"entries": [
-						"The first time you miss with an {@variantrule Unarmed Strike|XPHB} each turn, you can reroll the attack and must use the new result."
-					]
-				},
-				{
-					"type": "inset",
-					"name": "Dread Powers",
-					"entries": [
-						"A dread power can be any powerful malevolent entity capable of bestowing a portion of its power onto a mortal. Archdemons, Fey royalty, ancient liches, and unfathomable intelligences from beyond space and time are all possibilities."
-					]
-				}
+				"Also at 3rd level, you know how to manage your vitality as well as the ones of those bound to you. As a {@variantrule Bonus Action|XPHB}, you can use one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice and recover {@variantrule Hit Points|XPHB} equal to the number rolled + your Constitution modifier (minimum of 1).",
+				"Whenever one or more bounded creatures recover hit points through a spell or other magical effect, you recover a small amount of hit points; and when you recover hit points through a spell or other magical effect all creatures bound to you recover this amount as well. The amount to recover is equal to your Constitution modifier (minimum of 1)."
 			]
 		},
 		{
-			"name": "Deal with the Devil",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Hand of Dread",
-			"subclassSource": "Pugilist2024",
-			"level": 6,
+			"name": "Lifeline",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Guardian of Life",
+			"subclassSource": "DLA",
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"You gain one of the following options of your choice. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change your choice.",
-				{
-					"type": "entries",
-					"name": "Cloak of Shadows",
-					"entries": [
-						"You can cast {@spell Invisibility|XPHB} once without a spell slot, and you regain the ability to cast it in this way when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Mask of Many Faces",
-					"entries": [
-						"You can cast {@spell Disguise Self|XPHB} without expending a spell slot."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Otherworldly Walk",
-					"entries": [
-						"You can cast {@spell Misty Step|XPHB} once without a spell slot, and you regain the ability to cast it in this way when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
-					]
-				}
+				"By 7th level, whenever a creature bound by you is reduced to 0 {@variantrule Hit Points|XPHB}, you can use this feature (no action required) and the creature is dropped to 1 hit point instead. You are no longer bound to that creature. You can only use this feature once before a {@variantrule Long Rest|XPHB}.",
+				"At 15th level, you may use it 2 times before resting. At 20th level, 3 times before a long rest."
 			]
 		},
 		{
-			"name": "Grotesque Growth",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Hand of Dread",
-			"subclassSource": "Pugilist2024",
-			"level": 11,
+			"name": "Improved Bond",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Guardian of Life",
+			"subclassSource": "DLA",
+			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you use your {@subclassFeature Dread Hand|Pugilist|Pugilist2024|Hand of Dread|Pugilist2024|3} feature, you gain the benefits of the Enlarge effect of the {@spell Enlarge/Reduce|XPHB} spell and have a 10-foot reach.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you take a level of {@condition Exhaustion|XPHB} (no action required by you) to restore your use of it."
+				"By 15th level, the bonds you make are reinforced by trust, empathy and camaraderie. Bounded creatures can now be up to 120 feet away from you. Whenever you use your {@classFeature Tough Resistance|Shielder|DLA|1} dice for yourself, all bounded creatures gain a bonus to {@variantrule Armor Class|XPHB|AC} and saving throws equal to half the number rolled (rounded up) until the start of your next turn.",
+				"Additionally, whenever you use your {@subclassFeature Bond of the Martyr|Shielder|DLA|Guardian of Life|DLA|3} reaction to reduce damage by half, you and all other bound creatures get {@variantrule Temporary Hit Points|XPHB} equal to your {@variantrule Proficiency|XPHB} bonus + your Constitution modifier (minimum of 5)."
 			]
 		},
 		{
-			"name": "Fountain of Viscera",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Hand of Dread",
-			"subclassSource": "Pugilist2024",
-			"level": 17,
+			"name": "Sanctuary of Life",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Guardian of Life",
+			"subclassSource": "DLA",
+			"level": 20,
 			"header": 2,
 			"entries": [
-				"You can take a {@action Magic|XPHB} action and expend 6 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Points} to attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a Dexterity saving throw (DC 8 plus your Strength modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead.",
-				"If this damage reduces the target to 0 {@variantrule Hit Points|XPHB}, it immediately dies as you rip a hole through it, creating a stomach-turning fountain of viscera. When this happens, each creature of your choice within a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you must succeed on a Wisdom saving throw (DC 8 plus your Strength modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or have the {@condition Frightened|XPHB} condition for 1 minute. A creature that fails the saving throw can repeat the Wisdom saving throw again at the end of each of its turns, ending the {@condition Frightened|XPHB} condition on itself on a success.",
-				"Once you use this feature, you must finish a {@variantrule Long Rest|XPHB} before you can use it again."
+				"At 20th level, there's no one else more capable of keeping your comrades safe, and none will perish while you stand. As an {@variantrule Action|XPHB}, you can bind to up to 6 creatures within 120 feet of you with your {@subclassFeature Bond of the Martyr|Shielder|DLA|Guardian of Life|DLA|3} feature. If any bounded creature is at 0 {@variantrule Hit Points|XPHB}, but not dead, they regain 1 hit point. Then, all bounded creatures gain {@variantrule Temporary Hit Points} equal to half their hit point maximum. You may use this feature once before a {@variantrule Long Rest|XPHB}. However, you may use it extra times. For every extra use before a long rest, you gain 2 {@condition Exhaustion|XPHB} levels at the end of the effect."
 			]
 		},
 		{
-			"name": "Dog and Hound",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
+			"name": "Warden",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Warden",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"{@i Fight Side by Side with a Brawler's Best Friend}",
-				"Pugilists know what it's like to be an underdog, so it's no surprise some form a battleforged bond with a canine companion. They're used to being disappointed by friends that walk on two legs but a friend on four is as loyal as they come. When a fight breaks out, this duo's bite is even worse than its bark.",
+				"{@i The best defense is a fearsome offense}",
+				"Some shielders protect their allies with their shields, others do it through fear. Shielders who choose this path often use psionics, supernatural powers, or sometimes, their mere presence is enough to debilitate enemies and give their allies an advantage. After all, your enemies can't deal real damage if they are weak.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Brawler's Best Friend|Pugilist|Pugilist2024|Dog and Hound|Pugilist2024|3"
+					"subclassFeature": "Gatekeeper's Mark|Shielder|DLA|Warden|DLA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mutt With Moxie|Pugilist|Pugilist2024|Dog and Hound|Pugilist2024|3"
+					"subclassFeature": "Overseer|Shielder|DLA|Warden|DLA|3"
 				}
 			]
 		},
 		{
-			"name": "Brawler's Best Friend",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
+			"name": "Gatekeeper's Mark",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Warden",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"You summon and form a bond with a wild or stray dog, which draws strength from your bottomless well of resilience using the {@creature Hound|Pugilist2024} stat block.",
-				"The hound is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies and obeys your commands. It flees if you die.",
-				{
-					"type": "entries",
-					"name": "The Hound in Combat",
-					"entries": [
-						"In combat, the hound acts during your turn. It can move and use its {@variantrule Reaction|XPHB} on its own, but the only action it takes is the {@action Dodge|XPHB} action unless you take a {@variantrule Bonus Action|XPHB} to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the {@action Attack|XPHB} action to command the hound to take the Bite action. If you have the {@condition Incapacitated|XPHB} condition, the hound acts on its own and isn't limited to the {@action Dodge|XPHB} action."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Restoring or Replacing the Hound",
-					"entries": [
-						"If the hound died within the last hour, you can take a {@action Magic|XPHB} action to touch it and expend 2 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Points}. The hound returns to life after 1 minute with all its {@variantrule Hit Points|XPHB} restored.",
-						"Whenever you finish a {@variantrule Long Rest|XPHB}, you can summon and bond with a new dog, which appears in an unoccupied space within 5 feet of you. If you already have a hound from this feature, the old one vanishes when the new one appears."
-					]
-				},
-				{
-					"type": "statblock",
-					"tag": "creature",
-					"name": "Hound",
-					"source": "Pugilist2024"
-				}
+				"When you decide on the Warden Path at 3rd level, you gain the power to exhaust and debilitate those who run from you. Whenever you make an {@action Opportunity Attack|XPHB}, you may expend and roll one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice to mark the creature until the end of their next turn. While marked, the creature has {@variantrule Disadvantage|XPHB} on all attack rolls and ability checks. Additionally, whenever the creature is damaged, it takes extra Psychic damage equal to the roll."
 			]
 		},
 		{
-			"name": "Mutt With Moxie",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
+			"name": "Overseer",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Warden",
+			"subclassSource": "DLA",
 			"level": 3,
 			"entries": [
-				"You share everything with your faithful hound: food, shelter, even moxie. When you use abilities granted by your {@classFeature Moxie|Pugilist|Pugilist2024|2} feature, your hound gains a benefit as well.",
-				{
-					"type": "entries",
-					"name": "Brace Up",
-					"entries": [
-						"When you gain {@variantrule Temporary Hit Points|XPHB} from your Brace Up ability, your hound gains the same number of {@variantrule Temporary Hit Points|XPHB}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "One-Two Punch",
-					"entries": [
-						"When you use your One-Two Punch ability, your hound can make one or both attacks instead of you."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Stick and Move",
-					"entries": [
-						"When you use your Stick and Move ability, your hound can take your choice of the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Help|XPHB} action."
-					]
-				}
+				"Also at 3rd level, you realize how important it is to always be on the lookout, always analyzing possible dangers. Whenever you are hit with a melee attack, you can use your {@variantrule Reaction|XPHB} to gain one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice.",
+				"Additionally, between turns you can use this feature to do a reaction even when you have already spent your reaction. Once you use this feature, you must finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} before you can use it again. Starting at 15th level, you can use it twice before a rest, but only once between your turns."
 			]
 		},
 		{
-			"name": "Coordinated Attack",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
-			"level": 6,
+			"name": "Restraining Prison",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Warden",
+			"subclassSource": "DLA",
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"When you make an attack against a creature and your hound is within 5 feet of it, your hound can take a {@variantrule Reaction|XPHB} to give your attack {@variantrule Advantage|XPHB}. On a hit, you deal an extra {@damage 3d4} damage.",
-				"Additionally, whenever your hound hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type."
+				"By 7th level, you can focus your energy to mentally lash into an enemy, leaving them paralyzed long enough to give your allies an opportunity to strike. Whenever a creature you can see starts its turn within 30 feet of you, you can use your {@variantrule Reaction|XPHB} and force the creature to succeed on a Wisdom saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC}. On a failure, the creature is {@condition Paralyzed|XPHB} until the start of its next turn. On a success, the use of this feature is not expended, but your reaction is. You can only use this feature once before a {@variantrule Long Rest|XPHB}.",
+				"At 15th level, you may use it 2 times before resting. At 20th level, 3 times before a long rest."
 			]
 		},
 		{
-			"name": "Hound's Best Friend",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
-			"level": 11,
+			"name": "Patrol of the Damned",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Warden",
+			"subclassSource": "DLA",
+			"level": 15,
 			"header": 2,
 			"entries": [
-				"When a creature deals damage to your hound with an attack, you can take a {@variantrule Reaction|XPHB} to move up to half your {@variantrule Speed|XPHB} and make one melee attack with a Pugilist weapon or an {@variantrule Unarmed Strike|XPHB} against that creature."
+				"By 15th level, you've learned to infuse fear into the minds of creatures who try to oppose you. Marked creatures by your {@subclassFeature Gatekeeper's Mark|Shielder|DLA|Warden|DLA|3} feature are also {@condition Frightened|XPHB} of you. At the end of a marked creature's turn, you can expend a {@classFeature Tough Resistance|Shielder|DLA|1} dice to extend the mark until the end of their next turn (no action required)."
 			]
 		},
 		{
-			"name": "Off the Chain",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
-			"level": 17,
+			"name": "Cursed Confinement",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"subclassShortName": "Warden",
+			"subclassSource": "DLA",
+			"level": 20,
 			"header": 2,
 			"entries": [
-				"When your hound takes damage that causes it to become {@status Bloodied|XPHB} or takes damage while it is {@status Bloodied|XPHB}, you can take a {@variantrule Reaction|XPHB} to let your hound off the chain. When you do so, the hound gains {@variantrule Temporary Hit Points|XPHB} equal to five times your Pugilist level and, for the next minute, its {@variantrule Speed|XPHB} increases by 15 feet and you can command it to use its Bite without taking a {@variantrule Bonus Action|XPHB}.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending 3 {@classFeature Moxie|Pugilist|Pugilist2024|2|Pugilist2024|Moxie Points} (no action required)."
+				"At 20th level, your power can extend all around you, trapping those unfortunate enough to be near you. As an {@variantrule Action|XPHB}, choose any number of creatures within 30 feet of you. Those creatures are marked by your {@subclassFeature Gatekeeper's Mark|Shielder|DLA|Warden|DLA|3} feature and must succeed on a Wisdom saving throw or be {@condition Paralyzed|XPHB} until the start of your next turn. You may use this feature once before a {@variantrule Long Rest|XPHB}. However, you may use it extra times. For every extra use before a long rest, you gain 2 {@condition Exhaustion|XPHB} levels at the end of the effect."
 			]
 		}
 	],
