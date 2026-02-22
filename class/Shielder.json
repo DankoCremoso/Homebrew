@@ -1867,10 +1867,59 @@
 	],
 	"foundryClassFeature": [
 		{
-			"name": "Iron Chin",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
+			"name": "Tough Resistance",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 1,
+			"system": {
+				"uses": {
+					"max": "@prof",
+					"per": "lr"
+				}
+			},
+			"activities": [
+				{
+					"name": "Tough Resistance",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"value": 1,
+						"condition": "When attacked"
+					},
+					"target": {
+						"affects": {
+							"type": "self",
+							"choice": false
+						},
+						"override": false,
+						"prompt": false
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": 1,
+								"target": {
+									"consumes": {
+										"name": "Tough Resistance"
+									}
+								}
+							}
+						]
+					},
+					"roll": {
+						"name": "Tough Resistance Die AC Bonus",
+						"formula": "@scale.shielder.tough-resistance"
+					}
+				}
+			]
+		},
+		{
+			"name": "Protective Focus",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
 			"level": 1,
 			"effects": [
 				{
@@ -1879,13 +1928,13 @@
 							"key": "system.attributes.ac.calc",
 							"mode": 5,
 							"value": "custom",
-							"priority": 20
+							"priority": 50
 						},
 						{
 							"key": "system.attributes.ac.formula",
 							"mode": 5,
-							"value": "12 + @abilities.con.mod",
-							"priority": 20
+							"value": "8 + @prof + @abilities.wis.mod",
+							"priority": 50
 						}
 					],
 					"transfer": true
@@ -1893,514 +1942,36 @@
 			]
 		},
 		{
-			"name": "Fisticuffs",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 1,
-			"subEntities": {
-				"item": [
-					{
-						"name": "Unarmed Strike (Pugilist)",
-						"source": "Pugilist2024",
-						"type": "M|XPHB",
-						"rarity": "none",
-						"foundrySystem": {
-							"equipped": true,
-							"damage.parts": [
-								[
-									"@scale.pugilist.fisticuffs + @mod",
-									"bludgeoning"
-								]
-							],
-							"type": {
-								"value": "natural"
-							},
-							"ability": "str"
-						},
-						"foundryActivities": [
-							{
-								"type": "attack",
-								"activation": {
-									"type": "action",
-									"value": 1
-								},
-								"range": {
-									"units": "self",
-									"override": false
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft"
-									},
-									"affects": {
-										"choice": false
-									},
-									"override": false,
-									"prompt": true
-								},
-								"uses": {
-									"spent": 0,
-									"recovery": []
-								},
-								"attack": {
-									"critical": {
-										"threshold": null
-									},
-									"flat": false,
-									"type": {
-										"value": "melee",
-										"classification": "unarmed"
-									}
-								},
-								"damage": {
-									"critical": {
-										"bonus": ""
-									},
-									"includeBase": true
-								}
-							},
-							{
-								"name": "Bonus Action Attack",
-								"type": "attack",
-								"activation": {
-									"type": "bonus",
-									"value": 1
-								},
-								"range": {
-									"units": "self",
-									"override": false
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft"
-									},
-									"affects": {
-										"choice": false
-									},
-									"override": false,
-									"prompt": true
-								},
-								"uses": {
-									"spent": 0,
-									"recovery": []
-								},
-								"attack": {
-									"critical": {
-										"threshold": null
-									},
-									"flat": false,
-									"type": {
-										"value": "melee",
-										"classification": "unarmed"
-									}
-								},
-								"damage": {
-									"critical": {
-										"bonus": ""
-									},
-									"includeBase": true
-								}
-							},
-							{
-								"type": "save",
-								"name": "Grapple - Strength",
-								"activation": {
-									"type": "special"
-								},
-								"effects": [
-									{
-										"foundryId": "Xy7PqR9Nz2LmB4kW",
-										"onSave": false
-									}
-								],
-								"range": {
-									"override": false,
-									"units": "self"
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft",
-										"type": ""
-									},
-									"affects": {
-										"choice": false,
-										"count": "1",
-										"type": "creature",
-										"special": ""
-									},
-									"override": false,
-									"prompt": false
-								},
-								"damage": {
-									"parts": [],
-									"onSave": "half",
-									"critical": {
-										"allow": false
-									}
-								},
-								"save": {
-									"ability": [
-										"str"
-									],
-									"dc": {
-										"calculation": "",
-										"formula": "max(@abilities.str.dc)"
-									}
-								}
-							},
-							{
-								"type": "save",
-								"name": "Grapple - Dexterity",
-								"activation": {
-									"type": "special"
-								},
-								"effects": [
-									{
-										"foundryId": "Xy7PqR9Nz2LmB4kW",
-										"onSave": false
-									}
-								],
-								"range": {
-									"override": false,
-									"units": "self"
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft",
-										"type": ""
-									},
-									"affects": {
-										"choice": false,
-										"count": "1",
-										"type": "creature",
-										"special": ""
-									},
-									"override": false,
-									"prompt": false
-								},
-								"damage": {
-									"parts": [],
-									"onSave": "half",
-									"critical": {
-										"allow": false
-									}
-								},
-								"save": {
-									"ability": [
-										"dex"
-									],
-									"dc": {
-										"calculation": "",
-										"formula": "max(@abilities.dex.dc)"
-									}
-								}
-							},
-							{
-								"type": "save",
-								"name": "Shove (Prone) - Strength",
-								"activation": {
-									"type": "special"
-								},
-								"effects": [
-									{
-										"foundryId": "H7x9N2mP8L0bKjQa",
-										"onSave": false
-									}
-								],
-								"range": {
-									"override": false,
-									"units": "self"
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft",
-										"type": ""
-									},
-									"affects": {
-										"choice": false,
-										"count": "1",
-										"type": "creature",
-										"special": ""
-									},
-									"override": false,
-									"prompt": false
-								},
-								"damage": {
-									"parts": [],
-									"onSave": "half",
-									"critical": {
-										"allow": false
-									}
-								},
-								"save": {
-									"ability": [
-										"str"
-									],
-									"dc": {
-										"calculation": "",
-										"formula": "max(@abilities.str.dc)"
-									}
-								}
-							},
-							{
-								"type": "save",
-								"name": "Shove (Prone) - Dexterity",
-								"activation": {
-									"type": "special"
-								},
-								"effects": [
-									{
-										"foundryId": "H7x9N2mP8L0bKjQa",
-										"onSave": false
-									}
-								],
-								"range": {
-									"override": false,
-									"units": "self"
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft",
-										"type": ""
-									},
-									"affects": {
-										"choice": false,
-										"count": "1",
-										"type": "creature",
-										"special": ""
-									},
-									"override": false,
-									"prompt": false
-								},
-								"damage": {
-									"parts": [],
-									"onSave": "half",
-									"critical": {
-										"allow": false
-									}
-								},
-								"save": {
-									"ability": [
-										"dex"
-									],
-									"dc": {
-										"calculation": "",
-										"formula": "max(@abilities.dex.dc)"
-									}
-								}
-							},
-							{
-								"type": "save",
-								"name": "Shove (Push) - Strength",
-								"activation": {
-									"type": "special"
-								},
-								"range": {
-									"override": false,
-									"units": "self"
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft",
-										"type": ""
-									},
-									"affects": {
-										"choice": false,
-										"count": "1",
-										"type": "creature",
-										"special": ""
-									},
-									"override": false,
-									"prompt": false
-								},
-								"damage": {
-									"parts": [],
-									"onSave": "half",
-									"critical": {
-										"allow": false
-									}
-								},
-								"save": {
-									"ability": [
-										"str"
-									],
-									"dc": {
-										"calculation": "",
-										"formula": "max(@abilities.str.dc)"
-									}
-								}
-							},
-							{
-								"type": "save",
-								"name": "Shove (Push) - Dexterity",
-								"activation": {
-									"type": "special"
-								},
-								"range": {
-									"override": false,
-									"units": "self"
-								},
-								"target": {
-									"template": {
-										"contiguous": false,
-										"units": "ft",
-										"type": ""
-									},
-									"affects": {
-										"choice": false,
-										"count": "1",
-										"type": "creature",
-										"special": ""
-									},
-									"override": false,
-									"prompt": false
-								},
-								"damage": {
-									"parts": [],
-									"onSave": "half",
-									"critical": {
-										"allow": false
-									}
-								},
-								"save": {
-									"ability": [
-										"dex"
-									],
-									"dc": {
-										"calculation": "",
-										"formula": "max(@abilities.dex.dc)"
-									}
-								}
-							}
-						],
-						"foundryEffects": [
-							{
-								"name": "Grappled",
-								"img": "systems/dnd5e/icons/svg/statuses/grappled.svg",
-								"foundryId": "Xy7PqR9Nz2LmB4kW",
-								"changes": [],
-								"statuses": [
-									"grappled"
-								]
-							},
-							{
-								"name": "Prone",
-								"img": "systems/dnd5e/icons/svg/statuses/prone.svg",
-								"foundryId": "H7x9N2mP8L0bKjQa",
-								"changes": [],
-								"statuses": [
-									"prone"
-								]
-							}
-						]
-					}
-				]
-			},
-			"activities": [
-				{
-					"name": "Pugilist Weapon",
-					"type": "enchant",
-					"activation": {
-						"type": "special"
-					},
-					"effects": [
-						{
-							"foundryId": "N7PKmMsJLF7FqRX5"
-						}
-					]
-				},
-				{
-					"name": "Improvised Pugilist Weapon",
-					"type": "enchant",
-					"activation": {
-						"type": "special"
-					},
-					"effects": [
-						{
-							"foundryId": "pjd4XApchJBoASDF"
-						}
-					]
-				}
-			],
-			"effects": [
-				{
-					"type": "enchantment",
-					"name": "Pugilist Weapon",
-					"foundryId": "N7PKmMsJLF7FqRX5",
-					"changes": [
-						{
-							"key": "system.damage.base.custom.enabled",
-							"mode": 5,
-							"value": "true",
-							"priority": 20
-						},
-						{
-							"key": "system.damage.base.custom.formula",
-							"mode": 5,
-							"value": "@scale.pugilist.fisticuffs + @mod",
-							"priority": 20
-						},
-						{
-							"key": "name",
-							"mode": 5,
-							"value": "{} (Pugilist Weapon)",
-							"priority": 20
-						}
-					]
-				},
-				{
-					"type": "enchantment",
-					"name": "Improvised Pugilist Weapon",
-					"foundryId": "pjd4XApchJBoASDF",
-					"changes": [
-						{
-							"key": "system.damage.base.custom.enabled",
-							"mode": 5,
-							"value": "true",
-							"priority": 20
-						},
-						{
-							"key": "system.damage.base.custom.formula",
-							"mode": 5,
-							"value": "@scale.pugilist.fisticuffs + @mod",
-							"priority": 20
-						},
-						{
-							"key": "name",
-							"mode": 5,
-							"value": "{} (Improvised Pugilist Weapon)",
-							"priority": 20
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Moxie",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 2,
+			"name": "Mocking Taunt",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 5,
 			"system": {
 				"uses": {
-					"max": "@scale.pugilist.moxie",
-					"per": "sr"
+					"max": "max(1, @abilities.wis.mod)",
+					"per": "lr"
 				}
 			},
 			"activities": [
 				{
-					"name": "Brace Up",
-					"type": "heal",
+					"name": "Mocking Taunt",
+					"type": "save",
 					"activation": {
-						"type": "bonus"
+						"type": "action",
+						"value": 1
+					},
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "@prof",
+							"choice": true
+						},
+						"prompt": true
 					},
 					"consumption": {
 						"targets": [
@@ -2409,22 +1980,58 @@
 								"value": "1",
 								"target": {
 									"consumes": {
-										"name": "Moxie"
+										"name": "Mocking Taunt"
 									}
 								}
 							}
 						]
 					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Rally of Resistance",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 10,
+			"activities": [
+				{
+					"name": "Rally of Resistance",
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
 					"range": {
-						"units": "self",
-						"override": false,
-						"special": ""
+						"value": 60,
+						"units": "ft"
 					},
 					"target": {
 						"affects": {
-							"choice": false,
-							"type": "self"
+							"type": "creature",
+							"count": 1
 						}
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": 1,
+								"target": {
+									"consumes": {
+										"name": "Tough Resistance"
+									}
+								}
+							}
+						]
 					},
 					"healing": {
 						"types": [
@@ -2432,18 +2039,42 @@
 						],
 						"custom": {
 							"enabled": true,
-							"formula": "@scale.pugilist.fisticuffs + @classes.pugilist.levels + @abilities.con.mod"
-						},
-						"scaling": {
-							"number": 1
+							"formula": "@scale.shielder.tough-resistance"
 						}
 					}
-				},
+				}
+			]
+		},
+		{
+			"name": "Defensive Study",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 11,
+			"system": {
+				"uses": {
+					"max": "1",
+					"per": "lr"
+				}
+			},
+			"activities": [
 				{
-					"name": "One-Two Punch",
+					"name": "Defensive Study",
 					"type": "utility",
 					"activation": {
-						"type": "bonus"
+						"type": "bonus",
+						"value": 1
+					},
+					"range": {
+						"value": 30,
+						"units": "ft"
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": 1
+						},
+						"prompt": true
 					},
 					"consumption": {
 						"targets": [
@@ -2452,27 +2083,7 @@
 								"value": "1",
 								"target": {
 									"consumes": {
-										"name": "Moxie"
-									}
-								}
-							}
-						]
-					}
-				},
-				{
-					"name": "Stick and Move",
-					"type": "utility",
-					"activation": {
-						"type": "bonus"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1",
-								"target": {
-									"consumes": {
-										"name": "Moxie"
+										"name": "Defensive Study"
 									}
 								}
 							}
@@ -2482,95 +2093,63 @@
 			]
 		},
 		{
-			"name": "Bloodied But Unbowed",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 2,
-			"activities": [
+			"name": "Safe Aura",
+			"source": "DLA",
+			"className": "Shielder",
+			"classSource": "DLA",
+			"level": 17,
+			"system": {
+				"uses": {
+					"max": "1",
+					"per": "lr"
+				}
+			},
+			"effects": [
 				{
-					"name": "Regular",
+					"name": "Safe Aura",
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						},
+						{
+							"key": "system.traits.ci.value",
+							"mode": 2,
+							"value": "frightened",
+							"priority": 20
+						}
+					],
+					"transfer": false,
+					"duration": {
+						"seconds": 60
+					}
+				}
+			],
+			"activities":[
+				{
+					"name": "Safe Aura",
 					"type": "utility",
 					"activation": {
-						"type": "reaction",
+						"type": "action",
+						"value": 1
+					},
+					"duration": {
 						"value": 1,
-						"condition": "When you take damage"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1",
-								"target": {
-									"consumes": {
-										"name": "Moxie"
-									}
-								}
-							}
-						]
-					}
-				},
-				{
-					"name": "Bloodied",
-					"type": "heal",
-					"activation": {
-						"type": "reaction",
-						"override": false,
-						"condition": "when you take damage and are Bloodied"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1",
-								"target": {
-									"consumes": {
-										"name": "Moxie"
-									}
-								}
-							}
-						]
+						"units": "minute"
 					},
 					"range": {
-						"units": "self",
-						"override": false,
-						"special": ""
+						"value": 30,
+						"units": "ft"
 					},
 					"target": {
 						"affects": {
-							"choice": false,
-							"type": "self"
+							"type": "creature",
+							"count": "6",
+							"choice": true
 						},
-						"override": false,
 						"prompt": true
-					},
-					"healing": {
-						"types": [
-							"temphp"
-						],
-						"custom": {
-							"enabled": true,
-							"formula": "@classes.pugilist.levels * 4"
-						},
-						"scaling": {
-							"number": 1
-						}
-					}
-				}
-			]
-		},
-		{
-			"name": "Swagger Streak",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 2,
-			"activities": [
-				{
-					"name": "Use",
-					"type": "utility",
-					"activation": {
-						"type": "special"
 					},
 					"consumption": {
 						"targets": [
@@ -2579,701 +2158,228 @@
 								"value": "1",
 								"target": {
 									"consumes": {
-										"name": "Moxie"
-									}
-								}
-							}
-						]
-					},
-					"roll": {
-						"prompt": false,
-						"visible": false,
-						"name": "",
-						"formula": "@scale.pugilist.fisticuffs"
-					}
-				},
-				{
-					"name": "End Streak",
-					"type": "utility",
-					"activation": {
-						"type": "special"
-					},
-					"consumption": {
-						"scaling": {
-							"allowed": false
-						},
-						"spellSlot": true,
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "-1",
-								"target": {
-									"consumes": {
-										"name": "Moxie"
-									}
-								}
-							},
-							{
-								"type": "itemUses",
-								"value": "1",
-								"scaling": {}
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Dig Deep",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 4,
-			"activities": [
-				{
-					"name": "Regular",
-					"type": "utility",
-					"activation": {
-						"type": "bonus",
-						"value": 1
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1"
-							}
-						]
-					},
-					"effects": [
-						{
-							"foundryId": "DsBQqR6L92pVrZJR"
-						}
-					],
-					"range": {
-						"units": "self",
-						"override": false,
-						"special": ""
-					},
-					"target": {
-						"affects": {
-							"type": "self"
-						},
-						"prompt": true
-					}
-				},
-				{
-					"name": "Exhaustion",
-					"type": "utility",
-					"activation": {
-						"type": "bonus",
-						"value": 1
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "attribute",
-								"value": "-1",
-								"target": "attributes.exhaustion"
-							}
-						]
-					},
-					"effects": [
-						{
-							"foundryId": "DsBQqR6L92pVrZJR"
-						}
-					],
-					"range": {
-						"units": "self",
-						"override": false,
-						"special": ""
-					},
-					"target": {
-						"affects": {
-							"type": "self"
-						},
-						"prompt": true
-					}
-				}
-			],
-			"effects": [
-				{
-					"name": "Dig Deep",
-					"foundryId": "DsBQqR6L92pVrZJR",
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "bludgeoning",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "piercing",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "slashing",
-							"priority": 20
-						},
-						{
-							"key": "system.bonuses.msak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.mwak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.rwak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.rsak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.abilities.check",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.abilities.save",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.attributes.movement.bonus",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 5"
-						}
-					],
-					"duration": {
-						"seconds": 600
-					}
-				}
-			]
-		},
-		{
-			"name": "Moxie-Fueled Fists",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 6,
-			"advice": {
-				"type": "section",
-				"entries": [
-					"Using this on your Unarmed Strike or improvised weapon item will add Force damage as an additional selection when rolling damage."
-				]
-			},
-			"activities": [
-				{
-					"type": "enchant",
-					"activation": {
-						"type": "special"
-					},
-					"effects": [
-						{
-							"foundryId": "4UzZUjmgTVZPlqOR"
-						}
-					]
-				}
-			],
-			"effects": [
-				{
-					"type": "enchantment",
-					"name": "Moxie-Fueled Fists",
-					"foundryId": "4UzZUjmgTVZPlqOR",
-					"changes": [
-						{
-							"key": "system.damage.base.types",
-							"mode": 2,
-							"value": "force"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Down But Not Out",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 7,
-			"advice": {
-				"type": "section",
-				"entries": [
-					"Apply this to your Unarmed Strike or Pugilist Weapon."
-				]
-			},
-			"activities": [
-				{
-					"type": "enchant",
-					"activation": {
-						"type": "special",
-						"condition": "When you use your Bloodied But Unbowed while you are Bloodied"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1"
-							}
-						]
-					},
-					"effects": [
-						{
-							"foundryId": "E7KuCuqFHRhIpDSP"
-						}
-					]
-				}
-			],
-			"effects": [
-				{
-					"type": "enchantment",
-					"name": "Down But Not Out",
-					"changes": [
-						{
-							"key": "system.damageBonus",
-							"mode": 2,
-							"value": "@abilities.con.mod + @attributes.exhaustion",
-							"priority": 20
-						}
-					],
-					"duration": {
-						"seconds": 60
-					}
-				}
-			]
-		},
-		{
-			"name": "Herculean",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 10,
-			"advice": {
-				"type": "section",
-				"entries": [
-					"Pillar Breaker & Unmatched Athlete are not implemented."
-				]
-			},
-			"effects": [
-				{
-					"name": "Herculean",
-					"changes": [
-						{
-							"key": "system.attributes.encumbrance.multipliers.maximum",
-							"mode": 2,
-							"value": "1",
-							"priority": 20
-						}
-					],
-					"transfer": true
-				}
-			]
-		},
-		{
-			"name": "Shake It Off",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 10,
-			"activities": [
-				{
-					"name": "Regular",
-					"type": "utility",
-					"activation": {
-						"type": "special"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1",
-								"scaling": {}
-							}
-						]
-					}
-				},
-				{
-					"name": "Exhausted",
-					"type": "utility",
-					"activation": {
-						"type": "special"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "attribute",
-								"value": "-1",
-								"target": "attributes.exhaustion"
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Dig Deeper",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 13,
-			"activities": [
-				{
-					"type": "utility",
-					"activation": {
-						"type": "bonus",
-						"value": 1
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1"
-							}
-						]
-					},
-					"effects": [
-						{
-							"foundryId": "DsBQqR6L92pVrZJR"
-						}
-					],
-					"range": {
-						"units": "self",
-						"override": false,
-						"special": ""
-					},
-					"target": {
-						"affects": {
-							"type": "self"
-						},
-						"prompt": true
-					}
-				}
-			],
-			"effects": [
-				{
-					"name": "Dig Deeper",
-					"foundryId": "DsBQqR6L92pVrZJR",
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "bludgeoning",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "piercing",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "slashing",
-							"priority": 20
-						},
-						{
-							"key": "system.bonuses.msak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.mwak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.rwak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.rsak.attack",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.abilities.check",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.bonuses.abilities.save",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 2"
-						},
-						{
-							"key": "system.attributes.movement.bonus",
-							"mode": 2,
-							"value": "@attributes.exhaustion * 5"
-						}
-					],
-					"duration": {
-						"seconds": 60
-					}
-				}
-			]
-		},
-		{
-			"name": "Unbreakable",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 14,
-			"advice": {
-				"type": "section",
-				"entries": [
-					"The Advantage is only implemented if you have the Midi-QOL and Plutonium Automation Addon modules active."
-				]
-			},
-			"activities": [
-				{
-					"name": "Expend Moxie",
-					"type": "utility",
-					"activation": {
-						"type": "special"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1"
-							},
-							{
-								"type": "itemUses",
-								"value": "-1",
-								"target": {
-									"consumes": {
-										"name": "Down But Not Out"
-									}
-								}
-							},
-							{
-								"type": "itemUses",
-								"value": "-1",
-								"target": {
-									"consumes": {
-										"name": "Dig Deep"
-									}
-								}
-							},
-							{
-								"type": "itemUses",
-								"value": "-1",
-								"target": {
-									"consumes": {
-										"name": "Shake It Off."
+										"name": "Safe Aura"
 									}
 								}
 							}
 						]
 					}
-				}
-			]
-		},
-		{
-			"name": "Pugnacious",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 15,
-			"activities": [
-				{
-					"name": "Expend Moxie",
-					"type": "utility",
-					"activation": {
-						"type": "special"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1",
-								"target": {
-									"consumes": {
-										"name": "Moxie"
-									}
-								}
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Fighting Spirit",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 18,
-			"activities": [
-				{
-					"type": "heal",
-					"activation": {
-						"type": "special"
-					},
-					"consumption": {
-						"targets": [
-							{
-								"type": "itemUses",
-								"value": "1"
-							}
-						]
-					},
-					"effects": [
-						{
-							"foundryId": "GtT6vnIIkDInCO5i"
-						}
-					],
-					"target": {
-						"affects": {
-							"choice": false,
-							"type": "self",
-							"special": ""
-						},
-						"override": false,
-						"prompt": true
-					},
-					"healing": {
-						"types": [
-							"temphp"
-						],
-						"custom": {
-							"enabled": true,
-							"formula": "@system.attributes.hp.max.value / 2"
-						},
-						"scaling": {
-							"number": 1
-						}
-					}
-				}
-			],
-			"effects": [
-				{
-					"name": "Fighting Spirit",
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": 0,
-							"value": "acid",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "bludgeoning",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "cold",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "fire",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "force",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "lightning",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "necrotic",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "piercing",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "poison",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "psychic",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "radiant",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "slashing",
-							"priority": 20
-						},
-						{
-							"key": "system.traits.dr.value",
-							"mode": 2,
-							"value": "thunder",
-							"priority": 20
-						}
-					],
-					"duration": {
-						"seconds": 60
-					}
-				}
-			]
-		},
-		{
-			"name": "Peak Physical Condition",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"level": 20,
-			"effects": [
-				{
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.abilities.str.value",
-							"mode": "ADD",
-							"value": "+ 2"
-						},
-						{
-							"key": "system.abilities.con.value",
-							"mode": "ADD",
-							"value": "+ 2"
-						}
-					]
 				}
 			]
 		}
 	],
 	"foundrySubclassFeature": [
+		{
+    		"name": "Guardian Angel",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Defender",
+    		"subclassSource": "DLA",
+    		"level": 7,
+    		"system": {
+        		"uses": {
+            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Guardian Angel",
+            		"type": "utility",
+            		"activation": {
+                		"type": "reaction",
+                		"value": 1,
+                		"condition": "When a friendly creature within an area equal to your speed is attacked"
+            		},
+            		"range": {
+                		"units": "spec",
+                		"special": "Your walking speed"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "ally",
+                    		"count": "1"
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Guardian Angel"
+                            		}
+                        		}
+                    		}
+                		]		
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Damage Absorption",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Defender",
+    		"subclassSource": "DLA",
+    		"level": 15,
+    		"system": {
+        		"uses": {
+            		"max": "1",
+            		"per": "lr"
+        		}
+    		},
+    		"effects": [
+        		{
+            		"name": "Damage Absorption",
+            		"icon": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+      		      	"transfer": false,
+            		"duration": {
+                		"rounds": 3
+            		}
+        		}		
+    		],
+    		"activities": [
+        		{
+            		"name": "Damage Absorption",
+            		"type": "utility",
+            		"activation": {
+                		"type": "action",
+                		"value": 1
+            		},
+            		"duration": {
+                		"value": 3,
+                		"units": "round"
+            		},
+            		"range": {
+                		"value": 30,
+                		"units": "ft"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "ally",
+                    		"count": "5",
+                    		"choice": true
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Damage Absorption"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Indestructible Defense",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Defender",
+    		"subclassSource": "DLA",
+    		"level": 20,
+    		"system": {
+        		"uses": {
+            		"max": "1",
+            		"per": "lr"
+        		}
+    		},
+    		"effects": [
+        		{
+            		"name": "Indestructible Defense",
+            		"icon": "icons/magic/defensive/shield-barrier-flaming-diamond.webp",
+            		"transfer": false,
+            		"duration": {
+                		"rounds": 1
+            		},
+            		"changes": [
+                		{
+                    		"key": "system.attributes.movement.walk",
+                    		"mode": 5,
+                    		"value": "0",
+                    		"priority": 20
+                		}
+            		]
+        		}
+    		],
+    		"activities": [
+        		{
+            		"name": "Indestructible Defense (Action)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "action",
+                		"value": 1,
+                		"condition": "At the start of your turn"
+            		},
+            		"duration": {
+                		"value": 1,
+                		"units": "round"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Indestructible Defense"
+                            		}
+                        		}
+                    		}
+                		]
+    				}
+        		},
+        		{
+            		"name": "Indestructible Defense (Reaction)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "reaction",
+                		"value": 1,
+                		"condition": "When receiving damage or a harmful effect"
+            		},
+            		"duration": {
+                		"value": 1,
+                		"units": "round"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Indestructible Defense"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
 		{
 			"name": "Brawler's Best Friend",
 			"source": "Pugilist2024",
