@@ -2381,134 +2381,700 @@
     		]
 		},
 		{
-			"name": "Brawler's Best Friend",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Dog and Hound",
-			"subclassSource": "Pugilist2024",
-			"level": 3,
-			"activities": [
-				{
-					"name": "Summon Hound",
-					"type": "summon",
-					"activation": {
-						"type": "special"
-					},
-					"effects": [
-						{
-							"foundryId": "ROWY6ZBsNgEYVQiR"
-						}
-					],
-					"profiles": [
-						{
-							"uuid": "@creature[Hound|Pugilist2024]"
-						}
-					],
-					"bonuses": {
-						"ac": "@abilities.con.mod",
-						"hd": "@classes.pugilist.levels",
-						"hp": "@classes.pugilist.levels * 5",
-						"attackDamage": "@abilities.con.mod"
-					},
-					"match": {
-						"proficiency": true,
-						"attacks": true,
-						"saves": true,
-						"ability": "con"
-					}
-				}
-			],
-			"effects": [
-				{
-					"name": "Pack Bond",
-					"foundryId": "ROWY6ZBsNgEYVQiR",
-					"changes": [
-						{
-							"key": "system.abilities.str.bonuses.save",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.con.bonuses.save",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.dex.bonuses.save",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.cha.bonuses.save",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.wis.bonuses.save",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.int.bonuses.save",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.str.bonuses.check",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.con.bonuses.check",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.dex.bonuses.check",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.cha.bonuses.check",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.wis.bonuses.check",
-							"mode": 2,
-							"value": "@prof"
-						},
-						{
-							"key": "system.abilities.int.bonuses.check",
-							"mode": 2,
-							"value": "@prof"
-						}
-					]
-				}
+    		"name": "Shield Mastery",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Master of All Shields",
+    		"subclassSource": "DLA",
+    		"level": 3,
+    		"effects": [
+        		{
+            		"name": "Shield Mastery",
+            		"icon": "icons/equipment/shield/heater-wooden-brown-steel.webp",
+            		"transfer": true,
+            		"changes": [
+                		{
+                    		"key": "system.attributes.ac.bonus",
+                    		"mode": 2,
+                    		"value": "1",
+                    		"priority": 20
+                		}
+            		]
+        		}
+    		]
+		},
+		{
+    		"name": "Preventive Backup",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Master of All Shields",
+    		"subclassSource": "DLA",
+    		"level": 7,
+    		"system": {
+        		"uses": {
+            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Preventive Backup",
+            		"type": "utility",
+            		"activation": {
+                		"type": "bonus",
+                		"value": 1
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Preventive Backup"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Enhanced Armament",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Master of All Shields",
+    		"subclassSource": "DLA",
+    		"level": 20,
+    		"system": {
+        		"uses": {
+            		"max": "1",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Enhanced Armament",
+            		"type": "utility",
+            		"activation": {
+                		"type": "action",
+                		"value": 1
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                       			"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Enhanced Armament"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Eldritch Resistance",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Arcane Protector",
+    		"subclassSource": "DLA",
+    		"level": 3,
+    		"activities": [
+        		{
+            		"name": "Eldritch Resistance",
+            		"type": "utility",
+            		"activation": {
+                		"type": "special",
+                		"condition": "When you fail a concentration check"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Tough Resistance"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+            		"roll": {
+                		"name": "Concentration Bonus",
+                		"formula": "@scale.shielder.tough-resistance"
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Arcane Armor",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Arcane Protector",
+    		"subclassSource": "DLA",
+    		"level": 7,
+    		"system": {
+        		"uses": {
+            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Arcane Armor",
+            		"type": "utility",
+            		"activation": {
+                		"type": "reaction",
+                		"value": 1,
+                		"condition": "Whenever you fail a saving throw against a spell or magical effect"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Arcane Armor"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Spell Devourer",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Arcane Protector",
+    		"subclassSource": "DLA",
+    		"level": 20,
+    		"system": {
+        		"uses": {
+            		"max": "1",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Spell Devourer (Reaction)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "reaction",
+                		"value": 1,
+                		"condition": "When you see a creature within 60 feet casting a spell"
+            		},
+            		"range": {
+                		"value": 60,
+                		"units": "ft"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"count": "1"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Spell Devourer"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		},
+        		{
+            		"name": "Spell Devourer (Dispel)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "action",
+                		"value": 1
+            		},
+            		"range": {
+                		"value": 60,
+                		"units": "ft"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"count": "1"
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Spell Devourer"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+			"name": "Sudden Vitality",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Guardian of Life",
+    		"subclassSource": "DLA",
+    		"level": 3,
+    		"activities": [
+        		{
+            		"name": "Sudden Vitality (Bonus Action)",
+            		"type": "heal",
+            		"activation": {
+                		"type": "bonus",
+                		"value": 1
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Tough Resistance"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+            		"healing": {
+                		"custom": {
+                    		"enabled": true,
+                    		"formula": "@scale.shielder.tough-resistance + max(1, @abilities.con.mod)"
+                		}
+            		}
+        		}		
 			]
 		},
 		{
-			"name": "Bad Attitude",
-			"source": "Pugilist2024",
-			"className": "Pugilist",
-			"classSource": "Pugilist2024",
-			"subclassShortName": "Piss and Vinegar",
-			"subclassSource": "Pugilist2024",
-			"level": 3,
-			"effects": [
-				{
-					"name": "Bad Attitude",
-					"changes": [
-						{
-							"key": "system.skills.itm.bonuses.check",
-							"mode": 2,
-							"value": "@abilities.str.mod"
-						}
-					],
-					"transfer": true
-				}
-			]
-		}
+    		"name": "Lifeline",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Guardian of Life",
+    		"subclassSource": "DLA",
+    		"level": 7,
+    		"system": {
+        		"uses": {
+            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Lifeline",
+            		"type": "utility",
+            		"activation": {
+                		"type": "special",
+                		"condition": "When a creature bound by you is reduced to 0 hit points"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "ally",
+                    		"count": "1"
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Lifeline"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Sanctuary of Life",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Guardian of Life",
+    		"subclassSource": "DLA",
+    		"level": 20,
+    		"system": {
+        		"uses": {
+            		"max": "1",
+            		"per": "lr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Sanctuary of Life",
+            		"type": "utility",
+            		"activation": {
+                		"type": "action",
+                		"value": 1
+            		},
+            		"range": {
+                		"value": 120,
+                		"units": "ft"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"count": "6",
+                    		"choice": true
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Sanctuary of Life"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Gatekeeper's Mark",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Warden",
+    		"subclassSource": "DLA",
+    		"level": 3,
+    		"effects": [
+        		{
+            		"name": "Gatekeeper's Mark",
+            		"icon": "icons/magic/control/debuff-energy-hold-purple.webp",
+            		"transfer": false,
+            		"duration": {
+                		"rounds": 1
+            		}
+        		}
+    		],
+    		"activities": [
+        		{
+            		"name": "Gatekeeper's Mark",
+            		"type": "utility",
+            		"activation": {
+                		"type": "special",
+                		"condition": "When you make an opportunity attack"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"count": "1"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Tough Resistance"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+            		"roll": {
+                		"name": "Psychic Damage Value",
+                		"formula": "@scale.shielder.tough-resistance"
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Overseer",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Warden",
+    		"subclassSource": "DLA",
+    		"level": 3,
+    		"system": {
+        		"uses": {
+            		"max": "@classes.shielder.levels >= 15 ? 2 : 1",
+            		"per": "sr"
+        		}
+    		},
+    		"activities": [
+        		{
+            		"name": "Overseer (Recover Die)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "reaction",
+                		"value": 1,
+                		"condition": "When you are hit with a melee attack"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		}
+        		},
+        		{
+            		"name": "Overseer (Extra Reaction)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "special",
+                		"condition": "When you need a reaction but have already spent yours"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "self"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Overseer"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Restraining Prison",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Warden",
+    		"subclassSource": "DLA",
+    		"level": 7,
+    		"system": {
+        		"uses": {
+            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
+            		"per": "lr"
+        		}
+    		},
+    		"effects": [
+        		{
+            		"name": "Restraining Prison (Paralyzed)",
+            		"icon": "icons/svg/paralysis.svg",
+            		"transfer": false,
+            		"duration": {
+                		"rounds": 1
+            		}
+        		}
+    		],		
+    		"activities": [
+        		{
+            		"name": "Restraining Prison",
+            		"type": "save",
+            		"activation": {
+                		"type": "reaction",
+                		"value": 1,
+                		"condition": "When a creature you can see starts its turn within 30 feet"
+            		},
+            		"range": {
+                		"value": 30,
+                		"units": "ft"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"count": "1"
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Restraining Prison"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+            		"save": {
+                		"ability": [
+                    		"wis"
+                		],
+                		"dc": {
+                    		"calculation": "wis"
+                		}
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Patrol of the Damned",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Warden",
+    		"subclassSource": "DLA",
+    		"level": 15,
+    		"activities": [
+        		{
+            		"name": "Patrol of the Damned (Extend Mark)",
+            		"type": "utility",
+            		"activation": {
+                		"type": "special",
+                		"condition": "At the end of a marked creature's turn"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"count": "1"
+                		}
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Tough Resistance"
+                            		}
+                        		}
+                    		}
+                		]
+            		}
+        		}
+    		]
+		},
+		{
+    		"name": "Cursed Confinement",
+    		"source": "DLA",
+    		"className": "Shielder",
+    		"classSource": "DLA",
+    		"subclassShortName": "Warden",
+    		"subclassSource": "DLA",
+    		"level": 20,
+    		"system": {
+        		"uses": {
+            		"max": "1",
+            		"per": "lr"
+        		}
+    		},
+    		"effects": [
+        		{
+            		"name": "Cursed Confinement (Paralyzed & Marked)",
+            		"icon": "icons/svg/paralysis.svg",
+            		"transfer": false,
+            		"duration": {
+                		"rounds": 1
+            		}
+        		}
+    		],
+    		"activities": [
+        		{
+            		"name": "Cursed Confinement",
+            		"type": "save",
+            		"activation": {
+                		"type": "action",
+                		"value": 1
+            		},
+            		"range": {
+                		"value": 30,
+                		"units": "ft"
+            		},
+            		"target": {
+                		"affects": {
+                    		"type": "creature",
+                    		"choice": true
+                		},
+                		"prompt": true
+            		},
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "1",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Cursed Confinement"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+            		"save": {
+                		"ability": [
+                    		"wis"
+                		],
+                		"dc": {
+                    		"calculation": "wis"
+                		}
+            		}
+        		}
+    		]
+		}											
 	]
 }
