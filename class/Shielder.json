@@ -194,6 +194,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
 			"level": 1,
 			"entries": [
 				"Being trained in the art of defense, many seemingly hurtful attacks are blocked by your use of shields and physical resistance. When you are hit by an attack, you can take a {@variantrule Reaction|XPHB} to roll one of your Tough Resistance dice and add the result to your {@variantrule Armor Class|XPHB} for that attack, potentially causing the attack to miss you. You can use this feature a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. You regain any expended uses when you finish a Long Rest.",
@@ -205,6 +206,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp",
 			"level": 1,
 			"entries": [
 				"Being centered in defense allows you to be more aware of the enemy's moves and react accordingly. While you are not wielding a weapon and are using a {@item Shield|XPHB}, your {@variantrule Armor Class|XPHB} can instead be equal to your {@b Shielder DC} (8 + your {@variantrule Proficiency|XPHB|Proficiency Bonus} + your Wisdom modifier) plus the AC bonus provided by that shield."
@@ -215,6 +217,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/skills/melee/hand-grip-sword-orange.webp",
 			"level": 1,
 			"entries": [
 				"Your training with shields allows you to use the mastery properties of all {@filter shields|items|type=shield=sand} and one {@filter simple weapon|items|type=simple weapon=sand} of your choice with which you have proficiency, such as Shortbows or Daggers.",
@@ -226,6 +229,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/equipment/shield/buckler-wooden-boss-brown.webp",
 			"level": 2,
 			"entries": [
 				"Starting at 2nd level, you have got used to your shield as your offensive and defensive tool. You gain the following benefits while you are wearing a shield:",
@@ -263,6 +267,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
 			"level": 5,
 			"entries": [
 				"Beginning at 5th level, you learn to provoke enemies, unleashing insults and offenses, effectively manipulating them to attack you. As an {@variantrule Action|XPHB}, you may choose creatures up to your Proficiency bonus that are within 30 feet of you. As long as the target can hear you, each creature must succeed in a Wisdom saving throw against your {@b Shielder DC} or have {@variantrule Disadvantage|XPHB} on all attack rolls against creatures other than you. When attacked by someone other than you or at the end of its turn, the creature can reroll the saving throw ending the effect on a success. This feature also ends early if you get the {@condition Incapacitated|XPHB} condition. You can use this feature a number of times equal to your Wisdom modifier (a minimum of 1). You regain all expended uses after you finish a {@variantrule Long Rest|XPHB}."
@@ -273,6 +278,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
 			"level": 6,
 			"entries": [
 				"By 6th level, you learn to adopt a defensive stance where there aren't many who can break past it. When you finish your turn with remaining movement greater or equal to your {@variantrule Speed|XPHB}, you enter a defensive stance. While in this stance, all attacks done against you have {@variantrule Disadvantage|XPHB}. Using your movement removes you from your defensive stance.",
@@ -304,6 +310,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/equipment/shield/heater-embossed-gold.webp",
 			"level": 9,
 			"entries": [
 				"Beginning at 9th level, you can provide cover to allies near you. When a creature that is within 5 ft of you is attacked, you can impose {@variantrule Disadvantage|XPHB} on the attack roll (no action required)."
@@ -314,6 +321,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/skills/social/diplomacy-unity-alliance.webp",
 			"level": 10,
 			"entries": [
 				"Starting at 10th level, the clash of your shield with the enemy's weapons gives inner strength to your allies. As a {@variantrule Bonus Action|XPHB}, you can choose a creature you can see within 60 feet of you other than yourself and give it one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice. Once within the next 10 minutes, when the creature is attacked, it can use a {@variantrule Reaction|XPHB} to roll the die and gain a bonus to AC for that attack equal to the result of the roll or add the result as a bonus to a saving throw of its choice. When an ally rolls a Tough Resistance die this way, they get {@variantrule Temporary Hit Points|XPHB} equal to the result.",
@@ -325,6 +333,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/commodities/materials/feather-blue-glowing.webp",
 			"level": 11,
 			"entries": [
 				"At 11th level, you learn to analyze a foe at any moment, especially in the heat of battle. If you spend at least 1 minute outside of battle {@action Study|PXHB|studying} a creature, or as your {@variantrule Bonus Action|XPHB} in combat, you can discern certain strengths and weaknesses of a creature you can see within 30 feet of yourself; you know whether that creature has any {@variantrule Immunity|XPHB|Immunities}, {@variantrule Resistance|XPHB|Resistances}, or {@variantrule Vulnerability|XPHB|Vulnerabilities}, and if the creature has any, you know what they are.",
@@ -346,6 +355,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/environment/settlement/city-wall.webp",
 			"level": 13,
 			"entries": [
 				"Beginning 13th level, you are able to protect yourself while standing your ground, being difficult to take down. You gain {@variantrule Advantage|XPHB} against effects that push you or give you the {@condition Prone|XPHB} or {@condition Grappled|XPHB} condition.",
@@ -357,6 +367,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
 			"level": 14,
 			"entries": [
 				"By 14th level, your mind has grown as strong as your body. When you have to roll for a Wisdom saving throw or use your Wisdom modifier, you can use your Constitution ability modifier instead and vice versa. If you are already proficient in the saving throw you are making, you can add your {@variantrule Proficiency|XPHB|Proficiency Bonus} twice. You also gain {@variantrule Advantage|XPHB} against being {@condition Frightened|XPHB}."
@@ -387,6 +398,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/skills/melee/shield-block-gray-yellow.webp",
 			"level": 17,
 			"entries": [
 				"At 17th level, your presence brings comfort to your allies. As an {@variantrule Action|XPHB}, choose up to 6 friendly creatures within 30 feet of you. For 1 minute, as long as they are within this range, they gain a +2 bonus to their {@variantrule Armor Class|XPHB|AC} (as long as it does not surpass 18). You and the chosen creatures gain {@variantrule Immunity|XPHB} against being {@condition Frightened|XPHB} as long as they remain in the area. You regain this feature after a {@variantrule Long Rest|XPHB}."
@@ -397,6 +409,7 @@
 			"source": "DLA",
 			"className": "Shielder",
 			"classSource": "DLA",
+			"foundryImg": "icons/skills/melee/shield-block-fire-orange.webp",
 			"level": 18,
 			"entries": [
 				"By 18th level, you gain a constitution similar to that of adamantine. You gain {@variantrule Resistance|XPHB} to all non-magical damage and {@variantrule Immunity|XPHB}, to {@variantrule Critical Hit|XPHB|critical hits}."
@@ -1875,9 +1888,14 @@
 			"system": {
 				"uses": {
 					"max": "@prof",
-					"per": "lr"
+					"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
 				}
-			},
+			},					
 			"activities": [
 				{
 					"name": "Tough Resistance",
@@ -1950,7 +1968,12 @@
 			"system": {
 				"uses": {
 					"max": "max(1, @abilities.wis.mod)",
-					"per": "lr"
+					"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
 				}
 			},
 			"activities": [
@@ -2054,7 +2077,12 @@
 			"system": {
 				"uses": {
 					"max": "1",
-					"per": "lr"
+					"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
 				}
 			},
 			"activities": [
@@ -2101,7 +2129,12 @@
 			"system": {
 				"uses": {
 					"max": "1",
-					"per": "lr"
+					"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
 				}
 			},
 			"effects": [
@@ -2180,7 +2213,12 @@
     		"system": {
         		"uses": {
             		"max": "1 + floor(@classes.shielder.levels / 15) + floor(@classes.shielder.levels / 20)",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2230,7 +2268,12 @@
     		"system": {
         		"uses": {
             		"max": "1",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"effects": [
@@ -2294,7 +2337,12 @@
     		"system": {
         		"uses": {
             		"max": "1",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"effects": [
@@ -2414,8 +2462,13 @@
     		"level": 7,
     		"system": {
         		"uses": {
-            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
-            		"per": "lr"
+            		"max": "1 + floor(@classes.shielder.levels / 15) + floor(@classes.shielder.levels / 20)",
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2458,7 +2511,12 @@
     		"system": {
         		"uses": {
             		"max": "1",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2541,8 +2599,13 @@
     		"level": 7,
     		"system": {
         		"uses": {
-            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
-            		"per": "lr"
+            		"max": "1 + floor(@classes.shielder.levels / 15) + floor(@classes.shielder.levels / 20)",
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2586,7 +2649,12 @@
     		"system": {
         		"uses": {
             		"max": "1",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2709,8 +2777,13 @@
     		"level": 7,
     		"system": {
         		"uses": {
-            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
-            		"per": "lr"
+            		"max": "1 + floor(@classes.shielder.levels / 15) + floor(@classes.shielder.levels / 20)",
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2755,7 +2828,12 @@
     		"system": {
         		"uses": {
             		"max": "1",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"activities": [
@@ -2856,8 +2934,13 @@
     		"level": 3,
     		"system": {
         		"uses": {
-            		"max": "@classes.shielder.levels >= 15 ? 2 : 1",
-            		"per": "sr"
+            		"max": "1 + floor(@classes.shielder.levels / 15)",
+            		"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
         		}
     		},
     		"activities": [
@@ -2913,8 +2996,13 @@
     		"level": 7,
     		"system": {
         		"uses": {
-            		"max": "@classes.shielder.levels >= 20 ? 3 : (@classes.shielder.levels >= 15 ? 2 : 1)",
-            		"per": "lr"
+            		"max": "1 + floor(@classes.shielder.levels / 15) + floor(@classes.shielder.levels / 20)",
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"effects": [
@@ -3020,7 +3108,12 @@
     		"system": {
         		"uses": {
             		"max": "1",
-            		"per": "lr"
+            		"recovery": [
+    					{
+        					"period": "lr",
+        					"type": "recoverAll"
+    					}
+					]
         		}
     		},
     		"effects": [
