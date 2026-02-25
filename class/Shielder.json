@@ -1377,7 +1377,7 @@
 		{
 			"name": "Summoner Shield",
 			"source": "DLA",
-			"foundryImg": "icons/sundries/books/book-open-brown",
+			"foundryImg": "icons/sundries/books/book-open-brown.webp",
 			"prerequisite": [
 				{
 					"level": {
