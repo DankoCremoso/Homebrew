@@ -827,6 +827,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Defender",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -841,6 +842,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Defender",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/perception/eye-ringed-green.webp",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -855,6 +857,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Defender",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/holy/angel-winged-humanoid-blue.webp",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -869,6 +872,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Defender",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
 			"level": 15,
 			"header": 2,
 			"entries": [
@@ -882,6 +886,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Defender",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
 			"level": 20,
 			"header": 2,
 			"entries": [
@@ -916,6 +921,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Master of All Shields",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/equipment/shield/heater-wooden-brown-notched.webp",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -930,6 +936,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Master of All Shields",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/equipment/shield/targe-steel-blue.webp",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -943,6 +950,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Master of All Shields",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/equipment/shield/heater-wooden-steel-boss.webp",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -957,6 +965,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Master of All Shields",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/equipment/hand/gauntlet-armored-steel-grey.webp",
 			"level": 15,
 			"header": 2,
 			"entries": [
@@ -971,6 +980,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Master of All Shields",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-pentagon-purple-orange.webp",
 			"level": 20,
 			"header": 2,
 			"entries": [
@@ -1005,6 +1015,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Arcane Protector",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
 			"level": 3,
 			"entries": [
 				"When you decide on the Arcane Protector Path at 3rd level, you gain the ability to cast minor arcane spells, much like a wizard.",
@@ -1061,6 +1072,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Arcane Protector",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/unholy/hand-marked-pink.webp",
 			"level": 3,
 			"entries": [
 				"Also at 3rd level, your physical resistance and training give you an edge on maintaining spells where other spellcasters can't. When you fail a {@status Concentration|XPHB} check, you may spend one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice and add the result to the concentration check."
@@ -1073,6 +1085,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Arcane Protector",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1087,6 +1100,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Arcane Protector",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp",
 			"level": 15,
 			"header": 2,
 			"entries": [
@@ -1100,6 +1114,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Arcane Protector",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/control/fear-fright-monster-grin-purple-blue.webp",
 			"level": 20,
 			"header": 2,
 			"entries": [
@@ -1135,6 +1150,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Guardian of Life",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/life/cross-flared-green.webp",
 			"level": 3,
 			"entries": [
 				"When you decide on the Guardian of Life Path at 3rd level, you've learned to connect with other creatures through pain, loss, and sacrifice. As an {@variantrule Action|XPHB}, you bind with up to a number of creatures within 30 feet of you that you can see equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. These creatures are bound to you for 1 minute, until they are reduced to 0 {@variantrule Hit Points|XPHB|hit points}, until they are farther than 60 feet from you, or until you dismiss it (no action required).",
@@ -1148,6 +1164,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Guardian of Life",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/life/cross-beam-green.webp",
 			"level": 3,
 			"entries": [
 				"Also at 3rd level, you know how to manage your vitality as well as the ones of those bound to you. As a {@variantrule Bonus Action|XPHB}, you can use one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice and recover {@variantrule Hit Points|XPHB} equal to the number rolled + your Constitution modifier (minimum of 1).",
@@ -1161,6 +1178,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Guardian of Life",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/life/heart-area-circle-red-green.webp",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1175,6 +1193,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Guardian of Life",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
 			"level": 15,
 			"header": 2,
 			"entries": [
@@ -1189,6 +1208,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Guardian of Life",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/holy/barrier-shield-winged-blue.webp",
 			"level": 20,
 			"header": 2,
 			"entries": [
@@ -1223,6 +1243,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Warden",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp",
 			"level": 3,
 			"entries": [
 				"When you decide on the Warden Path at 3rd level, you gain the power to exhaust and debilitate those who run from you. Whenever you make an {@action Opportunity Attack|XPHB}, you may expend and roll one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice to mark the creature until the end of their next turn. While marked, the creature has {@variantrule Disadvantage|XPHB} on all attack rolls and ability checks. Additionally, whenever the creature is damaged, it takes extra Psychic damage equal to the roll."
@@ -1235,6 +1256,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Warden",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
 			"level": 3,
 			"entries": [
 				"Also at 3rd level, you realize how important it is to always be on the lookout, always analyzing possible dangers. Whenever you are hit with a melee attack, you can use your {@variantrule Reaction|XPHB} to gain one of your {@classFeature Tough Resistance|Shielder|DLA|1} dice.",
@@ -1248,6 +1270,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Warden",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -1262,6 +1285,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Warden",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye.webp",
 			"level": 15,
 			"header": 2,
 			"entries": [
@@ -1275,6 +1299,7 @@
 			"classSource": "DLA",
 			"subclassShortName": "Warden",
 			"subclassSource": "DLA",
+			"foundryImg": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
 			"level": 20,
 			"header": 2,
 			"entries": [
@@ -1286,6 +1311,7 @@
 		{
 			"name": "Chain Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/control/debuff-chains-blue.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1317,6 +1343,7 @@
 		{
 			"name": "Thorn Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/nature/root-vine-spiral-thorns-teal.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1350,6 +1377,7 @@
 		{
 			"name": "Summoner Shield",
 			"source": "DLA",
+			"foundryImg": "icons/sundries/books/book-open-brown",
 			"prerequisite": [
 				{
 					"level": {
@@ -1410,6 +1438,7 @@
 		{
 			"name": "Mirror Shield",
 			"source": "DLA",
+			"foundryImg": "icons/equipment/shield/heater-steel-segmented-purple.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1442,6 +1471,7 @@
 		{
 			"name": "Storm Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/lightning/bolt-strike-explosion-blue.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1475,6 +1505,7 @@
 		{
 			"name": "Ember Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/fire/flame-burning-earth-orange.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1506,6 +1537,7 @@
 		{
 			"name": "Frost Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/water/barrier-ice-crystal-wall-faceted-light.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1537,6 +1569,7 @@
 		{
 			"name": "Poison Shield",
 			"source": "DLA",
+			"foundryImg": "icons/skills/toxins/cauldron-bubbles-overflow-green.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1578,6 +1611,7 @@
 		{
 			"name": "Lantern Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/light/light-lantern-lit-white.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1609,6 +1643,7 @@
 		{
 			"name": "Shadow Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/unholy/orb-hands-pink.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1640,6 +1675,7 @@
 		{
 			"name": "Void Shield",
 			"source": "DLA",
+			"foundryImg": "icons/magic/movement/portal-vortex-orange.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -1671,6 +1707,7 @@
 		{
 			"name": "Sacrificial Shield",
 			"source": "DLA",
+			"foundryImg": "icons/equipment/shield/kite-steel-boss-gold.webp",
 			"prerequisite": [
 				{
 					"level": {
@@ -2279,7 +2316,7 @@
     		"effects": [
         		{
             		"name": "Damage Absorption",
-            		"icon": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+            		"icon": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
       		      	"transfer": false,
             		"duration": {
                 		"rounds": 3
@@ -2348,7 +2385,7 @@
     		"effects": [
         		{
             		"name": "Indestructible Defense",
-            		"icon": "icons/magic/defensive/shield-barrier-flaming-diamond.webp",
+            		"icon": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
             		"transfer": false,
             		"duration": {
                 		"rounds": 1
@@ -2439,7 +2476,7 @@
     		"effects": [
         		{
             		"name": "Shield Mastery",
-            		"icon": "icons/equipment/shield/heater-wooden-brown-steel.webp",
+            		"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
             		"transfer": true,
             		"changes": [
                 		{
@@ -2883,7 +2920,7 @@
     		"effects": [
         		{
             		"name": "Gatekeeper's Mark",
-            		"icon": "icons/magic/control/debuff-energy-hold-purple.webp",
+            		"icon": "icons/magic/unholy/strike-hand-glow-pink.webp",
             		"transfer": false,
             		"duration": {
                 		"rounds": 1
