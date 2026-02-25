@@ -1274,7 +1274,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"By 7th level, you can focus your energy to mentally lash into an enemy, leaving them paralyzed long enough to give your allies an opportunity to strike. Whenever a creature you can see starts its turn within 30 feet of you, you can use your {@variantrule Reaction|XPHB} and force the creature to succeed on a Wisdom saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC}. On a failure, the creature is {@condition Paralyzed|XPHB} until the start of its next turn. On a success, the use of this feature is not expended, but your reaction is. You can only use this feature once before a {@variantrule Long Rest|XPHB}.",
+				"By 7th level, you can focus your energy to mentally lash into an enemy, leaving them paralyzed long enough to give your allies an opportunity to strike. Whenever a creature you can see starts its turn within 30 feet of you, you can use your {@variantrule Reaction|XPHB} and force the creature to succeed on a Wisdom saving throw against your {@b Shielder DC}. On a failure, the creature is {@condition Paralyzed|XPHB} until the start of its next turn. On a success, the use of this feature is not expended, but your reaction is. You can only use this feature once before a {@variantrule Long Rest|XPHB}.",
 				"At 15th level, you may use it 2 times before resting. At 20th level, 3 times before a long rest."
 			]
 		},
@@ -1327,7 +1327,7 @@
 				}
 			],
 			"entries": [
-				"Your shield transforms into a shield with an embedded 50 ft long metal chain. As an {@variantrule Action|XPHB}, you can extend or retract the chain embedded within your shield. Also as an action, you can try to grapple a creature with the chain of your shield. Make a ranged attack against a Large or smaller creature within 30 ft of you. If the attack hits, the creature is {@condition Grappled|XPHB}. At the start of each of its turns, the creature can do a saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC} to break free. You can't use this ability if you already have a grappled creature. While grappling a creature, you may not move more than 30 feet away from it. As a {@variantrule Bonus Action|XPHB}, you can pull the creature up to 30 ft straight towards you if it is of the same size or smaller than you, or you can pull yourself up to 30 ft straight to the target if its size is larger than yours.",
+				"Your shield transforms into a shield with an embedded 50 ft long metal chain. As an {@variantrule Action|XPHB}, you can extend or retract the chain embedded within your shield. Also as an action, you can try to grapple a creature with the chain of your shield. Make a ranged attack against a Large or smaller creature within 30 ft of you. If the attack hits, the creature is {@condition Grappled|XPHB}. At the start of each of its turns, the creature can do a saving throw against your {@b Shielder DC} to break free. You can't use this ability if you already have a grappled creature. While grappling a creature, you may not move more than 30 feet away from it. As a {@variantrule Bonus Action|XPHB}, you can pull the creature up to 30 ft straight towards you if it is of the same size or smaller than you, or you can pull yourself up to 30 ft straight to the target if its size is larger than yours.",
 				{
 					"type": "entries",
 					"name": "Enhanced Armament",
@@ -1585,7 +1585,7 @@
 				}
 			],
 			"entries": [
-				"Your shield is imbued with a mixture of dangerous poisons that come out of your shield. You gain {@variantrule Resistance|XPHB} to poison damage and {@variantrule Immunity|XPHB} to being {@condition Poisoned|XPHB}. If you already have the poisoned condition, it is not neutralized but suppressed. Whenever you hit an attack with your shield you may try to poison the target. The target must succeed on a Constitution Saving Throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC}. On a failure, choose one of the following:",
+				"Your shield is imbued with a mixture of dangerous poisons that come out of your shield. You gain {@variantrule Resistance|XPHB} to poison damage and {@variantrule Immunity|XPHB} to being {@condition Poisoned|XPHB}. If you already have the poisoned condition, it is not neutralized but suppressed. Whenever you hit an attack with your shield you may try to poison the target. The target must succeed on a Constitution Saving Throw against your {@b Shielder DC}. On a failure, choose one of the following:",
 				{
 					"type": "list",
 					"items": [
@@ -1627,7 +1627,7 @@
 				}
 			],
 			"entries": [
-				"The center of your shield shed bright light as if a bright lantern was in its place. As a {@variantrule Bonus Action|XPHB}, your shield can shed bright light in a 30-foot radius and dim light another 30 feet. In a 10-foot radius centered on you, you can even see in magical darkness and as an {@variantrule Action|XPHB} you can focus your sight and see illusions for what they are. As a {@variantrule Reaction|XPHB} to being hit with a melee attack, you can cause the attacker to succeed on a Constitution saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC} or be {@condition Blinded|XPHB} until the end of their next turn.",
+				"The center of your shield shed bright light as if a bright lantern was in its place. As a {@variantrule Bonus Action|XPHB}, your shield can shed bright light in a 30-foot radius and dim light another 30 feet. In a 10-foot radius centered on you, you can even see in magical darkness and as an {@variantrule Action|XPHB} you can focus your sight and see illusions for what they are. As a {@variantrule Reaction|XPHB} to being hit with a melee attack, you can cause the attacker to succeed on a Constitution saving throw against your {@b Shielder DC} or be {@condition Blinded|XPHB} until the end of their next turn.",
 				{
 					"type": "entries",
 					"name": "Enhanced Armament",
@@ -1691,7 +1691,7 @@
 				}
 			],
 			"entries": [
-				"Your shield cracks showing a reek to an infinite abyss. As an {@variantrule Action|XPHB}, you can send a creature you can see within 30-feet of you to the void. The target must succeed on a Wisdom saving throw against your {@classFeature Protective Focus|Shielder|DLA|1|Shielder DC} (the target can choose to fail); On a failure, you can send the creature to the void, a harmless demiplane, for up to 1 minute. The creature can repeat the saving throw at the end of its turns to end the effect on a success and return to a harmless unoccupied space near where it was. Alternatively, on a failure you may choose to teleport the target to an unoccupied space of your choice that you can see within range. You may use this feature a number of times equal to your Wisdom modifier. You regain expended uses after finishing a long rest.",
+				"Your shield cracks showing a reek to an infinite abyss. As an {@variantrule Action|XPHB}, you can send a creature you can see within 30-feet of you to the void. The target must succeed on a Wisdom saving throw against your {@b Shielder DC} (the target can choose to fail); On a failure, you can send the creature to the void, a harmless demiplane, for up to 1 minute. The creature can repeat the saving throw at the end of its turns to end the effect on a success and return to a harmless unoccupied space near where it was. Alternatively, on a failure you may choose to teleport the target to an unoccupied space of your choice that you can see within range. You may use this feature a number of times equal to your Wisdom modifier. You regain expended uses after finishing a long rest.",
 				{
 					"type": "entries",
 					"name": "Enhanced Armament",
