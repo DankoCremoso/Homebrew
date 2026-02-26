@@ -3339,6 +3339,7 @@
 			"foundryEffects": [
 				{
 					"name": "Medium Wooden Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
 					"transfer": true,
 					"changes": [
 						{
