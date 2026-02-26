@@ -637,7 +637,7 @@
 			"source": "DLA",
 			"name": "Parrying",
 			"entries": [
-				"{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
+				"{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|XPHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
 			]
 		},
         {
