@@ -3236,7 +3236,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
-			"bonusAc": "+1",
 			"weight": 3,
 			"value": 1500,
 			"weaponCategory": "simple",
@@ -3260,7 +3259,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
-			"bonusAc": "+1",
 			"weight": 3,
 			"value": 1000,
 			"weaponCategory": "simple",
@@ -3283,7 +3281,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
-			"bonusAc": "+1",
 			"weight": 4,
 			"value": 2000,
 			"weaponCategory": "simple",
@@ -3307,7 +3304,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
-			"bonusAc": "+2",
 			"weight": 4,
 			"value": 2000,
 			"weaponCategory": "simple",
@@ -3329,7 +3325,7 @@
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
-			"bonusAc": "+2",
+			"ac": 2,
 			"weight": 4,
 			"value": 1500,
 			"weaponCategory": "simple",
@@ -3339,7 +3335,20 @@
 			"entries": [
                 "A classic round or heater shield made of thick oak or pine. It offers a perfect balance between weight and protection for the everyday adventurer.",
                 "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Medium Wooden Shield",
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2"
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Medium Metal Shield",
@@ -3348,7 +3357,7 @@
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
-			"bonusAc": "+2",
+			"ac": 2,
 			"weight": 6,
 			"value": 2500,
 			"weaponCategory": "simple",
@@ -3371,7 +3380,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
-			"bonusAc": "+2",
             "stealth": true,
 			"weight": 6,
 			"value": 2000,
@@ -3395,7 +3403,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
-			"bonusAc": "+2",
             "stealth": true,
 			"weight": 8,
 			"value": 2000,
@@ -3420,7 +3427,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
-			"bonusAc": "+3",
             "stealth": true,
 			"weight": 11,
 			"value": 3000,
@@ -3445,7 +3451,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
-			"bonusAc": "+2",
             "stealth": true,
 			"weight": 10,
 			"value": 3000,
@@ -3470,7 +3475,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
-			"bonusAc": "+3",
             "stealth": true,
 			"weight": 18,
 			"value": 5000,
@@ -3506,7 +3510,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
-			"bonusAc": "+3",
             "stealth": true,
 			"weight": 22,
 			"value": 7500,
@@ -3550,7 +3553,6 @@
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 4,
-			"bonusAc": "+4",
             "stealth": true,
 			"weight": 25,
 			"value": 10000,
