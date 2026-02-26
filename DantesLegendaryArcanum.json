@@ -3335,7 +3335,23 @@
 			"entries": [
                 "A classic round or heater shield made of thick oak or pine. It offers a perfect balance between weight and protection for the everyday adventurer.",
                 "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn."
-            ]
+            ],
+			"foundryItem": {
+				"effects": [
+					{
+						"name": "Medium Wooden Shield",
+						"transfer": true,
+						"changes": [
+							{
+								"key": "system.attributes.ac.bonus",
+								"mode": 2,
+								"value": "2",
+								"priority": 20
+							}
+						]
+					}
+				]
+			}
 		},
         {
 			"name": "Medium Metal Shield",
