@@ -24,8 +24,9 @@
         {
 			"name": "Wooden Buckler",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 0,
 			"weight": 2,
@@ -34,7 +35,7 @@
 			"property": ["L", "PRY", "STB"],
 			"dmg1": "1",
 			"dmgType": "B",
-			"weaponMastery": "nick",
+			"weaponMastery": "Nick|XPHB",
 			"entries": [
                 "A small, lightweight shield usually strapped to the forearm.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty PRY|DLA|Parrying}, {@itemProperty STB|DLA|Stable}",
@@ -46,8 +47,9 @@
         {
 			"name": "Metal Buckler",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
 			"weight": 3,
@@ -56,20 +58,37 @@
 			"property": ["L", "PRY", "STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "slow",
+			"weaponMastery": "Slow|XPHB",
 			"entries": [
                 "A light shield designed for parrying while leaving your hand free.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty PRY|DLA|Parrying}, {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by this property, the Speed reduction doesn't stack.",
                 "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Metal Buckler",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "1",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Small Wooden Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
 			"weight": 3,
@@ -78,19 +97,36 @@
 			"property": ["L", "STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "sap",
+			"weaponMastery": "Sap|XPHB",
 			"entries": [
                 "A light and maneuverable shield, often made of reinforced wood and bound with leather.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Small Wooden Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "1",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Throwing Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
 			"weight": 4,
@@ -100,19 +136,36 @@
             "range": "30/90",
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"weaponMastery": "nick",
+			"weaponMastery": "Nick|XPHB",
 			"entries": [
                 "A circular shield with a weighted, aerodynamic rim or sharpened edges, specifically balanced for flight. It is strapped to the arm with a quick-release mechanism.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty F|XPHB|Finesse}, {@itemProperty T|XPHB|Thrown} (30/90), {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Nick.} When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Throwing Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "1",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Small Metal Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
 			"weight": 4,
@@ -121,19 +174,36 @@
 			"property": ["STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "slow",
+			"weaponMastery": "Slow|XPHB",
 			"entries": [
                 "Forged from iron or steel. While heavier than its wooden counterpart, its rigid edge makes it a more reliable tool for deflecting heavy blades.",
                 "Properties: {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by this property, the Speed reduction doesn't stack.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Small Metal Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Medium Wooden Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
 			"weight": 4,
@@ -141,17 +211,34 @@
 			"weaponCategory": "simple",
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "sap",
+			"weaponMastery": "Sap|XPHB",
 			"entries": [
                 "A classic round or heater shield made of thick oak or pine. It offers a perfect balance between weight and protection for the everyday adventurer.",
                 "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Medium Wooden Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Medium Metal Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
 			"weight": 6,
@@ -160,19 +247,36 @@
 			"property": ["PRY"],
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"weaponMastery": "vex",
+			"weaponMastery": "Vex|XPHB",
 			"entries": [
                 "A standard infantry shield made of steel. It is remarkably durable and capable of weathering a storm of arrows or rhythmic melee strikes.",
                 "Properties: {@itemProperty PRY|DLA|Parrying}",
                 "{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to it, you have Advantage on your next attack roll against that creature before the end of your next turn.",
                 "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Medium Metal Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Large Wooden Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
             "stealth": true,
@@ -182,19 +286,36 @@
 			"property": ["MD"],
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"weaponMastery": "push",
+			"weaponMastery": "Push|XPHB",
 			"entries": [
                 "A tall, curved shield that covers the torso. While it is more cumbersome than a medium shield, its surface area makes it much harder for enemies to find a gap in your guard.",
                 "Properties: {@itemProperty MD|DLA|Mounted Defense}",
                 "{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller.",
                 "{@b Mounted Defense.} The AC this shield provides also applies to your mount."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Large Wooden Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Wooden Aspis",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
             "stealth": true,
@@ -205,19 +326,36 @@
 			"property": ["SWL"],
 			"dmg1": "2d4",
 			"dmgType": "B",
-			"weaponMastery": "cleave",
+			"weaponMastery": "Cleave|XPHB",
 			"entries": [
                 "A deeply dished circular shield favored by order warriors. The bronze-rimmed wood is designed to be tucked into the shoulder",
                 "Properties: {@itemProperty SWL|DLA|Shield Wall}",
                 "{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
                 "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Wooden Aspis",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Large Metal Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
             "stealth": true,
@@ -228,19 +366,36 @@
 			"property": ["H", "MD"],
 			"dmg1": "1d8",
 			"dmgType": "B",
-			"weaponMastery": "push",
+			"weaponMastery": "Push|XPHB",
 			"entries": [
                 "A heavy kite shield or heater shield made of solid metal. It provides formidable defense but requires significant strength to maneuver without tiring the arm.",
                 "Properties: {@itemProperty H|DLA|Heavy}, {@itemProperty MD|DLA|Mounted Defense}",
                 "{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller.",
                 "{@b Mounted Defense.} The AC this shield provides also applies to your mount."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Large Metal Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "3",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Metal Aspis",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
             "stealth": true,
@@ -251,19 +406,36 @@
 			"property": ["SWL"],
 			"dmg1": "2d6",
 			"dmgType": "B",
-			"weaponMastery": "graze",
+			"weaponMastery": "Graze|XPHB",
 			"entries": [
                 "A heavy bronze or steel circular shield. Its weight makes it an incredible offensive tool during a charge, though it is taxing to use for extended periods.",
                 "Properties: {@itemProperty SWL|DLA|Shield Wall}",
                 "{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
                 "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Metal Aspis",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Wooden Tower Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
             "stealth": true,
@@ -274,7 +446,7 @@
 			"property": ["BLK", "H", "SWL"],
 			"dmg1": "1d8",
 			"dmgType": "B",
-			"weaponMastery": "topple",
+			"weaponMastery": "Topple|XPHB",
 			"entries": [
                 "A rectangular slab of reinforced wood. It is essentially portable cover, though it lacks the sheer stopping power of its metal counterpart.",
                 "Properties: {@itemProperty BLK|DLA|Bulky}, {@itemProperty H|DLA|Heavy}, {@itemProperty SWL|DLA|Shield Wall}",
@@ -291,13 +463,30 @@
             },
             "If you take the {@action Dodge} action while this shield is donned, you gain {@b half cover} until the start of your next turn.",
                 "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Wooden Tower Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "3",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Metal Tower Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
             "stealth": true,
@@ -308,7 +497,7 @@
 			"property": ["BLK", "H", "DPL"],
 			"dmg1": "1d10",
 			"dmgType": "B",
-			"weaponMastery": "topple",
+			"weaponMastery": "Topple|XPHB",
 			"entries": [
                 "A massive wall of steel. It is nearly impossible to pierce, allowing anyone to stand their ground against even the most terrifying foes.",
                 "Properties: {@itemProperty BLK|DLA|Bulky}, {@itemProperty H|DLA|Heavy}, {@itemProperty DPL|DLA|Deployable}",
@@ -333,13 +522,30 @@
                     "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
                 ]
             }
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Metal Tower Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "3",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Grand Tower Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 4,
             "stealth": true,
@@ -350,7 +556,7 @@
 			"property": ["DPL", "H", "2H"],
 			"dmg1": "1d12",
 			"dmgType": "B",
-			"weaponMastery": "topple",
+			"weaponMastery": "Topple|XPHB",
 			"entries": [
                 "An enormous, master-crafted bastion of metal. It is designed to protect not just the wielder, but an entire line of allies behind them.",
                 "Properties: {@itemProperty DPL|DLA|Deployable}, {@itemProperty H|DLA|Heavy}, {@itemProperty 2H|XPHB|Two-handed}",
@@ -364,7 +570,23 @@
                     "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
                 ]
             }
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Grand Tower Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "4",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		}
     ],
     "itemProperty": [
@@ -434,5 +656,203 @@
 				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
 			]
 		}
-    ]
+    ],
+	"itemFluff": [
+		{
+			"name": "Wooden Buckler",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wb_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Buckler",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mb_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Small Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Throwing Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/throw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Small Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Medium Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Medium Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Large Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wooden Aspis",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wa_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Large Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Aspis",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/ma_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wooden Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Grand Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/gt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		}
+	]
 }
