@@ -3208,7 +3208,7 @@
         {
 			"name": "Wooden Buckler",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
@@ -3219,7 +3219,7 @@
 			"property": ["L", "PRY", "STB"],
 			"dmg1": "1",
 			"dmgType": "B",
-			"weaponMastery": "nick",
+			"weaponMastery": "Nick|XPHB",
 			"entries": [
                 "A small, lightweight shield usually strapped to the forearm.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty PRY|DLA|Parrying}, {@itemProperty STB|DLA|Stable}",
@@ -3231,18 +3231,19 @@
         {
 			"name": "Metal Buckler",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
+			"bonusAc": "+1",
 			"weight": 3,
 			"value": 1500,
 			"weaponCategory": "simple",
 			"property": ["L", "PRY", "STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "slow",
+			"weaponMastery": "Slow|XPHB",
 			"entries": [
                 "A light shield designed for parrying while leaving your hand free.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty PRY|DLA|Parrying}, {@itemProperty STB|DLA|Stable}",
@@ -3254,18 +3255,19 @@
         {
 			"name": "Small Wooden Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
+			"bonusAc": "+1",
 			"weight": 3,
 			"value": 1000,
 			"weaponCategory": "simple",
 			"property": ["L", "STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "sap",
+			"weaponMastery": "Sap|XPHB",
 			"entries": [
                 "A light and maneuverable shield, often made of reinforced wood and bound with leather.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty STB|DLA|Stable}",
@@ -3276,11 +3278,12 @@
         {
 			"name": "Throwing Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
+			"bonusAc": "+1",
 			"weight": 4,
 			"value": 2000,
 			"weaponCategory": "simple",
@@ -3288,7 +3291,7 @@
             "range": "30/90",
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"weaponMastery": "nick",
+			"weaponMastery": "Nick|XPHB",
 			"entries": [
                 "A circular shield with a weighted, aerodynamic rim or sharpened edges, specifically balanced for flight. It is strapped to the arm with a quick-release mechanism.",
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty F|XPHB|Finesse}, {@itemProperty T|XPHB|Thrown} (30/90), {@itemProperty STB|DLA|Stable}",
@@ -3299,18 +3302,19 @@
         {
 			"name": "Small Metal Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
+			"bonusAc": "+2",
 			"weight": 4,
 			"value": 2000,
 			"weaponCategory": "simple",
 			"property": ["STB"],
 			"dmg1": "1d4",
 			"dmgType": "B",
-			"weaponMastery": "slow",
+			"weaponMastery": "Slow|XPHB",
 			"entries": [
                 "Forged from iron or steel. While heavier than its wooden counterpart, its rigid edge makes it a more reliable tool for deflecting heavy blades.",
                 "Properties: {@itemProperty STB|DLA|Stable}",
@@ -3341,18 +3345,19 @@
         {
 			"name": "Medium Metal Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
+			"bonusAc": "+2",
 			"weight": 6,
 			"value": 2500,
 			"weaponCategory": "simple",
 			"property": ["PRY"],
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"weaponMastery": "vex",
+			"weaponMastery": "Vex|XPHB",
 			"entries": [
                 "A standard infantry shield made of steel. It is remarkably durable and capable of weathering a storm of arrows or rhythmic melee strikes.",
                 "Properties: {@itemProperty PRY|DLA|Parrying}",
@@ -3363,11 +3368,12 @@
         {
 			"name": "Large Wooden Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
+			"bonusAc": "+2",
             "stealth": true,
 			"weight": 6,
 			"value": 2000,
@@ -3375,7 +3381,7 @@
 			"property": ["MD"],
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"weaponMastery": "push",
+			"weaponMastery": "Push|XPHB",
 			"entries": [
                 "A tall, curved shield that covers the torso. While it is more cumbersome than a medium shield, its surface area makes it much harder for enemies to find a gap in your guard.",
                 "Properties: {@itemProperty MD|DLA|Mounted Defense}",
@@ -3386,11 +3392,12 @@
         {
 			"name": "Wooden Aspis",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
+			"bonusAc": "+2",
             "stealth": true,
 			"weight": 8,
 			"value": 2000,
@@ -3399,7 +3406,7 @@
 			"property": ["SWL"],
 			"dmg1": "2d4",
 			"dmgType": "B",
-			"weaponMastery": "cleave",
+			"weaponMastery": "Cleave|XPHB",
 			"entries": [
                 "A deeply dished circular shield favored by order warriors. The bronze-rimmed wood is designed to be tucked into the shoulder",
                 "Properties: {@itemProperty SWL|DLA|Shield Wall}",
@@ -3410,11 +3417,12 @@
         {
 			"name": "Large Metal Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
+			"bonusAc": "+3",
             "stealth": true,
 			"weight": 11,
 			"value": 3000,
@@ -3423,7 +3431,7 @@
 			"property": ["H", "MD"],
 			"dmg1": "1d8",
 			"dmgType": "B",
-			"weaponMastery": "push",
+			"weaponMastery": "Push|XPHB",
 			"entries": [
                 "A heavy kite shield or heater shield made of solid metal. It provides formidable defense but requires significant strength to maneuver without tiring the arm.",
                 "Properties: {@itemProperty H|DLA|Heavy}, {@itemProperty MD|DLA|Mounted Defense}",
@@ -3434,11 +3442,12 @@
         {
 			"name": "Metal Aspis",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
+			"bonusAc": "+2",
             "stealth": true,
 			"weight": 10,
 			"value": 3000,
@@ -3447,7 +3456,7 @@
 			"property": ["SWL"],
 			"dmg1": "2d6",
 			"dmgType": "B",
-			"weaponMastery": "graze",
+			"weaponMastery": "Graze|XPHB",
 			"entries": [
                 "A heavy bronze or steel circular shield. Its weight makes it an incredible offensive tool during a charge, though it is taxing to use for extended periods.",
                 "Properties: {@itemProperty SWL|DLA|Shield Wall}",
@@ -3458,11 +3467,12 @@
         {
 			"name": "Wooden Tower Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
+			"bonusAc": "+3",
             "stealth": true,
 			"weight": 18,
 			"value": 5000,
@@ -3471,7 +3481,7 @@
 			"property": ["BLK", "H", "SWL"],
 			"dmg1": "1d8",
 			"dmgType": "B",
-			"weaponMastery": "topple",
+			"weaponMastery": "Topple|XPHB",
 			"entries": [
                 "A rectangular slab of reinforced wood. It is essentially portable cover, though it lacks the sheer stopping power of its metal counterpart.",
                 "Properties: {@itemProperty BLK|DLA|Bulky}, {@itemProperty H|DLA|Heavy}, {@itemProperty SWL|DLA|Shield Wall}",
@@ -3493,11 +3503,12 @@
         {
 			"name": "Metal Tower Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
+			"bonusAc": "+3",
             "stealth": true,
 			"weight": 22,
 			"value": 7500,
@@ -3506,7 +3517,7 @@
 			"property": ["BLK", "H", "DPL"],
 			"dmg1": "1d10",
 			"dmgType": "B",
-			"weaponMastery": "topple",
+			"weaponMastery": "Topple|XPHB",
 			"entries": [
                 "A massive wall of steel. It is nearly impossible to pierce, allowing anyone to stand their ground against even the most terrifying foes.",
                 "Properties: {@itemProperty BLK|DLA|Bulky}, {@itemProperty H|DLA|Heavy}, {@itemProperty DPL|DLA|Deployable}",
@@ -3536,11 +3547,12 @@
         {
 			"name": "Grand Tower Shield",
 			"source": "DLA",
-			"type": "S",
+			"type": "S|XPHB",
             "rarity": "none",
 			"hasFluffImages": true,
 			"armor": true,
 			"ac": 4,
+			"bonusAc": "+4",
             "stealth": true,
 			"weight": 25,
 			"value": 10000,
@@ -3549,7 +3561,7 @@
 			"property": ["DPL", "H", "2H"],
 			"dmg1": "1d12",
 			"dmgType": "B",
-			"weaponMastery": "topple",
+			"weaponMastery": "Topple|XPHB",
 			"entries": [
                 "An enormous, master-crafted bastion of metal. It is designed to protect not just the wielder, but an entire line of allies behind them.",
                 "Properties: {@itemProperty DPL|DLA|Deployable}, {@itemProperty H|DLA|Heavy}, {@itemProperty 2H|XPHB|Two-handed}",
@@ -3830,26 +3842,6 @@
 					"credit":"AI Generated"
 				}
 			]
-		}
-	],
-	"foundryItem": [
-		{
-			"name": "Medium Wooden Shield",
-			"source": "DLA",
-			"effects": [
-					{
-						"name": "Medium Wooden Shield",
-						"transfer": true,
-						"changes": [
-							{
-								"key": "system.attributes.ac.bonus",
-								"mode": 2,
-								"value": "2",
-								"priority": 20
-							}
-						]
-					}
-				]
 		}
 	]
 }
