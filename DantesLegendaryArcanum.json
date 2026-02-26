@@ -3339,11 +3339,13 @@
 			"foundryEffects": [
 				{
 					"name": "Medium Wooden Shield",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "system.attributes.ac.bonus",
 							"mode": 2,
-							"value": "2"
+							"value": "2",
+							"priority": 20
 						}
 					]
 
