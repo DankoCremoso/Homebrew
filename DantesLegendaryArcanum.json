@@ -3249,7 +3249,23 @@
                 "{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by this property, the Speed reduction doesn't stack.",
                 "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Metal Buckler",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "1",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Small Wooden Shield",
@@ -3271,7 +3287,23 @@
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Sap.} If you hit a creature with this weapon and deal damage to it, that creature has Disadvantage on its next attack roll before the start of your next turn.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Small Wooden Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "1",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Throwing Shield",
@@ -3294,7 +3326,23 @@
                 "Properties: {@itemProperty L|XPHB|Light}, {@itemProperty F|XPHB|Finesse}, {@itemProperty T|XPHB|Thrown} (30/90), {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Nick.} When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Throwing Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "1",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Small Metal Shield",
@@ -3316,7 +3364,23 @@
                 "Properties: {@itemProperty STB|DLA|Stable}",
                 "{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by this property, the Speed reduction doesn't stack.",
                 "{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Small Metal Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Medium Wooden Shield",
@@ -3373,7 +3437,23 @@
                 "Properties: {@itemProperty PRY|DLA|Parrying}",
                 "{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to it, you have Advantage on your next attack roll against that creature before the end of your next turn.",
                 "{@b Parrying.} When another creature hits you with a melee attack, you can use your reaction to add half of your {@b Proficiency Bonus} (rounded down) to your AC for that attack, potentially causing it to miss. If you have the {@feat Defensive Duelist|PHB} feat or the {@classFeature Tough Resistance|Shielder|DLA|1} class feature, this bonus stacks with onto your existing bonus (no reaction required)"
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Medium Metal Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Large Wooden Shield",
@@ -3396,7 +3476,23 @@
                 "Properties: {@itemProperty MD|DLA|Mounted Defense}",
                 "{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller.",
                 "{@b Mounted Defense.} The AC this shield provides also applies to your mount."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Large Wooden Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Wooden Aspis",
@@ -3420,7 +3516,23 @@
                 "Properties: {@itemProperty SWL|DLA|Shield Wall}",
                 "{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
                 "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Wooden Aspis",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Large Metal Shield",
@@ -3444,7 +3556,23 @@
                 "Properties: {@itemProperty H|DLA|Heavy}, {@itemProperty MD|DLA|Mounted Defense}",
                 "{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from you if it is Large or smaller.",
                 "{@b Mounted Defense.} The AC this shield provides also applies to your mount."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Large Metal Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "3",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Metal Aspis",
@@ -3468,7 +3596,23 @@
                 "Properties: {@itemProperty SWL|DLA|Shield Wall}",
                 "{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
                 "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Metal Aspis",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Wooden Tower Shield",
@@ -3503,7 +3647,23 @@
             },
             "If you take the {@action Dodge} action while this shield is donned, you gain {@b half cover} until the start of your next turn.",
                 "{@b Shield Wall.} This shield gives a +1 bonus to its base AC for each ally using a shield with this property within 5 feet of you, to a maximum of +2 bonus AC. To gain this bonus, you and your allies must be standing. Using this shield while riding a mount imposes disadvantage on your attacks."
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Wooden Tower Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "3",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Metal Tower Shield",
@@ -3546,7 +3706,23 @@
                     "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
                 ]
             }
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Metal Tower Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "3",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		},
         {
 			"name": "Grand Tower Shield",
@@ -3578,7 +3754,23 @@
                     "{@b Retrieval:} You can don the shield as a {@action bonus action} if it is still standing. If a creature uses an {@action action} to succeed on a {@dc 13} Strength check, the shield is dislodged and knocked down. A knocked-down shield requires an {@action action} to don or redeploy."
                 ]
             }
-            ]
+            ],
+			"foundryEffects": [
+				{
+					"name": "Grand Tower Shield",
+					"icon": "icons/equipment/shield/heater-wooden-brown-notched.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": 2,
+							"value": "4",
+							"priority": 20
+						}
+					]
+
+				}
+			]
 		}
     ],
     "itemProperty": [
