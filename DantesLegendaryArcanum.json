@@ -3210,6 +3210,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 0,
 			"weight": 2,
@@ -3232,6 +3233,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
 			"weight": 3,
@@ -3254,6 +3256,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
 			"weight": 3,
@@ -3275,6 +3278,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 1,
 			"weight": 4,
@@ -3297,6 +3301,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
 			"weight": 4,
@@ -3318,6 +3323,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
 			"weight": 4,
@@ -3336,6 +3342,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
 			"weight": 6,
@@ -3357,6 +3364,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
             "stealth": true,
@@ -3379,6 +3387,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
             "stealth": true,
@@ -3402,6 +3411,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
             "stealth": true,
@@ -3425,6 +3435,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 2,
             "stealth": true,
@@ -3448,6 +3459,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
             "stealth": true,
@@ -3482,6 +3494,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 3,
             "stealth": true,
@@ -3524,6 +3537,7 @@
 			"source": "DLA",
 			"type": "S",
             "rarity": "none",
+			"hasFluffImages": true,
 			"armor": true,
 			"ac": 4,
             "stealth": true,
@@ -3618,5 +3632,203 @@
 				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
 			]
 		}
-    ]
+    ],
+	"itemFluff": [
+		{
+			"name": "Wooden Buckler",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wb_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Buckler",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mb_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Small Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Throwing Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/throw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Small Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Medium Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Medium Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Large Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wooden Aspis",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wa_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Large Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Aspis",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/ma_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wooden Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Grand Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/gt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		}
+	]
 }
