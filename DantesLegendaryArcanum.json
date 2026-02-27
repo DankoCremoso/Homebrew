@@ -14,7 +14,7 @@
                 "version": "1.1.0",
                 "sourceType": "homebrew",
                 "url": "https://docs.google.com/document/d/1abm6fJi6jso16pQXeH50VZt84g0ZK0ZQAMdpyze-xik/edit?usp=sharing",
-                "color": "0f5585"
+                "color": "1a877e"
             }
         ],
         "dateAdded": 1707912000,
@@ -3771,6 +3771,876 @@
 
 				}
 			]
+		},
+		{
+			"name": "Punch Dagger",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "simple",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Punch Dagger.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+            ]
+		},
+		{
+			"name": "Scythe",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "simple",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 2000,
+			"property": ["H", "2H"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Scythe.} You can change the damage type of this weapon to Bludgeoning.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+            ]
+		},
+		{
+			"name": "Bastard Sword",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 6,
+			"value": 12500,
+			"property": ["H", "V"],
+			"weaponMastery": "Graze|XPHB",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"dmg2": "1d12",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty V|XPHB|Versatile} (1d12)",
+				"{@b Bastard Sword.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, You can change the damage type of this weapon to Bludgeoning.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+            ]
+		},
+		{
+			"name": "Claw Bracer",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 3000,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Claw Bracer.} You cannot be disarmed of this weapon. Additionally, You can change the damage type of this weapon to Slashing.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+            ]
+		},
+		{
+			"name": "Falchion",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 8,
+			"value": 7500,
+			"property": ["H", "2H"],
+			"weaponMastery": "Graze|XPHB",
+			"dmg1": "2d4",
+			"dmgType": "S",
+			"critThreshold": 19,
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Falchion.} The crit range for this weapon is 19-20.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+            ]
+		},
+		{
+			"name": "Full Blade",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 20,
+			"value": 150000,
+			"property": ["H", "2H"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "2d8",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Full Blade.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer disadvantage on all attacks made with this weapon.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+            ]
+		},
+		{
+			"name": "Heavy Flail",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 1500,
+			"property": ["H", "2H"],
+			"weaponMastery": "Push|XPHB",
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+            ]
+		},
+		{
+			"name": "Jitte",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Jitte.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+            ]
+		},
+		{
+			"name": "Kama",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"property": ["F", "L"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+            ]
+		},
+		{
+			"name": "Katana",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 40000,
+			"property": ["F", "V"],
+			"weaponMastery": "Sap|XPHB",
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty V|XPHB|Versatile} (1d10)",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+            ]
+		},
+		{
+			"name": "Katar",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 2000,
+			"property": ["F", "L"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Katar.} You have {@variantrule Advantage|XPHB} to resist being disarmed with this weapon.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+            ]
+		},
+		{
+			"name": "Kusari-gama",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"property": ["F", "L", "R", "2H"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty R|XPHB|Reach}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Kusari-gama.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} or disarm when attacking with this weapon. You can treat this weapon as if you are dual wielding and apply any relevant feats why wielding this weapon. This weapon can be utilized as a monk weapon.Additionally, you may change the damage of this weapon to Bludgeoning.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+            ]
+		},
+		{
+			"name": "Nekode",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"property": ["L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty L|XPHB|Light}",
+				"{@b Nekode.} You cannot be disarmed of this weapon. Additionally, any {@skill Athletics|XPHB} (Climb) checks you make while wielding this weapon have {@variantrule Advantage|XPHB}.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+            ]
+		},
+		{
+			"name": "Ninja-to",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "Nunchaku",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"property": ["F", "L"],
+			"weaponMastery": "Slow|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Nunchaku.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Nodachi",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 15,
+			"value": 160000,
+			"property": ["H", "R", "2H"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "2d8",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty R|XPHB|Reach}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Nodachi.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, you have disadvantage when you try to attack an enemy within 5 feet of you.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "O-Katana",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 6,
+			"value": 150000,
+			"property": ["H", "V"],
+			"weaponMastery": "Sap|XPHB",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"dmg2": "1d12",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty V|XPHB|Versatile} (1d12)",
+				"{@b O-Katana.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon.",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Sai",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Sai.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "Three-Sectioned Staff",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 8,
+			"value": 400,
+			"property": ["F", "2H"],
+			"weaponMastery": "Topple|XPHB",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Three-Sectioned Staff.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"name": "Tonfa",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"property": ["F", "L"],
+			"weaponMastery": "Slow|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Tonfa.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Wakizashi",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 30000,
+			"property": ["F", "L"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "War Fan",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 3000,
+			"property": ["F", "L"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b War Fan.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "War Scythe",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 12,
+			"value": 5000,
+			"property": ["H", "R", "2H"],
+			"weaponMastery": "Graze|XPHB",
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty R|XPHB|Reach}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b War Scythe.} You have {@variantrule Disadvantage|XPHB} when you try to attack an enemy within 5 feet of you.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+			]
+		},
+		{
+			"name": "Whip-Dagger",
+			"source": "DLA",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 2500,
+			"property": ["F", "R"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty R|XPHB|Reach}",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Bolas",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"property": ["F", "L", "T"],
+			"weaponMastery": "Topple|XPHB",
+			"range": "10/30",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 10/30)",
+				"{@b Bolas.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} when attacking with this weapon.",
+				"{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"name": "Boomerang",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"property": ["F", "L", "T"],
+			"weaponMastery": "Nick|XPHB",
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 20/60)",
+				"{@b Boomerang.} This weapon will return to you if you fail to hit your target. Using your {@variantrule Reaction|XPHB}, you can catch it by succeeding a DC 10 Dexterity check.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "Chakram",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 1500,
+			"property": ["F", "L", "T"],
+			"weaponMastery": "Graze|XPHB",
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 20/60)",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+			]
+		},
+		{
+			"name": "Shuriken",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"property": ["A", "F", "L", "T"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "10/30",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 10/30), {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown}",
+				"{@b Shuriken.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Wrist Crossbow",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 25000,
+			"property": ["A", "L", "LD"],
+			"weaponMastery": "Nick|XPHB",
+			"range": "25/90",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 25/90), {@itemProperty L|XPHB|Light}, {@itemProperty LD|XPHB|Loading}",
+				"{@b Wrist Crossbow.} You cannot be disarmed of this weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "Flexible Metal Wire",
+			"source": "DLA",
+			"type": "G|XPHB",
+            "rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"entries": [
+				"{@b Flexible Metal Wire.} Flexible metal wire has 5 {@variantrule Hit Points|XPHB}. It can be burst with a successful DC 20 Strength check. Comes in 10 ft segments."
+			]
+		},
+		{
+			"name": "Bounty Hunter's Pack",
+			"source": "DLA",
+			"type": "G|XPHB",
+            "rarity": "none",
+			"weight": 95,
+			"value": 4000,
+			"entries": [
+				"{@b Bounty Hunter's Pack.} Includes a {@item Chest|XPHB}, 2 {@item Map or Scroll Case|XPHB}, a {@item Portable Ram|XPHB}, a {@item Hammer|PHB}, 10 feet of {@item Chain|XPHB}, 50 feet of hempen {@item Rope|XPHB}, a {@item Bullseye Lantern|XPHB}, a {@item Lock|XPHB}, {@item Manacles|XPHB}, 5 flasks of {@item Oil|XPHB}, 10 {@item Piton|PHB}, 10 {@item Iron Spikes|XPHB}, 10 sheets of {@item Parchment|XPHB}, 1 bottle of {@item Ink|XPHB}, 5 {@item Ink Pen|XPHB}, 5 days of {@item Rations|XPHB}, and a {@item Waterskin|XPHB}."
+			],
+			"packContents": [
+				{
+					"item": "Chest|XPHB"
+				},
+				{
+					"item": "Portable Ram|XPHB"
+				},
+				{
+					"item": "Hammer|PHB"
+				},
+				{
+					"item": "Chain|XPHB"
+				},
+				{
+					"item": "Rope|XPHB"
+				},
+				{
+					"item": "Bullseye Lantern|XPHB"
+				},
+				{
+					"item": "Lock|XPHB"
+				},
+				{
+					"item": "Manacles|XPHB"
+				},
+				{
+					"item": "Oil|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Piton|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Iron Spike|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Parchment|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Ink|XPHB"
+				},
+				{
+					"item": "Ink Pen|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Rations|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Waterskin|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB",
+					"quantity": 2
+				}
+			]
+		},
+		{
+			"name": "Detective's Pack",
+			"source": "DLA",
+			"type": "G|XPHB",
+            "rarity": "none",
+			"weight": 59,
+			"value": 14000,
+			"entries": [
+				"{@b Detective's Pack.} Includes a {@item Chest|XPHB}, 2 {@item Map or Scroll Case|XPHB}, a set of {@item Fine Clothes|XPHB}, an {@item Abacus|PHB}, 5 {@item Candle|XPHB}, 10 sheets of {@item Paper|XPHB}, a {@item Crowbar|XPHB}, 10 pieces of {@item Chalk (1 Piece)|PHB|Chalk}, 1 bottle of {@item Ink|XPHB}, 5 {@item Ink Pen|XPHB}, a {@item Magnifying Glass|XPHB}, a steel {@item Mirror|XPHB}, {@item Sealing Wax|PHB}, and a {@item Signal Whistle|XPHB}"
+			],
+			"packContents": [
+				{
+					"item": "Chest|XPHB"
+				},
+				{
+					"item": "Fine Clothes|XPHB"
+				},
+				{
+					"item": "Abacus|PHB"
+				},
+				{
+					"item": "Candle|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Paper|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Crowbar|XPHB"
+				},
+				{
+					"item": "Chalk (1 piece)|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Ink|XPHB"
+				},
+				{
+					"item": "Ink Pen|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Magnifying Glass|XPHB"
+				},
+				{
+					"item": "Mirror|XPHB"
+				},
+				{
+					"item": "Sealing Wax|PHB"
+				},
+				{
+					"item": "Signal Whistle|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB",
+					"quantity": 2
+				}
+			]
+		},
+		{
+			"name": "Ninja's Pack",
+			"source": "DLA",
+			"type": "G|XPHB",
+			"rarity": "none",
+			"weight": 27,
+			"value": 4000,
+			"entries": [
+				"{@b Ninja's Pack.} Includes {@item Backpack|XPHB}, a bag of 1,000 {@item Ball Bearings|XPHB}, a bag of 20 {@item Caltrops|XPHB}, 10 feet of {@item Flexible Metal Wire|DLA}, 2 {@item Costume|XPHB}, a {@item Grappling Hook|XPHB}, a {@item Map or Scroll Case|XPHB}, a bottle of {@item Ink|XPHB}, an {@item Ink Pen|XPHB}, 10 sheets of {@item Paper|XPHB}, 5 {@item Candle|XPHB}, 10 {@item Piton|PHB}, 5 days of {@item Rations|XPHB}, a {@item Tinderbox|XPHB}, and a {@item Waterskin|XPHB}."
+			],
+			"packContents": [
+				{
+					"item": "Backpack|XPHB"
+				},
+				{
+					"item": "Ball Bearings|XPHB"
+				},
+				{
+					"item": "Caltrops|XPHB"
+				},
+				{
+					"item": "Flexible Metal Wire|DLA"
+				},
+				{
+					"item": "Costume|XPHB",
+					"quantity": 2
+				},
+				{
+					"item": "Grappling Hook|XPHB"
+				},
+				{
+					"item": "Ink|XPHB"
+				},
+				{
+					"item": "Ink Pen|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Paper|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Candle|XPHB",
+					"quantity": 5
+				},
+				{
+					"item":"Piton|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Rations|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Tinderbox|XPHB"
+				},
+				{
+					"item": "Waterskin|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB"
+				}
+			]
+		},
+		{
+			"name": "Outdoorsman's Pack",
+			"source": "DLA",
+			"type": "G|XPHB",
+			"rarity": "none",
+			"weight": 88,
+			"value": 1700,
+			"entries": [
+				"{@b Outdoorsman's Pack.} Includes {@item Backpack|XPHB}, a {@item Bedroll|XPHB}, 2 sets of {@item Common Clothes|PHB}, a {@item Block and Tackle|XPHB}, a {@item Bucket|XPHB}, 50 feet of hempen {@item Rope|XPHB}, 5 {@item Candle|XPHB}, {@item Fishing Tackle|PHB}, 2 {@item Hunting Trap|XPHB}, a {@item Jug|XPHB}, a {@item Lamp|XPHB}, 5 flasks of {@item Oil|XPHB}, a {@item Mess Kit|PHB}, 10 {@item Piton|PHB}, an {@item Iron Pot|XPHB}, a {@item Shovel|XPHB}, a two-person {@item Tent|XPHB}, a {@item Tinderbox|XPHB}, a {@item Whetstone|PHB}, a small knife, 5 days of {@item Rations|XPHB}, and a {@item Waterskin|XPHB}."
+			],
+			"packContents": [
+				{
+					"item": "Backpack|XPHB"
+				},
+				{
+					"item": "Bedroll|XPHB"
+				},
+				{
+					"item":"Common Clothes|PHB",
+					"quantity": 2
+				},
+				{
+					"item": "Block and Tackle|XPHB"
+				},
+				{
+					"item": "Rope|XPHB"
+				},
+				{
+					"item": "Candle|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Fishing Tackle|PHB"
+				},
+				{
+					"item": "Hunting Trap|XPHB",
+					"quantity": 2
+				},
+				{
+					"item": "Lamp|XPHB"
+				},
+				{
+					"item": "Oil|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Mess Kit|PHB"
+				},
+				{
+					"item": "Piton|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Shovel|PHB"
+				},
+				{
+					"item": "Tent|XPHB"
+				},
+				{
+					"item": "Tinderbox|XPHB"
+				},
+				{
+					"item": "Whetstone|PHB"
+				},
+				{
+					"item": "Rations|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Waterskin|XPHB"
+				},
+				{
+					"item": "Bucket|XPHB"
+				},
+				{
+					"item": "Jug|XPHB"
+				},
+				{
+					"item": "Iron Pot|XPHB"
+				}
+			]
 		}
     ],
     "itemProperty": [
@@ -4033,6 +4903,412 @@
 					"href": {
 						"type": "external",
 						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/gt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Punch Dagger",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/punch_dagger.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Scythe",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/scythe.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Bastard Sword",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/bastard.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Claw Bracer",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/claw_bracer.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Falchion",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/falchion.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Full Blade",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/full_blade.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Heavy Flail",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/heavy_flail.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Jitte",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/jitte.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Kama",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/kama.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Katana",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/katana.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Katar",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/katar.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Kusari-gama",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/kusarigama.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Nekode",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/nekode.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Ninja-to",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/ninjato.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Nunchaku",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/nunchaku.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Nodachi",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/nodachi.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "O-Katana",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/okatana.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Sai",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/sai.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Three-Sectioned Staff",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/three_staff.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Tonfa",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/tonfa.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wakizashi",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/wakizashi.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "War Fan",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/war_fan.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "War Scythe",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/war_scythe.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Whip-Dagger",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/whip_dagger.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Bolas",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/bolas.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Boomerang",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/boomerang.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Chakram",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/chakram.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Shuriken",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/shuriken.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Wrist Crossbow",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/wrist_crossbow.jpg"
 					},
 					"credit":"AI Generated"
 				}
