@@ -629,10 +629,6 @@
 					"item": "Chest|XPHB"
 				},
 				{
-					"item": "Map or Scroll Case|XPHB",
-					"quantity": 2
-				},
-				{
 					"item": "Portable Ram|XPHB"
 				},
 				{
@@ -682,6 +678,10 @@
 				},
 				{
 					"item": "Waterskin|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB",
+					"quantity": 2
 				}
 			]
 		},
@@ -698,10 +698,6 @@
 			"packContents": [
 				{
 					"item": "Chest|XPHB"
-				},
-				{
-					"item": "Map or Scroll Case|XPHB",
-					"quantity": 2
 				},
 				{
 					"item": "Fine Clothes|XPHB"
@@ -742,6 +738,10 @@
 				},
 				{
 					"item": "Signal Whistle|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB",
+					"quantity": 2
 				}
 			]
 		},
@@ -776,9 +776,6 @@
 					"item": "Grappling Hook|XPHB"
 				},
 				{
-					"item": "Map or Scroll Case|XPHB"
-				},
-				{
 					"item": "Ink|XPHB"
 				},
 				{
@@ -806,6 +803,9 @@
 				},
 				{
 					"item": "Waterskin|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB"
 				}
 			]
 		},
@@ -834,9 +834,6 @@
 					"item": "Block and Tackle|XPHB"
 				},
 				{
-					"item": "Bucket|XPHB"
-				},
-				{
 					"item": "Rope|XPHB"
 				},
 				{
@@ -851,9 +848,6 @@
 					"quantity": 2
 				},
 				{
-					"item": "Jug|XPHB"
-				},
-				{
 					"item": "Lamp|XPHB"
 				},
 				{
@@ -866,9 +860,6 @@
 				{
 					"item": "Piton|PHB",
 					"quantity": 10
-				},
-				{
-					"item": "Iron Pot|XPHB"
 				},
 				{
 					"item": "Shovel|PHB"
@@ -888,6 +879,15 @@
 				},
 				{
 					"item": "Waterskin|XPHB"
+				},
+				{
+					"item": "Bucket|XPHB"
+				},
+				{
+					"item": "Jug|XPHB"
+				},
+				{
+					"item": "Iron Pot|XPHB"
 				}
 			]
 		}
