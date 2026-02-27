@@ -14,7 +14,7 @@
                 "version": "1.0.0",
                 "sourceType": "homebrew",
                 "url": "https://www.dmsguild.com/en/product/174973/d-d-5e-expanded-armory-gear",
-                "color": "0f5585"
+                "color": "a30d0d"
             }
         ],
         "dateAdded": 1772133970,
@@ -38,7 +38,7 @@
 			"entries": [
                 "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
 				"{@b Punch Dagger.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon.",
-				"{@b Mastery: Nick.}"
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
             ]
 		},
 		{
@@ -56,7 +56,9 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Scythe.} You can change the damage type of this weapon to Bludgeoning."
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Scythe.} You can change the damage type of this weapon to Bludgeoning.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
             ]
 		},
 		{
@@ -75,7 +77,9 @@
 			"dmg2": "1d12",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Bastard Sword.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, You can change the damage type of this weapon to Bludgeoning."
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty V|XPHB|Versatile} (1d12)",
+				"{@b Bastard Sword.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, You can change the damage type of this weapon to Bludgeoning.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
             ]
 		},
 		{
@@ -93,7 +97,9 @@
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Claw Bracer.} You cannot be disarmed of this weapon. Additionally, You can change the damage type of this weapon to Slashing."
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Claw Bracer.} You cannot be disarmed of this weapon. Additionally, You can change the damage type of this weapon to Slashing.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
             ]
 		},
 		{
@@ -112,7 +118,9 @@
 			"critThreshold": 19,
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Falchion.} The crit range for this weapon is 19-20."
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Falchion.} The crit range for this weapon is 19-20.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
             ]
 		},
 		{
@@ -130,7 +138,9 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Full Blade.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer disadvantage on all attacks made with this weapon."
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Full Blade.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer disadvantage on all attacks made with this weapon.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
             ]
 		},
 		{
@@ -148,7 +158,8 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-                ""
+                "Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
             ]
 		},
 		{
@@ -166,7 +177,9 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Jitte.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon."
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Jitte.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
             ]
 		},
 		{
@@ -184,7 +197,8 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-                ""
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
             ]
 		},
 		{
@@ -203,7 +217,8 @@
 			"dmg2": "1d10",
 			"hasFluffImages": true,
 			"entries": [
-                ""
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty V|XPHB|Versatile} (1d10)",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
             ]
 		},
 		{
@@ -221,7 +236,9 @@
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Katar.} You have {@variantrule Advantage|XPHB} to resist being disarmed with this weapon."
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Katar.} You have {@variantrule Advantage|XPHB} to resist being disarmed with this weapon.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
             ]
 		},
 		{
@@ -239,7 +256,9 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Kusari-gama.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} or disarm when attacking with this weapon. You can treat this weapon as if you are dual wielding and apply any relevant feats why wielding this weapon. This weapon can be utilized as a monk weapon.Additionally, you may change the damage of this weapon to Bludgeoning."
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty R|XPHB|Reach}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Kusari-gama.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} or disarm when attacking with this weapon. You can treat this weapon as if you are dual wielding and apply any relevant feats why wielding this weapon. This weapon can be utilized as a monk weapon.Additionally, you may change the damage of this weapon to Bludgeoning.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
             ]
 		},
 		{
@@ -257,7 +276,9 @@
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-                "{@b Nekode.} You cannot be disarmed of this weapon. Additionally, any {@skill Athletics|XPHB} (Climb) checks you make while wielding this weapon have {@variantrule Advantage|XPHB}."
+                "Properties: {@itemProperty L|XPHB|Light}",
+				"{@b Nekode.} You cannot be disarmed of this weapon. Additionally, any {@skill Athletics|XPHB} (Climb) checks you make while wielding this weapon have {@variantrule Advantage|XPHB}.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
             ]
 		},
 		{
@@ -275,7 +296,8 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				""
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
 			]
 		},
 		{
@@ -293,7 +315,9 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Nunchaku.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Nunchaku.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
 			]
 		},
 		{
@@ -311,7 +335,9 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Nodachi.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, you have disadvantage when you try to attack an enemy within 5 feet of you."
+				"Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty R|XPHB|Reach}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Nodachi.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, you have disadvantage when you try to attack an enemy within 5 feet of you.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
 			]
 		},
 		{
@@ -330,7 +356,9 @@
 			"dmg2": "1d12",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b O-Katana.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon."
+				"Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty V|XPHB|Versatile} (1d12)",
+				"{@b O-Katana.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon.",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
 			]
 		},
 		{
@@ -348,7 +376,9 @@
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Sai.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Sai.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
 			]
 		},
 		{
@@ -366,7 +396,9 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Three-Sectioned Staff.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b Three-Sectioned Staff.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
 			]
 		},
 		{
@@ -384,7 +416,9 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Tonfa.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Tonfa.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
 			]
 		},
 		{
@@ -402,7 +436,8 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				""
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
 			]
 		},
 		{
@@ -420,7 +455,9 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b War Fan.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b War Fan.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Cleave.} If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
 			]
 		},
 		{
@@ -438,7 +475,9 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b War Scythe.} You have {@variantrule Disadvantage|XPHB} when you try to attack an enemy within 5 feet of you."
+				"Properties: {@itemProperty H|XPHB|Heavy}, {@itemProperty R|XPHB|Reach}, {@itemProperty 2H|XPHB|Two-Handed}",
+				"{@b War Scythe.} You have {@variantrule Disadvantage|XPHB} when you try to attack an enemy within 5 feet of you.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
 			]
 		},
 		{
@@ -456,7 +495,8 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				""
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty R|XPHB|Reach}",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
 			]
 		},
 		{
@@ -475,7 +515,9 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Bolas.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} when attacking with this weapon."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 10/30)",
+				"{@b Bolas.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} when attacking with this weapon.",
+				"{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
 			]
 		},
 		{
@@ -494,7 +536,9 @@
 			"dmgType": "B",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Boomerang.} This weapon will return to you if you fail to hit your target. Using your {@variantrule Reaction|XPHB}, you can catch it by succeeding a DC 10 Dexterity check."
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 20/60)",
+				"{@b Boomerang.} This weapon will return to you if you fail to hit your target. Using your {@variantrule Reaction|XPHB}, you can catch it by succeeding a DC 10 Dexterity check.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
 			]
 		},
 		{
@@ -513,7 +557,8 @@
 			"dmgType": "S",
 			"hasFluffImages": true,
 			"entries": [
-				""
+				"Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 20/60)",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
 			]
 		},
 		{
@@ -532,7 +577,9 @@
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Shuriken.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon."
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 10/30), {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown}",
+				"{@b Shuriken.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
 			]
 		},
 		{
@@ -545,13 +592,15 @@
 			"weight": 2,
 			"value": 25000,
 			"property": ["A", "L", "LD"],
-			"weaponMastery": "Push|XPHB",
+			"weaponMastery": "Nick|XPHB",
 			"range": "25/90",
 			"dmg1": "1d6",
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-				"{@b Wrist Crossbow.} You cannot be disarmed of this weapon."
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 25/90), {@itemProperty L|XPHB|Light}, {@itemProperty LD|XPHB|Loading}",
+				"{@b Wrist Crossbow.} You cannot be disarmed of this weapon.",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
 			]
 		},
 		{
@@ -562,7 +611,7 @@
 			"weight": 2,
 			"value": 50,
 			"entries": [
-				"{@b Flexible Metal Wire.} Flexible metal wire has 5 {@variantrule Hit Points|XPHB}. It can be burst with a successful DC 20 Strength check."
+				"{@b Flexible Metal Wire.} Flexible metal wire has 5 {@variantrule Hit Points|XPHB}. It can be burst with a successful DC 20 Strength check. Comes in 10 ft segments."
 			]
 		},
 		{
@@ -570,21 +619,275 @@
 			"source": "EAG24",
 			"type": "G|XPHB",
             "rarity": "none",
-			"weight": 2,
+			"weight": 95,
 			"value": 4000,
 			"entries": [
-				"{@b Bounty Hunter's Pack.} Includes a chest, 2 cases for maps and scrolls, a portable ram, a hammer, 10 feet of chain, 50 feet of hempen rope, a bullseye lantern, a lock, manacles, 5 flasks of oil, 10 pitons, 10 iron spikes, 10 sheets of parchment, 1 bottle of ink, 5 ink pens, 5 days of rations, and a waterskin."
+				"{@b Bounty Hunter's Pack.} Includes a {@item Chest|XPHB}, 2 {@item Map or Scroll Case|XPHB}, a {@item Portable Ram|XPHB}, a {@item Hammer|PHB}, 10 feet of {@item Chain|XPHB}, 50 feet of hempen {@item Rope|XPHB}, a {@item Bullseye Lantern|XPHB}, a {@item Lock|XPHB}, {@item Manacles|XPHB}, 5 flasks of {@item Oil|XPHB}, 10 {@item Piton|PHB}, 10 {@item Iron Spikes|XPHB}, 10 sheets of {@item Parchment|XPHB}, 1 bottle of {@item Ink|XPHB}, 5 {@item Ink Pen|XPHB}, 5 days of {@item Rations|XPHB}, and a {@item Waterskin|XPHB}."
 			],
 			"packContents": [
 				{
 					"item": "Chest|XPHB"
 				},
 				{
-					"item": "Book|XPHB",
-					"quantity": 7
+					"item": "Map or Scroll Case|XPHB",
+					"quantity": 2
+				},
+				{
+					"item": "Portable Ram|XPHB"
+				},
+				{
+					"item": "Hammer|PHB"
+				},
+				{
+					"item": "Chain|XPHB"
+				},
+				{
+					"item": "Rope|XPHB"
+				},
+				{
+					"item": "Bullseye Lantern|XPHB"
+				},
+				{
+					"item": "Lock|XPHB"
+				},
+				{
+					"item": "Manacles|XPHB"
+				},
+				{
+					"item": "Oil|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Piton|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Iron Spike|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Parchment|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Ink|XPHB"
+				},
+				{
+					"item": "Ink Pen|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Rations|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Waterskin|XPHB"
+				}
+			]
+		},
+		{
+			"name": "Detective's Pack",
+			"source": "EAG24",
+			"type": "G|XPHB",
+            "rarity": "none",
+			"weight": 59,
+			"value": 14000,
+			"entries": [
+				"{@b Detective's Pack.} Includes a {@item Chest|XPHB}, 2 {@item Map or Scroll Case|XPHB}, a set of {@item Fine Clothes|XPHB}, an {@item Abacus|PHB}, 5 {@item Candle|XPHB}, 10 sheets of {@item Paper|XPHB}, a {@item Crowbar|XPHB}, 10 pieces of {@item Chalk (1 Piece)|PHB|Chalk}, 1 bottle of {@item Ink|XPHB}, 5 {@item Ink Pen|XPHB}, a {@item Magnifying Glass|XPHB}, a steel {@item Mirror|XPHB}, {@item Sealing Wax|PHB}, and a {@item Signal Whistle|XPHB}"
+			],
+			"packContents": [
+				{
+					"item": "Chest|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB",
+					"quantity": 2
+				},
+				{
+					"item": "Fine Clothes|XPHB"
+				},
+				{
+					"item": "Abacus|PHB"
+				},
+				{
+					"item": "Candle|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Paper|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Crowbar|XPHB"
+				},
+				{
+					"item": "Chalk (1 piece)|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Ink|XPHB"
+				},
+				{
+					"item": "Ink Pen|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Magnifying Glass|XPHB"
+				},
+				{
+					"item": "Mirror|XPHB"
+				},
+				{
+					"item": "Sealing Wax|PHB"
+				},
+				{
+					"item": "Signal Whistle|XPHB"
+				}
+			]
+		},
+		{
+			"name": "Ninja's Pack",
+			"source": "EAG24",
+			"type": "G|XPHB",
+			"rarity": "none",
+			"weight": 27,
+			"value:": 4000,
+			"entries": [
+				"{@b Ninja's Pack.} Includes {@item Backpack|XPHB}, a bag of 1,000 {@item Ball Bearings|XPHB}, a bag of 20 {@item Caltrops|XPHB}, 10 feet of {@item Flexible Metal Wire|EAG24}, 2 {@item Costume|XPHB}, a {@item Grappling Hook|XPHB}, a {@item Map or Scroll Case|XPHB}, a bottle of {@item Ink|XPHB}, an {@item Ink Pen|XPHB}, 10 sheets of {@item Paper|XPHB}, 5 {@item Candle|XPHB}, 10 {@item Piton|PHB}, 5 days of {@item Rations|XPHB}, a {@item Tinderbox|XPHB}, and a {@item Waterskin|XPHB}."
+			],
+			"packContents": [
+				{
+					"item": "Backpack|XPHB"
+				},
+				{
+					"item": "Ball Bearings|XPHB"
+				},
+				{
+					"item": "Caltrops|XPHB"
+				},
+				{
+					"item": "Flexible Metal Wire|EAG24"
+				},
+				{
+					"item": "Costume|XPHB",
+					"quantity": 2
+				},
+				{
+					"item": "Grappling Hook|XPHB"
+				},
+				{
+					"item": "Map or Scroll Case|XPHB"
+				},
+				{
+					"item": "Ink|XPHB"
+				},
+				{
+					"item": "Ink Pen|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Paper|XPHB",
+					"quantity": 10
+				},
+				{
+					"item": "Candle|XPHB",
+					"quantity": 5
+				},
+				{
+					"item":"Piton|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Rations|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Tinderbox|XPHB"
+				},
+				{
+					"item": "Waterskin|XPHB"
+				}
+			]
+		},
+		{
+			"name": "Outdoorsman's Pack",
+			"source": "EAG24",
+			"type": "G|XPHB",
+			"rarity": "none",
+			"weight": 88,
+			"value:": 1700,
+			"entries": [
+				"{@b Outdoorsman's Pack.} Includes {@item Backpack|XPHB}, a {@item Bedroll|XPHB}, 2 sets of {@item Common Clothes|PHB}, a {@item Block and Tackle|XPHB}, a {@item Bucket|XPHB}, 50 feet of hempen {@item Rope|XPHB}, 5 {@item Candle|XPHB}, {@item Fishing Tackle|PHB}, 2 {@item Hunting Trap|XPHB}, a {@item Jug|XPHB}, a {@item Lamp|XPHB}, 5 flasks of {@item Oil|XPHB}, a {@item Mess Kit|PHB}, 10 {@item Piton|PHB}, an {@item Iron Pot|XPHB}, a {@item Shovel|XPHB}, a two-person {@item Tent|XPHB}, a {@item Tinderbox|XPHB}, a {@item Whetstone|PHB}, a small knife, 5 days of {@item Rations|XPHB}, and a {@item Waterskin|XPHB}."
+			],
+			"packContents": [
+				{
+					"item": "Backpack|XPHB"
 				},
 				{
 					"item": "Bedroll|XPHB"
+				},
+				{
+					"item":"Common Clothes|PHB",
+					"quantity": 2
+				},
+				{
+					"item": "Block and Tackle|XPHB"
+				},
+				{
+					"item": "Bucket|XPHB"
+				},
+				{
+					"item": "Rope|XPHB"
+				},
+				{
+					"item": "Candle|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Fishing Tackle|PHB"
+				},
+				{
+					"item": "Hunting Trap|XPHB",
+					"quantity": 2
+				},
+				{
+					"item": "Jug|XPHB"
+				},
+				{
+					"item": "Lamp|XPHB"
+				},
+				{
+					"item": "Oil|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Mess Kit|PHB"
+				},
+				{
+					"item": "Piton|PHB",
+					"quantity": 10
+				},
+				{
+					"item": "Iron Pot|XPHB"
+				},
+				{
+					"item": "Shovel|PHB"
+				},
+				{
+					"item": "Tent|XPHB"
+				},
+				{
+					"item": "Tinderbox|XPHB"
+				},
+				{
+					"item": "Whetstone|PHB"
+				},
+				{
+					"item": "Rations|XPHB",
+					"quantity": 5
+				},
+				{
+					"item": "Waterskin|XPHB"
 				}
 			]
 		}
