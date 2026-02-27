@@ -1,0 +1,992 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "EAG24",
+                "abbreviation": "EAG24",
+                "full": "Expanded Armory & Gear (20024)",
+                "authors": [
+                    "Jason Mendell"
+                ],
+				"convertedBy": [
+					"Daniel 'DanteL' Acosta"
+				],
+                "version": "1.0.0",
+                "sourceType": "homebrew",
+                "url": "https://www.dmsguild.com/en/product/174973/d-d-5e-expanded-armory-gear",
+                "color": "0f5585"
+            }
+        ],
+        "dateAdded": 1772133970,
+		"edition": "one"
+    },
+    "item": [
+        {
+			"name": "Punch Dagger",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "simple",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "Properties: {@itemProperty F|XPHB|Finesse}, {@itemProperty L|XPHB|Light}",
+				"{@b Punch Dagger.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon.",
+				"{@b Mastery: Nick.}"
+            ]
+		},
+		{
+			"name": "Scythe",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "simple",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 2000,
+			"property": ["H", "2H"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Scythe.} You can change the damage type of this weapon to Bludgeoning."
+            ]
+		},
+		{
+			"name": "Bastard Sword",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 6,
+			"value": 12500,
+			"property": ["H", "V"],
+			"weaponMastery": "Graze|XPHB",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"dmg2": "1d12",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Bastard Sword.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, You can change the damage type of this weapon to Bludgeoning."
+            ]
+		},
+		{
+			"name": "Claw Bracer",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 3000,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Claw Bracer.} You cannot be disarmed of this weapon. Additionally, You can change the damage type of this weapon to Slashing."
+            ]
+		},
+		{
+			"name": "Falchion",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 8,
+			"value": 7500,
+			"property": ["H", "2H"],
+			"weaponMastery": "Graze|XPHB",
+			"dmg1": "2d4",
+			"dmgType": "S",
+			"critThreshold": 19,
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Falchion.} The crit range for this weapon is 19-20."
+            ]
+		},
+		{
+			"name": "Full Blade",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 20,
+			"value": 150000,
+			"property": ["H", "2H"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "2d8",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Full Blade.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer disadvantage on all attacks made with this weapon."
+            ]
+		},
+		{
+			"name": "Heavy Flail",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 1500,
+			"property": ["H", "2H"],
+			"weaponMastery": "Push|XPHB",
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+                ""
+            ]
+		},
+		{
+			"name": "Jitte",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Jitte.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon."
+            ]
+		},
+		{
+			"name": "Kama",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"property": ["F", "L"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                ""
+            ]
+		},
+		{
+			"name": "Katana",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 40000,
+			"property": ["F", "V"],
+			"weaponMastery": "Sap|XPHB",
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"hasFluffImages": true,
+			"entries": [
+                ""
+            ]
+		},
+		{
+			"name": "Katar",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 2000,
+			"property": ["F", "L"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Katar.} You have {@variantrule Advantage|XPHB} to resist being disarmed with this weapon."
+            ]
+		},
+		{
+			"name": "Kusari-gama",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"property": ["F", "L", "R", "2H"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Kusari-gama.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} or disarm when attacking with this weapon. You can treat this weapon as if you are dual wielding and apply any relevant feats why wielding this weapon. This weapon can be utilized as a monk weapon.Additionally, you may change the damage of this weapon to Bludgeoning."
+            ]
+		},
+		{
+			"name": "Nekode",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"property": ["L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+                "{@b Nekode.} You cannot be disarmed of this weapon. Additionally, any {@skill Athletics|XPHB} (Climb) checks you make while wielding this weapon have {@variantrule Advantage|XPHB}."
+            ]
+		},
+		{
+			"name": "Ninja-to",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Nunchaku",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"property": ["F", "L"],
+			"weaponMastery": "Slow|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Nunchaku.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm them when attacking with this weapon. This can be utilized as a monk weapon."
+			]
+		},
+		{
+			"name": "Nodachi",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 15,
+			"value": 160000,
+			"property": ["H", "R", "2H"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "2d8",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Nodachi.} This particular weapon is too large to wield normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon. Additionally, you have disadvantage when you try to attack an enemy within 5 feet of you."
+			]
+		},
+		{
+			"name": "O-Katana",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 6,
+			"value": 150000,
+			"property": ["H", "V"],
+			"weaponMastery": "Sap|XPHB",
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"dmg2": "1d12",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b O-Katana.} This particular weapon is too large to wield in one hand normally unless you meet a specific strength requirement. You must have a Strength score of at least 20 or suffer {@variantrule Disadvantage|XPHB} on all attacks made with this weapon."
+			]
+		},
+		{
+			"name": "Sai",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"property": ["F", "L"],
+			"weaponMastery": "Nick|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Sai.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon."
+			]
+		},
+		{
+			"name": "Three-Sectioned Staff",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 8,
+			"value": 400,
+			"property": ["F", "2H"],
+			"weaponMastery": "Topple|XPHB",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Three-Sectioned Staff.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon."
+			]
+		},
+		{
+			"name": "Tonfa",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"property": ["F", "L"],
+			"weaponMastery": "Slow|XPHB",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Tonfa.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to disarm when attacking with this weapon. This can be utilized as a monk weapon."
+			]
+		},
+		{
+			"name": "Wakizashi",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 30000,
+			"property": ["F", "L"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "War Fan",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 3000,
+			"property": ["F", "L"],
+			"weaponMastery": "Cleave|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b War Fan.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon."
+			]
+		},
+		{
+			"name": "War Scythe",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 12,
+			"value": 5000,
+			"property": ["H", "R", "2H"],
+			"weaponMastery": "Graze|XPHB",
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b War Scythe.} You have {@variantrule Disadvantage|XPHB} when you try to attack an enemy within 5 feet of you."
+			]
+		},
+		{
+			"name": "Whip-Dagger",
+			"source": "EAG24",
+			"type": "M|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 2500,
+			"property": ["F", "R"],
+			"weaponMastery": "Vex|XPHB",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Bolas",
+			"source": "EAG24",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"property": ["F", "L", "T"],
+			"weaponMastery": "Topple|XPHB",
+			"range": "10/30",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Bolas.} Enemies have {@variantrule Disadvantage|XPHB} on any saves from an attack that would allow you to knock them {@condition Prone|XPHB} when attacking with this weapon."
+			]
+		},
+		{
+			"name": "Boomerang",
+			"source": "EAG24",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"property": ["F", "L", "T"],
+			"weaponMastery": "Nick|XPHB",
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Boomerang.} This weapon will return to you if you fail to hit your target. Using your {@variantrule Reaction|XPHB}, you can catch it by succeeding a DC 10 Dexterity check."
+			]
+		},
+		{
+			"name": "Chakram",
+			"source": "EAG24",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 1500,
+			"property": ["F", "L", "T"],
+			"weaponMastery": "Graze|XPHB",
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"hasFluffImages": true,
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Shuriken",
+			"source": "EAG24",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"property": ["A", "F", "L", "T"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "10/30",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Shuriken.} You have advantage on {@skill Sleight of Hand|XPHB} checks made with this weapon. This can be utilized as a monk weapon."
+			]
+		},
+		{
+			"name": "Wrist Crossbow",
+			"source": "EAG24",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 25000,
+			"property": ["A", "L", "LD"],
+			"weaponMastery": "Push|XPHB",
+			"range": "25/90",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"{@b Wrist Crossbow.} You cannot be disarmed of this weapon."
+			]
+		},
+		{
+			"name": "Flexible Metal Wire",
+			"source": "EAG24",
+			"type": "G|XPHB",
+            "rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"entries": [
+				"{@b Flexible Metal Wire.} Flexible metal wire has 5 {@variantrule Hit Points|XPHB}. It can be burst with a successful DC 20 Strength check."
+			]
+		},
+		{
+			"name": "Bounty Hunter's Pack",
+			"source": "EAG24",
+			"type": "G|XPHB",
+            "rarity": "none",
+			"weight": 2,
+			"value": 4000,
+			"entries": [
+				"{@b Flexible Metal Wire.} Includes a chest, 2 cases for maps and scrolls, a portable ram, a hammer, 10 feet of chain, 50 feet of hempen rope, a bullseye lantern, a lock, manacles, 5 flasks of oil, 10 pitons, 10 iron spikes, 10 sheets of parchment, 1 bottle of ink, 5 ink pens, 5 days of rations, and a waterskin."
+			],
+			"packContents": [
+				
+			]
+		}
+	],
+	"itemFluff": [
+		{
+			"name": "Punch Dagger",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/punch_dagger.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Scythe",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/scythe.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Bastard Sword",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/bastard.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Claw Bracer",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/claw_bracer.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Falchion",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/falchion.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Full Blade",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/full_blade.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Heavy Flail",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/heavy_flail.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Jitte",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/jitte.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Kama",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/kama.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Katana",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/katana.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Katar",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/katar.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Kusari-gama",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/kusarigama.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Nekode",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/nekode.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Ninja-to",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/ninjato.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Nunchaku",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/nunchaku.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Nodachi",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/nodachi.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "O-Katana",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/okatana.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Sai",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/sai.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Three-Sectioned Staff",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/three_staff.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Tonfa",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/tonfa.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wakizashi",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/wakizashi.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "War Fan",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/war_fan.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "War Scythe",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/war_scythe.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Whip-Dagger",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/whip_dagger.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Bolas",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/bolas.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Boomerang",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/boomerang.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Chakram",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/chakram.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Shuriken",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/shuriken.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Wrist Crossbow",
+			"source": "EAG24",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/wrist_crossbow.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		}
+
+	]
+}
