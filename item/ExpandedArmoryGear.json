@@ -573,10 +573,19 @@
 			"weight": 2,
 			"value": 4000,
 			"entries": [
-				"{@b Flexible Metal Wire.} Includes a chest, 2 cases for maps and scrolls, a portable ram, a hammer, 10 feet of chain, 50 feet of hempen rope, a bullseye lantern, a lock, manacles, 5 flasks of oil, 10 pitons, 10 iron spikes, 10 sheets of parchment, 1 bottle of ink, 5 ink pens, 5 days of rations, and a waterskin."
+				"{@b Bounty Hunter's Pack.} Includes a chest, 2 cases for maps and scrolls, a portable ram, a hammer, 10 feet of chain, 50 feet of hempen rope, a bullseye lantern, a lock, manacles, 5 flasks of oil, 10 pitons, 10 iron spikes, 10 sheets of parchment, 1 bottle of ink, 5 ink pens, 5 days of rations, and a waterskin."
 			],
 			"packContents": [
-				
+				{
+					"item": "Chest|XPHB"
+				},
+				{
+					"item": "Book|XPHB",
+					"quantity": 7
+				},
+				{
+					"item": "Bedroll|XPHB"
+				}
 			]
 		}
 	],
