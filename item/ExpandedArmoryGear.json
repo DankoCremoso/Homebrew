@@ -751,7 +751,7 @@
 			"type": "G|XPHB",
 			"rarity": "none",
 			"weight": 27,
-			"value:": 4000,
+			"value": 4000,
 			"entries": [
 				"{@b Ninja's Pack.} Includes {@item Backpack|XPHB}, a bag of 1,000 {@item Ball Bearings|XPHB}, a bag of 20 {@item Caltrops|XPHB}, 10 feet of {@item Flexible Metal Wire|EAG24}, 2 {@item Costume|XPHB}, a {@item Grappling Hook|XPHB}, a {@item Map or Scroll Case|XPHB}, a bottle of {@item Ink|XPHB}, an {@item Ink Pen|XPHB}, 10 sheets of {@item Paper|XPHB}, 5 {@item Candle|XPHB}, 10 {@item Piton|PHB}, 5 days of {@item Rations|XPHB}, a {@item Tinderbox|XPHB}, and a {@item Waterskin|XPHB}."
 			],
@@ -815,7 +815,7 @@
 			"type": "G|XPHB",
 			"rarity": "none",
 			"weight": 88,
-			"value:": 1700,
+			"value": 1700,
 			"entries": [
 				"{@b Outdoorsman's Pack.} Includes {@item Backpack|XPHB}, a {@item Bedroll|XPHB}, 2 sets of {@item Common Clothes|PHB}, a {@item Block and Tackle|XPHB}, a {@item Bucket|XPHB}, 50 feet of hempen {@item Rope|XPHB}, 5 {@item Candle|XPHB}, {@item Fishing Tackle|PHB}, 2 {@item Hunting Trap|XPHB}, a {@item Jug|XPHB}, a {@item Lamp|XPHB}, 5 flasks of {@item Oil|XPHB}, a {@item Mess Kit|PHB}, 10 {@item Piton|PHB}, an {@item Iron Pot|XPHB}, a {@item Shovel|XPHB}, a two-person {@item Tent|XPHB}, a {@item Tinderbox|XPHB}, a {@item Whetstone|PHB}, a small knife, 5 days of {@item Rations|XPHB}, and a {@item Waterskin|XPHB}."
 			],
