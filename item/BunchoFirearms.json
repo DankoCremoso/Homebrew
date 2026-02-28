@@ -1,0 +1,271 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "BoF",
+                "abbreviation": "BoF",
+                "full": "Buncho' Firearms",
+                "authors": [
+                    "Matt Mercer",
+					"Daniel 'DanteL' Acosta"
+                ],
+				"convertedBy": [
+					"Daniel 'DanteL' Acosta"
+				],
+                "version": "1.1.0",
+                "sourceType": "homebrew",
+                "url": "https://docs.google.com/document/d/1abm6fJi6jso16pQXeH50VZt84g0ZK0ZQAMdpyze-xik/edit?usp=sharing",
+                "color": "0f5585"
+            }
+        ],
+        "dateAdded": 1707912000,
+		"edition": "one"
+    },
+    "item": [
+		{
+			"name": "Palm Pistol",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"property": ["A", "L", "RLD", "MSF"],
+			"weaponMastery": "Nick|XPHB",
+			"range": "20/60",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 40/160), {@itemProperty L|XPHB|Light}, {@itemProperty RLD|XPHB|Reload} 1, {@itemProperty MSF|XPHB|Misfire} 1",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		}
+    ],
+    "itemProperty": [
+        {
+			"abbreviation": "RLD",
+			"source": "BoF",
+			"name": "Reload",
+			"entries": [
+            "{@b Reload.} The weapon can be fired a number of times equal to its Reload score before you must spend 1 {@action Attack|XPHB} or 1 {@variantrule Action|XPHB} to reload. You must have one free hand to reload a firearm."
+        	]
+		},
+        {
+			"abbreviation": "MSF",
+			"source": "BoF",
+			"name": "Misfire",
+			"entries": [
+            "{@b Misfire.} Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an {@variantrule Action|XPHB} to try to repair it.",
+			"To repair your firearm, you must make a succesfull {@item Tinker's Tools|XPHB} check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon's misfire score by 1."
+        ]
+		},
+        {
+			"abbreviation": "EXP",
+			"source": "BoF",
+			"name": "Explosive",
+			"entries": [
+				"{@b Explosive.} Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your {@variantrule Proficiency|XPHB} Bonus + your Dexterity modifier) or suffer {@dice 1d8} fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so."
+			]
+		}
+    ],
+	"itemFluff": [
+		{
+			"name": "Wooden Buckler",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wb_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Buckler",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mb_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Small Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Throwing Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/throw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Small Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Medium Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Medium Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Large Wooden Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lw_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wooden Aspis",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wa_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Large Metal Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lm_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Aspis",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/ma_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Wooden Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Metal Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Grand Tower Shield",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/gt_shield.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		}
+	]
+}
