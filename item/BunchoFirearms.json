@@ -353,11 +353,23 @@
 			"source": "BoF",
 			"type": "A|XPHB",
 			"value": 500,
-			"weight": 0.2,
+			"weight": 0.5,
 			"rarity": "none",
 			"bulletFirearm": true,
 			"entries": [
 				"If firing a firearm with Armor Breaker rounds in it, ignore the {@variantrule Cover|XPHB|Half Cover} bonus to {@variantrule Armor Class|XPHB|AC}. If the target is wearing Heavy Armor or has Natural Armor (AC 17 or higher), the damage die for this shot increases by one size (e.g., {@dice 1d10} becomes {@dice 1d12}). However, the weight and kickback are intense. If you miss the attack, you must succeed on a DC 15 Strength saving throw or be pushed 5 feet backward."
+			]
+		},
+		{
+			"name": "Rubber Slug",
+			"source": "BoF",
+			"type": "A|XPHB",
+			"value": 200,
+			"weight": 0.3,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"rubber-core lead slugs designed for firearm trick shots. When you hit a creature with an attack roll using this ammunition, you can immediately make another attack roll against a different creature within 20 feet of the first. You can cause this ricochet a number of times equal to your {@variantrule Proficiency|XPHB} Bonus per turn."
 			]
 		}
     ],
@@ -390,196 +402,196 @@
     ],
 	"itemFluff": [
 		{
-			"name": "Wooden Buckler",
-			"source": "DLA",
+			"name": "Palm Pistol",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wb_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/palm_pistol.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Musket",
+			"source": "BoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/musket.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Pepperbox",
+			"source": "BoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/pepperbox.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Blunderbuss",
+			"source": "BoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/blunderbuss.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Bad News",
+			"source": "BoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/bad_news.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Hand Mortar",
+			"source": "BoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/hand_mortar.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Ruster",
+			"source": "BoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/ruster.jpg"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Metal Buckler",
-			"source": "DLA",
+			"name": "Awaker",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mb_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/awaker.png"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Small Wooden Shield",
-			"source": "DLA",
+			"name": "Flint Wizard",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sw_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/flint_wizard.png"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Throwing Shield",
-			"source": "DLA",
+			"name": "Whistling Wind",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/throw_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/wh_wind.png"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Small Metal Shield",
-			"source": "DLA",
+			"name": "Ririan Rose",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/sm_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/ririan_rose.png"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Medium Wooden Shield",
-			"source": "DLA",
+			"name": "Backup",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mw_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/backup.png"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Medium Metal Shield",
-			"source": "DLA",
+			"name": "Cinder",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mm_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/cinder.png"
 					},
 					"credit":"AI Generated"
 				}
 			]
 		},
 		{
-			"name": "Large Wooden Shield",
-			"source": "DLA",
+			"name": "Glass Spitter",
+			"source": "BoF",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lw_shield.png"
-					},
-					"credit":"AI Generated"
-				}
-			]
-		},
-		{
-			"name": "Wooden Aspis",
-			"source": "DLA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wa_shield.png"
-					},
-					"credit":"AI Generated"
-				}
-			]
-		},
-		{
-			"name": "Large Metal Shield",
-			"source": "DLA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/lm_shield.png"
-					},
-					"credit":"AI Generated"
-				}
-			]
-		},
-		{
-			"name": "Metal Aspis",
-			"source": "DLA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/ma_shield.png"
-					},
-					"credit":"AI Generated"
-				}
-			]
-		},
-		{
-			"name": "Wooden Tower Shield",
-			"source": "DLA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/wt_shield.png"
-					},
-					"credit":"AI Generated"
-				}
-			]
-		},
-		{
-			"name": "Metal Tower Shield",
-			"source": "DLA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/mt_shield.png"
-					},
-					"credit":"AI Generated"
-				}
-			]
-		},
-		{
-			"name": "Grand Tower Shield",
-			"source": "DLA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/shields/gt_shield.png"
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/glass_spitter.png"
 					},
 					"credit":"AI Generated"
 				}
