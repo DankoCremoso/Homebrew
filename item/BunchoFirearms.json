@@ -31,21 +31,21 @@
             "rarity": "none",
 			"weight": 1,
 			"value": 5000,
-			"property": ["A", "L", "RLD", "MSF"],
+			"property": ["A", "L", "RLDG", "MSF"],
 			"weaponMastery": "Nick|XPHB",
 			"range": "20/60",
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 40/160), {@itemProperty L|XPHB|Light}, {@itemProperty RLD|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 1",
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 40/160), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 1",
 				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
 			]
 		}
     ],
     "itemProperty": [
         {
-			"abbreviation": "RLD",
+			"abbreviation": "RLDG",
 			"source": "BoF",
 			"name": "Reload",
 			"entries": [
