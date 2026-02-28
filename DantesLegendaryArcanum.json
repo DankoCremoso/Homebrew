@@ -4641,6 +4641,356 @@
 					"item": "Iron Pot|XPHB"
 				}
 			]
+		},
+		{
+			"name": "Palm Pistol",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"property": ["A", "L", "RLDG", "MSF"],
+			"weaponMastery": "Nick|XPHB",
+			"range": "40/160",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 40/160), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 1",
+				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "Pistol",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 15000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "60/240",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty RLDG|BoF|Reload} 4, {@itemProperty MSF|BoF|Misfire} 1",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Musket",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 30000,
+			"property": ["A", "2H", "RLDG", "MSF"],
+			"weaponMastery": "Slow|XPHB",
+			"range": "120/480",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 120/480), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Pepperbox",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 5,
+			"value": 25000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "80/320",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 80/320), {@itemProperty RLDG|BoF|Reload} 6, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Blunderbuss",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 30000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Push|XPHB",
+			"range": "15/60",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 15/60), {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+			]
+		},
+		{
+			"name": "Bad News",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 25,
+			"property": ["A", "2H", "RLDG", "MSF"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "200/800",
+			"dmg1": "2d12",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 200/800), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 3",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Hand Mortar",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"property": ["A", "RLDG", "MSF", "EXP"],
+			"weaponMastery": "Slow|XPHB",
+			"range": "30/60",
+			"dmg1": "2d8",
+			"dmgType": "F",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 30/60), {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 3, {@itemProperty EXP|BoF|Explosive}",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Ruster",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 8000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "60/240",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty RLDG|BoF|Reload} 3, {@itemProperty MSF|BoF|Misfire} 5",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Awaker",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 8,
+			"value": 25000,
+			"property": ["A", "L", "RLDG", "MSF"],
+			"weaponMastery": "Topple|XPHB",
+			"range": "10/30",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 10/30), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 3",
+				"{@b Special: Daze.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature loses all reactions and can only do an action or bonus action, not both, on its next turn.",
+				"{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"name": "Flint Wizard",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 5,
+			"value": 20000,
+			"property": ["A", "2H", "RLDG", "MSF", "EXP"],
+			"weaponMastery": "Push|XPHB",
+			"range": "60/240",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 2, {@itemProperty EXP|BoF|Explosive}",
+				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+			]
+		},
+		{
+			"name": "Whistling Wind",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 25000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "60/240",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty RLDG|BoF|Reload} 4, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Special: Sonic Snap.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature is {@condition Deafened|XPHB} until the end of its next turn. Additionally, if the target makes any concentration check because of damage from this weapon, it makes the check with {@variantrule Disadvantage|XPHB}. However, if the weapon misfires, the whistle backfires; you are Deafened until you spend an action to clear the jam.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Ririan Rose",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 7,
+			"value": 35000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Slow|XPHB",
+			"range": "60/160",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/160), {@itemProperty RLDG|BoF|Reload} 6, {@itemProperty MSF|BoF|Misfire} 3",
+				"{@b Special: Petal Spread.} When targeting inside your normal range, Instead of a single shot, you can choose to fire a burst of three chambers at once. You make one attack roll with {@variantrule Disadvantage|XPHB}. If it hits, you roll the weapon's damage dice three times. However, using this feature increases the Misfire score by +2 for that attack.",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Backup",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 15000,
+			"property": ["A", "L", "RLDG", "MSF"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 20/60), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 1",
+				"{@b Special: Double Tap.} As a {@variantrule Bonus Action|XPHB}, you can fire the second chamber at the same target. You do not add your Ability Modifier to the damage of this second shot.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Cinder",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 25,
+			"property": ["A", "H", "2H", "RLDG", "MSF", "EXP"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "150/600",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 150/600), {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 4, {@itemProperty EXP|BoF|Explosive}",
+				"{@b Special: Scorched Trail.} This weapon's shot leaves a line of smoke behind it that provides {@variantrule Cover|XPHB|Half Cover} to anyone standing behind it until the start of your next turn. However, on a misfire, the cinder-dust explodes in the chamber. You take {@dice 1d10} Fire damage, and the weapon cannot be repaired until the end of a {@variantrule Long Rest|XPHB}.",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Glass Spitter",
+			"source": "DLA",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 12,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Graze|XPHB",
+			"range": "15/30",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 15/30), {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Special: Fragmented Wound.} On a hit, the target takes an extra {@dice 1d4} piercing damage at the start of its next turn as the shards settle. Additionally, you can choose to target a 15ft cone instead of a single creature. All creatures in the cone must make a Dexterity Saving Throw (DC = 8 + your Proficiency + Dex Mod) or take half the weapon's damage.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+			]
+		},
+		{
+			"name": "Fireball Pellet",
+			"source": "DLA",
+			"type": "A|XPHB",
+			"value": 80,
+			"weight": 0.1,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"Fireball Pellets are ammunition for use in firearms. Using this ammunition gives your firearm the {@itemProperty EXP|BoF|Explosive} property, but increases the Misfire score by +2 for that attack."
+			]
+		},
+		{
+			"name": "Dragon-Pain Shrapnel",
+			"source": "DLA",
+			"type": "A|XPHB",
+			"value": 100,
+			"weight": 0.2,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"When using Dragon-Pain shrapnels as ammunition in a firearm, on a hit, the target takes an extra {@dice 1d4} slashing damage at the start of its next turn, however the misfire score for that attack increases by +1."
+			]
+		},
+		{
+			"name": "Armor Breaker Round",
+			"source": "DLA",
+			"type": "A|XPHB",
+			"value": 500,
+			"weight": 0.5,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"If firing a firearm with Armor Breaker rounds in it, ignore the {@variantrule Cover|XPHB|Half Cover} bonus to {@variantrule Armor Class|XPHB|AC}. If the target is wearing Heavy Armor or has Natural Armor (AC 17 or higher), the damage die for this shot increases by one size (e.g., {@dice 1d10} becomes {@dice 1d12}). However, the weight and kickback are intense. If you miss the attack, you must succeed on a DC 15 Strength saving throw or be pushed 5 feet backward."
+			]
+		},
+		{
+			"name": "Rubber Slug",
+			"source": "DLA",
+			"type": "A|XPHB",
+			"value": 200,
+			"weight": 0.3,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"rubber-core lead slugs designed for firearm trick shots. When you hit a creature with an attack roll using this ammunition, you can immediately make another attack roll against a different creature within 20 feet of the first. You can cause this ricochet a number of times equal to your {@variantrule Proficiency|XPHB} Bonus per turn."
+			]
 		}
     ],
     "itemProperty": [
@@ -4708,6 +5058,31 @@
 			"name": "Stable",
 			"entries": [
 				"{@b Stable.} The hand holding this shield retains enough freedom of movement to perform other actions that do not require fine movement or require tight confines. The hand holding this shield may hold a {@filter light simple weapon|items|property=L|category=simple weapon}. However, if this shield is equipped alongside a weapon with the {@itemProperty 2H|XPHB|Two-handed} property, it does not provide a bonus to AC."
+			]
+		},
+		{
+			"abbreviation": "RLDG",
+			"source": "DLA",
+			"name": "Reload",
+			"entries": [
+            "{@b Reload.} The weapon can be fired a number of times equal to its Reload score before you must spend 1 {@action Attack|XPHB} or 1 {@variantrule Action|XPHB} to reload. You must have one free hand to reload a firearm."
+        	]
+		},
+        {
+			"abbreviation": "MSF",
+			"source": "DLA",
+			"name": "Misfire",
+			"entries": [
+            "{@b Misfire.} Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an {@variantrule Action|XPHB} to try to repair it.",
+			"To repair your firearm, you must make a succesfull {@item Tinker's Tools|XPHB} check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon's misfire score by 1."
+        ]
+		},
+        {
+			"abbreviation": "EXP",
+			"source": "DLA",
+			"name": "Explosive",
+			"entries": [
+				"{@b Explosive.} Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your {@variantrule Proficiency|XPHB} Bonus + your Dexterity modifier) or suffer {@dice 1d8} fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so."
 			]
 		}
     ],
@@ -5309,6 +5684,202 @@
 					"href": {
 						"type": "external",
 						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/weapons/wrist_crossbow.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Palm Pistol",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/palm_pistol.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Musket",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/musket.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Pepperbox",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/pepperbox.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Blunderbuss",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/blunderbuss.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Bad News",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/bad_news.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Hand Mortar",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/hand_mortar.jpg"
+					},
+					"credit":""
+				}
+			]
+		},
+		{
+			"name": "Ruster",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/ruster.jpg"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Awaker",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/awaker.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Flint Wizard",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/flint_wizard.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Whistling Wind",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/wh_wind.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Ririan Rose",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/ririan_rose.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Backup",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/backup.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Cinder",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/cinder.png"
+					},
+					"credit":"AI Generated"
+				}
+			]
+		},
+		{
+			"name": "Glass Spitter",
+			"source": "DLA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/firearms/glass_spitter.png"
 					},
 					"credit":"AI Generated"
 				}

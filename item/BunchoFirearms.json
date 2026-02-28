@@ -15,7 +15,7 @@
                 "version": "1.0.0",
                 "sourceType": "homebrew",
                 "url": "https://docs.google.com/document/d/1abm6fJi6jso16pQXeH50VZt84g0ZK0ZQAMdpyze-xik/edit?usp=sharing",
-                "color": "0f5585"
+                "color": "407840"
             }
         ],
         "dateAdded": 1707912000,
@@ -217,7 +217,7 @@
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
-				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 2, {@itemProperty EXP|BoF|EXP}",
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 2, {@itemProperty EXP|BoF|Explosive}",
 				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
 			]
 		},
