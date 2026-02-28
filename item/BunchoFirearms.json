@@ -12,7 +12,7 @@
 				"convertedBy": [
 					"Daniel 'DanteL' Acosta"
 				],
-                "version": "1.1.0",
+                "version": "1.0.0",
                 "sourceType": "homebrew",
                 "url": "https://docs.google.com/document/d/1abm6fJi6jso16pQXeH50VZt84g0ZK0ZQAMdpyze-xik/edit?usp=sharing",
                 "color": "0f5585"
@@ -33,13 +33,331 @@
 			"value": 5000,
 			"property": ["A", "L", "RLDG", "MSF"],
 			"weaponMastery": "Nick|XPHB",
-			"range": "20/60",
+			"range": "40/160",
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"hasFluffImages": true,
 			"entries": [
 				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 40/160), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 1",
 				"{@b Mastery: Nick.} When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can make it as part of the {@action Attack|XPHB} action instead of as a Bonus Action. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"name": "Pistol",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 15000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "60/240",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty RLDG|BoF|Reload} 4, {@itemProperty MSF|BoF|Misfire} 1",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Musket",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 30000,
+			"property": ["A", "2H", "RLDG", "MSF"],
+			"weaponMastery": "Slow|XPHB",
+			"range": "120/480",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 120/480), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Pepperbox",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 5,
+			"value": 25000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "80/320",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 80/320), {@itemProperty RLDG|BoF|Reload} 6, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Blunderbuss",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"value": 30000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Push|XPHB",
+			"range": "15/60",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 15/60), {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+			]
+		},
+		{
+			"name": "Bad News",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 25,
+			"property": ["A", "2H", "RLDG", "MSF"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "200/800",
+			"dmg1": "2d12",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 200/800), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 3",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Hand Mortar",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 10,
+			"property": ["A", "RLDG", "MSF", "EXP"],
+			"weaponMastery": "Slow|XPHB",
+			"range": "30/60",
+			"dmg1": "2d8",
+			"dmgType": "F",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 30/60), {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 3, {@itemProperty EXP|BoF|Explosive}",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Ruster",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 8000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "60/240",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty RLDG|BoF|Reload} 3, {@itemProperty MSF|BoF|Misfire} 5",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Awaker",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 8,
+			"value": 25000,
+			"property": ["A", "L", "RLDG", "MSF"],
+			"weaponMastery": "Topple|XPHB",
+			"range": "10/30",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 10/30), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 3",
+				"{@b Special: Daze.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature loses all reactions and can only do an action or bonus action, not both, on its next turn.",
+				"{@b Mastery: Topple.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"name": "Flint Wizard",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 5,
+			"value": 20000,
+			"property": ["A", "2H", "RLDG", "MSF", "EXP"],
+			"weaponMastery": "Push|XPHB",
+			"range": "60/240",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 2, {@itemProperty EXP|BoF|EXP}",
+				"{@b Mastery: Push.} If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+			]
+		},
+		{
+			"name": "Whistling Wind",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 3,
+			"value": 25000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "60/240",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/240), {@itemProperty RLDG|BoF|Reload} 4, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Special: Sonic Snap.} If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature is {@condition Deafened|XPHB} until the end of its next turn. Additionally, if the target makes any concentration check because of damage from this weapon, it makes the check with {@variantrule Disadvantage|XPHB}. However, if the weapon misfires, the whistle backfires; you are Deafened until you spend an action to clear the jam.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Ririan Rose",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 7,
+			"value": 35000,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Slow|XPHB",
+			"range": "60/160",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 60/160), {@itemProperty RLDG|BoF|Reload} 6, {@itemProperty MSF|BoF|Misfire} 3",
+				"{@b Special: Petal Spread.} When targeting inside your normal range, Instead of a single shot, you can choose to fire a burst of three chambers at once. You make one attack roll with {@variantrule Disadvantage|XPHB}. If it hits, you roll the weapon's damage dice three times. However, using this feature increases the Misfire score by +2 for that attack.",
+				"{@b Mastery: Slow.} If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"name": "Backup",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 2,
+			"value": 15000,
+			"property": ["A", "L", "RLDG", "MSF"],
+			"weaponMastery": "Vex|XPHB",
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 20/60), {@itemProperty L|XPHB|Light}, {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 1",
+				"{@b Special: Double Tap.} As a {@variantrule Bonus Action|XPHB}, you can fire the second chamber at the same target. You do not add your Ability Modifier to the damage of this second shot.",
+				"{@b Mastery: Vex.} If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"name": "Cinder",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 25,
+			"property": ["A", "H", "2H", "RLDG", "MSF", "EXP"],
+			"weaponMastery": "Sap|XPHB",
+			"range": "150/600",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 150/600), {@itemProperty H|XPHB|Heavy}, {@itemProperty 2H|XPHB|Two-Handed}, {@itemProperty RLDG|BoF|Reload} 1, {@itemProperty MSF|BoF|Misfire} 4, {@itemProperty EXP|BoF|Explosive}",
+				"{@b Special: Scorched Trail.} This weapon's shot leaves a line of smoke behind it that provides {@variantrule Cover|XPHB|Half Cover} to anyone standing behind it until the start of your next turn. However, on a misfire, the cinder-dust explodes in the chamber. You take {@dice 1d10} Fire damage, and the weapon cannot be repaired until the end of a {@variantrule Long Rest|XPHB}.",
+				"{@b Mastery: Sap.} If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"name": "Glass Spitter",
+			"source": "BoF",
+			"type": "R|XPHB",
+			"weaponCategory": "martial",
+			"weapon": true,
+            "rarity": "none",
+			"weight": 12,
+			"property": ["A", "RLDG", "MSF"],
+			"weaponMastery": "Graze|XPHB",
+			"range": "15/30",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"Properties: {@itemProperty A|XPHB|Ammunition} (Range 15/30), {@itemProperty RLDG|BoF|Reload} 2, {@itemProperty MSF|BoF|Misfire} 2",
+				"{@b Special: Fragmented Wound.} On a hit, the target takes an extra {@dice 1d4} piercing damage at the start of its next turn as the shards settle. Additionally, you can choose to target a 15ft cone instead of a single creature. All creatures in the cone must make a Dexterity Saving Throw (DC = 8 + your Proficiency + Dex Mod) or take half the weapon's damage.",
+				"{@b Mastery: Graze.} If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+			]
+		},
+		{
+			"name": "Fireball Pellet",
+			"source": "BoF",
+			"type": "A|XPHB",
+			"value": 80,
+			"weight": 0.1,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"Fireball Pellets are ammunition for use in firearms. Using this ammunition gives your firearm the {@itemProperty EXP|BoF|Explosive} property, but increases the Misfire score by +2 for that attack."
+			]
+		},
+		{
+			"name": "Dragon-Pain Shrapnel",
+			"source": "BoF",
+			"type": "A|XPHB",
+			"value": 100,
+			"weight": 0.2,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"When using Dragon-Pain shrapnels as ammunition in a firearm, on a hit, the target takes an extra {@dice 1d4} slashing damage at the start of its next turn, however the misfire score for that attack increases by +1."
+			]
+		},
+		{
+			"name": "Armor Breaker Round",
+			"source": "BoF",
+			"type": "A|XPHB",
+			"value": 500,
+			"weight": 0.2,
+			"rarity": "none",
+			"bulletFirearm": true,
+			"entries": [
+				"If firing a firearm with Armor Breaker rounds in it, ignore the {@variantrule Cover|XPHB|Half Cover} bonus to {@variantrule Armor Class|XPHB|AC}. If the target is wearing Heavy Armor or has Natural Armor (AC 17 or higher), the damage die for this shot increases by one size (e.g., {@dice 1d10} becomes {@dice 1d12}). However, the weight and kickback are intense. If you miss the attack, you must succeed on a DC 15 Strength saving throw or be pushed 5 feet backward."
 			]
 		}
     ],
