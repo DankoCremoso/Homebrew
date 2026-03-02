@@ -146,6 +146,7 @@
             "name": "Vengeful Spirit",
             "source": "DLAB",
             "category": "O",
+            "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/feats/VengefulSpirit.png",
             "entries": [
                 "Your soul is tainted by the essence of decay. When your body fails, your destructive soul manifests.",
                 "When you are reduced to 0 {@variantrule Hit Points|XPHB}, you do not roll {@variantrule Death Saving Throw|XPHB|Death Saving Throws}. Instead, you fall {@condition Unconscious|XPHB}, and your Vengeful Spirit instantly manifests in an unoccupied space within 5ft of you. While at 0 Hit Points, your consciousness transfers to the Spirit. On your turn, you control the Spirit's movement and actions. It shares your {@variantrule Initiative|XPHB}, {@variantrule Armor Class|XPHB|AC}, and {@variantrule Speed|XPHB|movement speeds}. It is {@variantrule Immunity|XPHB|immune} to all conditions.",
