@@ -172,5 +172,26 @@
                 }
             ]
         }
+    ],
+    "backgroundFluff": [
+        {
+            "name": "Broken",
+            "source": "DLAB",
+            "entries": [
+                "Long before your first brush with the grave, there was the isolation. Since childhood, an invisible barrier has stood between you and the rest of the world. Perhaps animals recoiled at your touch, peers instinctively shunned you, or even your own family looked at you with an uneasy, unexplainable dread. They sensed an unspoken wrongness they couldn’t name. This quiet alienation was the first symptom of a soul tainted by the decay—a primordial, destructive rot woven into the very fabric of your being.",
+                "But the cruelest irony of your existence is the awakening. There are no birthmarks, no omens, and no spells that can reveal one of the Broken. You lived your life entirely unaware of the darkness coiled inside you.",
+                "The only definitive proof lies in the grave. To know what you are, you had to experience the agonizing, terrifying reality of your own demise. You had to feel your life slip away into the dark, your body failing, your mind fading... only to violently shatter the quiet of the afterlife. In that horrific moment of death, the decay ripped itself from your unconscious form, manifesting as a Vengeful Spirit. As you watched your own broken body from the outside, you awoke to a chilling realization: death is not a peaceful release for you. It is merely a violent, corrupt beginning."
+            ],
+            "images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Broken_Background.png"
+					},
+					"credit": "AI Generated"
+				}
+			]
+        }
     ]
 }
