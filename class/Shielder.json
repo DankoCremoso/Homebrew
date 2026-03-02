@@ -2796,6 +2796,9 @@
                 		]
             		},
             		"healing": {
+						"types": [
+                            "healing"
+                        ],
                 		"custom": {
                     		"enabled": true,
                     		"formula": "@scale.shielder.tough-resistance + max(1, @abilities.con.mod)"
