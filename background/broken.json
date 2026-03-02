@@ -220,7 +220,7 @@
                             {
                                 "custom": {
                                     "enabled": true,
-                                    "formula": "max(1, @prof - 1)d8 + @mod"
+                                    "formula": "(@prof - 1)d8 + @mod"
                                 },
                                 "types": [
                                     "force"
