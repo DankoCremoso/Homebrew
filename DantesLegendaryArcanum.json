@@ -5888,5 +5888,393 @@
 				}
 			]
 		}
-	]
+	],
+	"background": [
+        {
+            "name": "Broken",
+            "source": "DLA",
+            "edition": "one",
+            "ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights":[
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "feats": [
+                {
+                    "Vengeful Spirit|DLAB": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "intimidation": true,
+                    "survival": true
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "Poisoner's Kit": true,
+                    "anyGamingSet": 1
+                }
+            ],
+            "startingEquipment": [
+                {
+                    "A": [
+                        {
+                            "item": "Dagger|XPHB"
+                        },
+                        {
+                            "item": "Poisoner's Kit|XPHB"
+                        },
+                        {
+                            "equipmentType": "setGaming"
+                        },
+                        {
+                            "item": "Bedroll|XPHB"
+                        },
+                        {
+                            "item": "Traveler's Clothes|XPHB"
+                        },
+                        {
+                            "value": 500
+                        }
+                    ],
+                    "B": [
+                        {
+                            "value": 6000
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Ability Scores:",
+                            "entry": "Intelligence, Wisdom, Charisma"
+                        },
+                        {
+					        "type": "item",
+					        "name": "Feat:",
+					        "entry": "{@feat Vengeful Spirit|DLAB}"
+				        },
+				        {
+					        "type": "item",
+					        "name": "Skill Proficiencies:",
+					        "entry": "{@skill Intimidation|XPHB}, {@skill Survival|XPHB}"
+				        },
+				        {
+					        "type": "item",
+					        "name": "Tool Proficiency:",
+					        "entry": "{@item Poisoner's Kit|XPHB} and choose one kind of {@item Gaming Set|XPHB}"
+				        },
+				        {
+					        "type": "item",
+					        "name": "Equipment:",
+					        "entry": "Choose A or B: (A) {@item Dagger|XPHB}, {@item Poisoner's Kit|XPHB}, {@item Gaming Set|XPHB} (any), {@item Bedroll|XPHB}, {@item Traveler's Clothes|XPHB}, 5 GP; or (B) 60 GP"
+				        }
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true
+        }
+    ],
+	"backgroundFluff": [
+        {
+            "name": "Broken",
+            "source": "DLA",
+            "entries": [
+                "Long before your first brush with the grave, there was the isolation. Since childhood, an invisible barrier has stood between you and the rest of the world. Perhaps animals recoiled at your touch, peers instinctively shunned you, or even your own family looked at you with an uneasy, unexplainable dread. They sensed an unspoken wrongness they couldn’t name. This quiet alienation was the first symptom of a soul tainted by the decay—a primordial, destructive rot woven into the very fabric of your being.",
+                "But the cruelest irony of your existence is the awakening. There are no birthmarks, no omens, and no spells that can reveal one of the Broken. You lived your life entirely unaware of the darkness coiled inside you.",
+                "The only definitive proof lies in the grave. To know what you are, you had to experience the agonizing, terrifying reality of your own demise. You had to feel your life slip away into the dark, your body failing, your mind fading... only to violently shatter the quiet of the afterlife. In that horrific moment of death, the decay ripped itself from your unconscious form, manifesting as a Vengeful Spirit. As you watched your own broken body from the outside, you awoke to a chilling realization: death is not a peaceful release for you. It is merely a violent, corrupt beginning."
+            ],
+            "images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/Broken_Background.png"
+					},
+					"credit": "AI Generated"
+				}
+			]
+        }
+    ],
+	"feat": [
+        {
+            "name": "Vengeful Spirit",
+            "source": "DLA",
+            "category": "O",
+            "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/feats/VengefulSpirit.png",
+            "entries": [
+                "Your soul is tainted by the essence of decay. When your body fails, your destructive soul manifests.",
+                "When you are reduced to 0 {@variantrule Hit Points|XPHB}, you do not roll {@variantrule Death Saving Throw|XPHB|Death Saving Throws}. Instead, you fall {@condition Unconscious|XPHB}, and your Vengeful Spirit instantly manifests in an unoccupied space within 5ft of you. While at 0 Hit Points, your consciousness transfers to the Spirit. On your turn, you control the Spirit's movement and actions. It shares your {@variantrule Initiative|XPHB}, {@variantrule Armor Class|XPHB|AC}, and {@variantrule Speed|XPHB|movement speeds}. It is {@variantrule Immunity|XPHB|immune} to all conditions.",
+                {
+                    "type": "entries",
+                    "name": "Destructive Strikes",
+                    "entries": [
+                        "As an {@variantrule Action|XPHB}, the Spirit can make a melee spell attack against a creature within 5 feet (using your Charisma, Wisdom, or Intelligence modifier + {@variantrule Proficiency|XPHB|Proficiency Bonus} to hit). On a hit, it deals Force damage equal to {@dice 1d8} + your chosen ability modifier. The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 9 ({@dice 3d8}), 13 ({@dice 4d8}), and 17 ({@dice 5d8})."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Satiate the Grief",
+                    "entries": [
+                        "The Spirit craves destruction. If the Spirit deals cumulative damage equal to {@b 3 x your Character Level} in a single combat, or it has been more than {@b 30 seconds} since you've been Unconscious and are not dead yet, your soul is satiated. Your physical body instantly regains 1 HP and the Spirit vanishes. Whenever you recover from having 0 hit points, you gain 1 Level of {@condition Exhaustion|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spirit Resolve",
+                    "entries": [
+                        "You have a Spirit Resolve pool equal to {@b 5 x your Character Level}. This pool represents the health of your Vengeful Spirit. This pool only replenishes when you finish a {@variantrule Long Rest|XPHB}. If the Spirit takes damage, subtract that damage from your Spirit Resolve pool. If the Spirit Resolve hits 0, the Spirit breaks and becomes unable to manifest. If you have 0 hit points and your spirit can't manifest, whenever you would make a Death Saving Throw instead you automatically gain a failure. If your physical body takes damage while at 0 HP, it counts as a Death Saving Throw failure. You die outright if your body accumulates 3 failures "
+                    ]
+                }
+            ],
+            "foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Destructive Strikes Damage",
+					"configuration": {
+						"identifier": "destructive-strikes",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"n": 1,
+								"die": 8
+							},
+							"5": {
+								"n": 2,
+								"die": 8
+							},
+							"9": {
+								"n": 3,
+								"die": 8
+							},
+							"13": {
+								"n": 4,
+								"die": 8
+							},
+							"17": {
+								"n": 5,
+								"die": 8
+							}
+						}
+					}
+				}
+			],
+            "foundrySystem": {
+                "uses": {
+                    "max": "@details.level * 3",
+                    "spent": 0,
+                    "recovery": [
+                        {
+        					"period": "lr",
+        					"type": "loseAll"
+    					}
+                    ]
+                }
+            },
+            "foundryActivities": [
+                {
+                    "name": "Destructive Strikes",
+                    "type": "attack",
+                    "activation": {
+                        "type": "action",
+                        "value": 1
+                    },
+                    "range": {
+                        "units": "self",
+                        "override": false
+                    },
+                    "target": {
+                        "template": {
+                            "contiguous": false,
+                            "units": "ft"
+                        },
+                        "affects": {
+                            "choice": false
+                        },
+                        "override": false,
+                        "prompt": true
+                    },
+                    "uses": {
+                        "spent": 0,
+                        "recovery": []
+                    },
+                    "attack": {
+                        "ability": "",
+                        "bonus": "",
+                        "critical": {
+                            "threshold": null
+                        },
+                        "flat": false,
+                        "type": {
+                            "value": "melee",
+                            "classification": "spell"
+                        }
+                    },
+                    "damage": {
+                        "critical": {
+                            "bonus": ""
+                        },
+                        "includesBase": true,
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.vengeful-spirit.destructive-strikes + @mod"
+                                },
+                                "types": [
+                                    "force"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Satiate the Grief",
+            		"type": "heal",
+            		"activation": {
+                		"type": "special"
+            		},
+            		"range": {
+                        "units": "self",
+                        "override": false
+                    },
+                    "target": {
+                        "template": {
+                            "contiguous": false,
+                            "units": "ft"
+                        },
+                        "affects": {
+                            "type": "self",
+                            "choice": false
+                        },
+                        "override": false,
+                        "prompt": true
+                    },
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "@details.level * 3",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Vengeful Spirit"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+                    "healing": {
+                        "types": [
+                            "healing"
+                        ],
+                        "custom": {
+                    		"enabled": true,
+                    		"formula": "1"
+                		}
+                    }
+                }
+            ]               
+        },
+        {
+            "name": "Relentless Vengance",
+            "source": "DLA",
+            "category": "G",
+            "prerequisite": [
+                {
+                    "level": 4,
+                    "feat": [
+                        "Vengeful Spirit|DLAB"
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/feats/RelentlessVengance.png",
+            "entries": [
+                "You have learned to draw out your destructive soul without needing to be on the brink of death.",
+                {
+                    "type": "entries",
+                    "name": "Ability Score Increase",
+                    "entries": [
+                        "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Conscious Hatred",
+                    "entries": [
+                        "As a {@variantrule Bonus Action|XPHB}, you can manifest your {@feat Vengeful Spirit|DLAB} in an unoccupied space within 15 feet of you. It lasts for 10 minutes or until you dismiss it (no action required). While manifested, the Spirit takes its turn immediately after yours. It can move on its own, but it will only take the {@action Dodge|XPHB} action unless you use your Bonus Action to command it to take the {@action Attack|XPHB} action (using the Destructive Strikes from your Origin Feat) or the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Help|XPHB} action."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Sorrow Rebuke",
+                    "entries": [
+                        "The damage from your spirit's Destructive Strikes increases to {@dice 1d10}."
+                    ]
+                }
+            ],
+            "foundryEffects": [
+				{
+					"name": "Sorrow Rebuke",
+					"icon": "icons/magic/unholy/hand-claw-fire-blue.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.scale.vengeful-spirit.destructive-strikes.faces",
+							"mode": 2,
+							"value": "2",
+							"priority": 20
+						}
+					]
+
+				}
+			]             
+        }
+    ]
 }
