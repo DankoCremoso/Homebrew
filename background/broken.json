@@ -219,11 +219,9 @@
                         "parts": [
                             {
                                 "custom": {
-                                    "enabled": false
+                                    "enabled": true,
+                                    "formula": "max(1, @prof - 1)d8 + @mod"
                                 },
-                                "number": "@prof - 1",
-                                "denomination": 8,
-                                "bonus": "@mod",
                                 "types": [
                                     "force"
                                 ]
