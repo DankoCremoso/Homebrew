@@ -376,9 +376,9 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "scale.vengeful-spirit.destructive-strikes.faces",
+							"key": "system.scale.vengeful-spirit.destructive-strikes.faces",
 							"mode": 2,
-							"value": "10",
+							"value": "2",
 							"priority": 20
 						}
 					]
