@@ -309,6 +309,9 @@
                 		]
             		},
                     "healing": {
+                        "types": [
+                            "healing"
+                        ],
                         "custom": {
                     		"enabled": true,
                     		"formula": "1"
