@@ -319,6 +319,72 @@
                     }
                 }
             ]               
+        },
+        {
+            "name": "Relentless Vengance",
+            "source": "DLAB",
+            "category": "G",
+            "prerequisite": [
+                {
+                    "level": 4,
+                    "feat": [
+                        "Vengeful Spirit|DLAB"
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/feats/RelentlessVengance.png",
+            "entries": [
+                "You have learned to draw out your destructive soul without needing to be on the brink of death.",
+                {
+                    "type": "entries",
+                    "name": "Ability Score Increase",
+                    "entries": [
+                        "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Conscious Hatred",
+                    "entries": [
+                        "As a {@variantrule Bonus Action|XPHB}, you can manifest your {@feat Vengeful Spirit|DLAB} in an unoccupied space within 15 feet of you. It lasts for 10 minutes or until you dismiss it (no action required). While manifested, the Spirit takes its turn immediately after yours. It can move on its own, but it will only take the {@action Dodge|XPHB} action unless you use your Bonus Action to command it to take the {@action Attack|XPHB} action (using the Destructive Strikes from your Origin Feat) or the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Help|XPHB} action."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Sorrow Rebuke",
+                    "entries": [
+                        "The damage from your spirit's Destructive Strikes increases to {@dice 1d10}."
+                    ]
+                }
+            ],
+            "foundryEffects": [
+				{
+					"name": "Sorrow Rebuke",
+					"icon": "icons/magic/unholy/hand-claw-fire-blue.webp",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "scale.vengeful-spirit.destructive-strikes.faces",
+							"mode": 2,
+							"value": "10",
+							"priority": 20
+						}
+					]
+
+				}
+			]             
         }
     ],
     "backgroundFluff": [
