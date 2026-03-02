@@ -172,6 +172,38 @@
                     ]
                 }
             ],
+            "foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Destructive Strikes Damage",
+					"configuration": {
+						"identifier": "destructive-strikes",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"n": 1,
+								"die": 8
+							},
+							"5": {
+								"n": 2,
+								"die": 8
+							},
+							"9": {
+								"n": 3,
+								"die": 8
+							},
+							"13": {
+								"n": 4,
+								"die": 8
+							},
+							"17": {
+								"n": 5,
+								"die": 8
+							}
+						}
+					}
+				}
+			],
             "foundryActivities": [
                 {
                     "name": "Destructive Strikes",
@@ -220,7 +252,7 @@
                             {
                                 "custom": {
                                     "enabled": true,
-                                    "formula": "(@prof - 1)d8 + @mod"
+                                    "formula": "@scale.vengeful-spirit.destructive-strikes + @mod"
                                 },
                                 "types": [
                                     "force"
