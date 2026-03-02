@@ -172,7 +172,7 @@
                     ]
                 }
             ],
-            "foudnryActivities": [
+            "foundryActivities": [
                 {
                     "name": "Destructive Strikes",
                     "type": "attack",
@@ -181,6 +181,10 @@
                         "value": 1
                     },
                     "range": {
+                        "units": "self",
+                        "override": false
+                    },
+                    "target": {
                         "template": {
                             "contiguous": false,
                             "units": "ft"
@@ -208,6 +212,10 @@
                         }
                     },
                     "damage": {
+                        "critical": {
+                            "bonus": ""
+                        },
+                        "includesBase": true,
                         "parts": [
                             {
                                 "custom": {
