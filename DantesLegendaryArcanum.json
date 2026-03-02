@@ -5929,7 +5929,7 @@
             ],
             "feats": [
                 {
-                    "Vengeful Spirit|DLAB": true
+                    "Vengeful Spirit|DLA": true
                 }
             ],
             "skillProficiencies": [
@@ -5986,7 +5986,7 @@
                         {
 					        "type": "item",
 					        "name": "Feat:",
-					        "entry": "{@feat Vengeful Spirit|DLAB}"
+					        "entry": "{@feat Vengeful Spirit|DLA}"
 				        },
 				        {
 					        "type": "item",
@@ -6218,7 +6218,7 @@
                 {
                     "level": 4,
                     "feat": [
-                        "Vengeful Spirit|DLAB"
+                        "Vengeful Spirit|DLA"
                     ]
                 }
             ],
@@ -6248,7 +6248,7 @@
                     "type": "entries",
                     "name": "Conscious Hatred",
                     "entries": [
-                        "As a {@variantrule Bonus Action|XPHB}, you can manifest your {@feat Vengeful Spirit|DLAB} in an unoccupied space within 15 feet of you. It lasts for 10 minutes or until you dismiss it (no action required). While manifested, the Spirit takes its turn immediately after yours. It can move on its own, but it will only take the {@action Dodge|XPHB} action unless you use your Bonus Action to command it to take the {@action Attack|XPHB} action (using the Destructive Strikes from your Origin Feat) or the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Help|XPHB} action."
+                        "As a {@variantrule Bonus Action|XPHB}, you can manifest your {@feat Vengeful Spirit|DLA} in an unoccupied space within 15 feet of you. It lasts for 10 minutes or until you dismiss it (no action required). While manifested, the Spirit takes its turn immediately after yours. It can move on its own, but it will only take the {@action Dodge|XPHB} action unless you use your Bonus Action to command it to take the {@action Attack|XPHB} action (using the Destructive Strikes from your Origin Feat) or the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Help|XPHB} action."
                     ]
                 },
                 {
