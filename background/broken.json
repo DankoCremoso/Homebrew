@@ -309,20 +309,10 @@
                 		]
             		},
                     "healing": {
-                        "number": 1,
-                        "denomination": null,
-                        "bonus": "",
-                        "types": [
-                            "healing"
-                        ],
                         "custom": {
-                            "enabled": false,
-                            "formula": ""
-                        },
-                        "scaling": {
-                            "number": 1,
-                            "mode": ""
-                        }
+                    		"enabled": true,
+                    		"formula": "1"
+                		}
                     }
                 }
             ]               
