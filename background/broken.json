@@ -204,6 +204,18 @@
 					}
 				}
 			],
+            "foundrySystem": {
+                "uses": {
+                    "max": "@details.level * 3",
+                    "spent": 0,
+                    "recovery": [
+                        {
+        					"period": "lr",
+        					"type": "loseAll"
+    					}
+                    ]
+                }
+            },
             "foundryActivities": [
                 {
                     "name": "Destructive Strikes",
@@ -259,6 +271,58 @@
                                 ]
                             }
                         ]
+                    }
+                },
+                {
+                    "name": "Satiate the Grief",
+            		"type": "heal",
+            		"activation": {
+                		"type": "special"
+            		},
+            		"range": {
+                        "units": "self",
+                        "override": false
+                    },
+                    "target": {
+                        "template": {
+                            "contiguous": false,
+                            "units": "ft"
+                        },
+                        "affects": {
+                            "type": "self",
+                            "choice": false
+                        },
+                        "override": false,
+                        "prompt": true
+                    },
+            		"consumption": {
+                		"targets": [
+                    		{
+                        		"type": "itemUses",
+                        		"value": "@details.level * 3",
+                        		"target": {
+                            		"consumes": {
+                                		"name": "Vengeful Spirit"
+                            		}
+                        		}
+                    		}
+                		]
+            		},
+                    "healing": {
+                        "number": 1,
+                        "denomination": null,
+                        "bonus": "",
+                        "types": [
+                            "healing"
+                        ],
+                        "custom": {
+                            "enabled": false,
+                            "formula": ""
+                        },
+                        "scaling": {
+                            "number": 1,
+                            "mode": ""
+                        }
                     }
                 }
             ]               
