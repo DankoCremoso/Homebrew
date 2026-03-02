@@ -1,0 +1,176 @@
+{
+"_meta": {
+        "sources": [
+            {
+                "json": "DLAB",
+                "abbreviation": "DLAB",
+                "full": "Dante's Legendary Arcanum: Broken",
+                "authors": [
+                    "Daniel 'DanteL' Acosta"
+                ],
+				"convertedBy": [
+					"Daniel 'DanteL' Acosta"
+				],
+                "version": "1.0.0",
+                "sourceType": "homebrew",
+                "url": "https://docs.google.com/document/d/1abm6fJi6jso16pQXeH50VZt84g0ZK0ZQAMdpyze-xik/edit?usp=sharing",
+                "color": "0a0912"
+            }
+        ],
+        "dateAdded": 1707912000,
+		"edition": "one"
+    },
+    "background": [
+        {
+            "name": "Broken",
+            "source": "DLAB",
+            "edition": "one",
+            "ability": [
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights": [
+                                2,
+                                1
+                            ]
+                        }
+                    }
+                },
+                {
+                    "choose": {
+                        "weighted": {
+                            "from": [
+                                "int",
+                                "wis",
+                                "cha"
+                            ],
+                            "weights":[
+                                1,
+                                1,
+                                1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "feats": [
+                {
+                    "Vengeful Spirit|DLAB": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "intimidation": true,
+                    "survival": true
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "Poisoner's Kit": true,
+                    "anyGamingSet": 1
+                }
+            ],
+            "startingEquipment": [
+                {
+                    "A": [
+                        {
+                            "item": "Dagger|XPHB"
+                        },
+                        {
+                            "item": "Poisoner's Kit|XPHB"
+                        },
+                        {
+                            "equipmentType": "setGaming"
+                        },
+                        {
+                            "item": "Bedroll|XPHB"
+                        },
+                        {
+                            "item": "Traveler's Clothes|XPHB"
+                        },
+                        {
+                            "value": 500
+                        }
+                    ],
+                    "B": [
+                        {
+                            "value": 6000
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Ability Scores:",
+                            "entry": "Intelligence, Wisdom, Charisma"
+                        },
+                        {
+					        "type": "item",
+					        "name": "Feat:",
+					        "entry": "{@feat Vengeful Spirit|DLAB}"
+				        },
+				        {
+					        "type": "item",
+					        "name": "Skill Proficiencies:",
+					        "entry": "{@skill Intimidation|XPHB}, {@skill Survival|XPHB}"
+				        },
+				        {
+					        "type": "item",
+					        "name": "Tool Proficiency:",
+					        "entry": "{@item Poisoner's Kit|XPHB} and choose one kind of {@item Gaming Set|XPHB}"
+				        },
+				        {
+					        "type": "item",
+					        "name": "Equipment:",
+					        "entry": "Choose A or B: (A) {@item Dagger|XPHB}, {@item Poisoner's Kit|XPHB}, {@item Gaming Set|XPHB} (any), {@item Bedroll|XPHB}, {@item Traveler's Clothes|XPHB}, 5 GP; or (B) 60 GP"
+				        }
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true
+        }
+    ],
+    "feat": [
+        {
+            "name": "Vengeful Spirit",
+            "source": "DLAB",
+            "category": "O",
+            "entries": [
+                "Your soul is tainted by the essence of decay. When your body fails, your destructive soul manifests.",
+                "When you are reduced to 0 {@variantrule Hit Points|XPHB}, you do not roll {@variantrule Death Saving Throw|XPHB|Death Saving Throws}. Instead, you fall {@condition Unconscious|XPHB}, and your Vengeful Spirit instantly manifests in an unoccupied space within 5ft of you. While at 0 Hit Points, your consciousness transfers to the Spirit. On your turn, you control the Spirit's movement and actions. It shares your {@variantrule Initiative|XPHB}, {@variantrule Armor Class|XPHB|AC}, and {@variantrule Speed|XPHB|movement speeds}. It is {@variantrule Immunity|XPHB|immune} to all conditions.",
+                {
+                    "type": "entries",
+                    "name": "Destructive Strikes",
+                    "entries": [
+                        "As an {@variantrule Action|XPHB}, the Spirit can make a melee spell attack against a creature within 5 feet (using your Charisma, Wisdom, or Intelligence modifier + {@variantrule Proficiency|XPHB|Proficiency Bonus} to hit). On a hit, it deals Force damage equal to {@dice 1d8} + your chosen ability modifier. The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 9 ({@dice 3d8}), 13 ({@dice 4d8}), and 17 ({@dice 5d8})."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cursed Eternity",
+                    "entries": [
+                        "The Spirit craves destruction. If the Spirit deals cumulative damage equal to {@b 3 x your Character Level} in a single combat, or it has been more than {@b 30 seconds} since you've been Unconscious and are not dead yet, your soul is satiated. Your physical body instantly regains 1 HP and the Spirit vanishes. Whenever you recover from having 0 hit points, you gain 1 Level of {@variantrule Exhaustion|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spirit Resolve",
+                    "entries": [
+                        "You have a Spirit Resolve pool equal to {@b 5 x your Character Level}. This pool represents the health of your Vengeful Spirit. This pool only replenishes when you finish a {@variantrule Long Rest|XPHB}. If the Spirit takes damage, subtract that damage from your Spirit Resolve pool. If the Spirit Resolve hits 0, the Spirit breaks and becomes unable to manifest. If you have 0 hit points and your spirit can't manifest, whenever you would make a Death Saving Throw instead you automatically gain a failure. If your physical body takes damage while at 0 HP, it counts as a Death Saving Throw failure. You die outright if your body accumulates 3 failures "
+                    ]
+                }
+            ]
+        }
+    ]
+}
