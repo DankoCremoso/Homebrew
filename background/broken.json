@@ -161,7 +161,7 @@
                     "type": "entries",
                     "name": "Satiate the Grief",
                     "entries": [
-                        "The Spirit craves destruction. If the Spirit deals cumulative damage equal to {@b 3 x your Character Level} in a single combat, or it has been more than {@b 30 seconds} since you've been Unconscious and are not dead yet, your soul is satiated. Your physical body instantly regains 1 HP and the Spirit vanishes. Whenever you recover from having 0 hit points, you gain 1 Level of {@condition Exhaustion|XPHB}."
+                        "The Spirit craves destruction. If the Spirit deals cumulative damage equal to {@b 3 x your Character Level} to hostile creatures in a single combat, or it has been more than {@b 30 seconds} since you've been Unconscious and are not dead yet, your soul is satiated. Your physical body instantly regains 1 HP and the Spirit vanishes. Whenever you recover from having 0 hit points, you gain 1 Level of {@condition Exhaustion|XPHB}."
                     ]
                 },
                 {
