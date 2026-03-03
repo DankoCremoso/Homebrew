@@ -27,7 +27,7 @@
             "edition": "one",
             "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/race/FeywildFairy.png",
             "creatureTypes": [
-                "humanoid"
+                "fey"
             ],
             "size": [
                 "S",
@@ -38,6 +38,11 @@
                 "fly": true
             },
             "darkvision": 60,
+            "skillProficiencies": [
+                {
+                    "sleight of hand": true
+                }
+            ],
             "languageProficiencies": [
                 {
                     "common": true,
