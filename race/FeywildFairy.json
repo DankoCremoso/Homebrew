@@ -25,6 +25,7 @@
             "name": "Feywild Fairy",
             "source": "DLA:FF",
             "edition": "one",
+            "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/race/FeywildFairy.png",
             "creatureTypes": [
                 "humanoid"
             ],
