@@ -264,7 +264,7 @@
                                     "name": "Beetle",
                                     "entries": [
                                         "You've developed a hard outer shell to protect your flimsy wings, this shell comes in a multitude of colors and often helps you defensively; your wings are transparent, and are not known to carry a color.",
-                                        "{@b Hardened Shell.} When you take damage from an attack, you can use your {@variantrule Reaction|XPHB} to magically harden your wings and shell, reducing the damage taken by 1d12 + your Constitution modifier. You can use this trait a number of times equal to your {@variantrule Proficiency|XPHB} Bonus, and you regain all expended uses when you finish a Long Rest."
+                                        "{@b Hardened Shell.} When you take damage from an attack, you can use your {@variantrule Reaction|XPHB} to magically harden your wings and shell, reducing the damage taken by {@dice 1d12} + your Constitution modifier. You can use this trait a number of times equal to your {@variantrule Proficiency|XPHB} Bonus, and you regain all expended uses when you finish a Long Rest."
                                     ]
                                 },
                                 {
@@ -272,7 +272,7 @@
                                     "name": "Bee",
                                     "entries": [
                                         "You possess slender, transparent wings laced with delicate amber veins that emit a low, steady thrum when in motion; to complement them, you've developed a thick, coarse collar of golden or black fuzz around your neck and shoulders.",
-                                        "{@b For the Hive.} You have a hidden stinger or can coat your weapons in a naturally produced toxin. Once per turn, when you hit a creature with a melee attack or an unarmed strike, you can deal an extra 1d6 Poison damage to the target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. Additionally, Your instincts are wired for teamwork and protecting your allies. You can take the Help action as a Bonus Action. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+                                        "{@b For the Hive.} You have a hidden stinger or can coat your weapons in a naturally produced toxin. Once per turn, when you hit a creature with a melee attack or an unarmed strike, you can deal an extra {@dice 1d6} Poison damage to the target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. Additionally, Your instincts are wired for teamwork and protecting your allies. You can take the {@action Help|XPHB} action as a {@variantrule Bonus Action|XPHB}. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
                                     ]
                                 }
                             ]
@@ -448,7 +448,7 @@
                                     "type": "entries",
                                     "entries": [
                                         "You've developed a hard outer shell to protect your flimsy wings, this shell comes in a multitude of colors and often helps you defensively; your wings are transparent, and are not known to carry a color.",
-                                        "{@b Hardened Shell.} When you take damage from an attack, you can use your {@variantrule Reaction|XPHB} to magically harden your wings and shell, reducing the damage taken by 1d12 + your Constitution modifier. You can use this trait a number of times equal to your {@variantrule Proficiency|XPHB} Bonus, and you regain all expended uses when you finish a Long Rest."
+                                        "{@b Hardened Shell.} When you take damage from an attack, you can use your {@variantrule Reaction|XPHB} to magically harden your wings and shell, reducing the damage taken by {@dice 1d12} + your Constitution modifier. You can use this trait a number of times equal to your {@variantrule Proficiency|XPHB} Bonus, and you regain all expended uses when you finish a Long Rest."
                                     ]
                                 }
                             }
@@ -468,7 +468,7 @@
                                     "type": "entries",
                                     "entries": [
                                         "You possess slender, transparent wings laced with delicate amber veins that emit a low, steady thrum when in motion; to complement them, you've developed a thick, coarse collar of golden or black fuzz around your neck and shoulders.",
-                                        "{@b For the Hive.} You have a hidden stinger or can coat your weapons in a naturally produced toxin. Once per turn, when you hit a creature with a melee attack or an unarmed strike, you can deal an extra 1d6 Poison damage to the target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. Additionally, Your instincts are wired for teamwork and protecting your allies. You can take the Help action as a Bonus Action. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+                                        "{@b For the Hive.} You have a hidden stinger or can coat your weapons in a naturally produced toxin. Once per turn, when you hit a creature with a melee attack or an unarmed strike, you can deal an extra {@dice 1d6} Poison damage to the target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. Additionally, Your instincts are wired for teamwork and protecting your allies. You can take the {@action Help|XPHB} action as a {@variantrule Bonus Action|XPHB}. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
                                     ]
                                 }
                             }
@@ -481,7 +481,7 @@
     ],
     "raceFluff": [
         {
-            "name": "Broken",
+            "name": "Feywild Fairy",
             "source": "DLA:FF",
             "entries": [
                 "While most mortals picture fairies as tiny, elusive tricksters darting through the undergrowth, the Feywild holds far older, heavier magic. Feywild Fairies are formidable entities, standing as tall as halflings or short humans. They are not born; they are forged in the crucible of wild magic or profound empathy, emerging from a magical chrysalis as specialized champions, guardians, and envoys of the fey.",

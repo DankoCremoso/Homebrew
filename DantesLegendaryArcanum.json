@@ -6276,5 +6276,504 @@
 				}
 			]             
         }
+    ],
+	"race": [
+        {
+            "name": "Feywild Fairy",
+            "source": "DLA",
+            "edition": "one",
+            "foundryImg": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/race/FeywildFairy.png",
+            "creatureTypes": [
+                "fey"
+            ],
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": true
+            },
+            "darkvision": 60,
+            "skillProficiencies": [
+                {
+                    "sleight of hand": true
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "elvish": true,
+                    "sylvan": true
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "name": "Butterfly",
+                    "innate": {
+                        "1": {
+                            "daily": {
+                                "1": [
+                                    "Invisibility|XPHB"
+                                ]
+                            }
+                        },
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "Faerie Fire|XPHB"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "Fly|XPHB"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "Dancing Lights|XPHB#C"
+                        ]
+                    }
+                },
+                {
+                    "name": "Dragonfly",
+                    "innate": {
+                        "1": {
+                            "daily": {
+                                "1": [
+                                    "Invisibility|XPHB"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                },
+                {
+                    "name": "Moth",
+                    "innate": {
+                        "1": {
+                            "daily": {
+                                "1": [
+                                    "Invisibility|XPHB"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": {
+                            "_": [
+                                {
+                                    "choose": "level=0|class=Wizard",
+                                    "count": 2
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Beetle",
+                    "innate": {
+                        "1": {
+                            "daily": {
+                                "1": [
+                                    "Invisibility|XPHB"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                },
+                {
+                    "name": "Bee",
+                    "innate": {
+                        "1": {
+                            "daily": {
+                                "1": [
+                                    "Invisibility|XPHB"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "sizeEntry": {
+                "type": "item",
+                "name": "Size:",
+                "entries": [
+                    "Feywild Fairies are usually the size of a halfling (2-4 feet tall) with some reaching the size of a short human (4-6 feet tall). Your size is Small or Medium."
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Age",
+                    "entries": [
+                        "Feywild Fairies do not experience a traditional birth or childhood. Instead, they are born anew, emerging fully formed and mature from a magical chrysalis. While the exact limits of their lifespan remain a mystery to mortal scholars, it is widely believed they can live for around 150 years after their transformation."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You have {@sense Darkvision|XPHB} with a range of 60 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Charmed|XPHB} condition on yourself."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Innate Magic",
+                    "entries": [
+                        "You can cast {@spell Invisibility|XPHB} once with this trait, requiring no material components, and you regain the ability to cast it when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this race)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Nimble Form",
+                    "entries": [
+                        "You are proficient in the {@skill Sleight of Hand|XPHB} skill. Additionally, you can move through the space of any creature that is of a size larger than yours."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read and write Common, Elvish, and Sylvan"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fairy Heritage",
+                    "entries": [
+                        "You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):",
+                        {
+                            "type": "list",
+                            "style": "list-hang-notitle",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Butterfly",
+                                    "entries": [
+                                        "Your wings have a fine loose powder that trails behind you in a color to match your wings; wings can range in many different shades and colors. Many patterns carry multiple colors while some only carry a single color in varying shades; your wings may also come in many designs that are both elegant and subtle. You carry a small amount of fuzz around your neck and on your arms, as well as the long elegant antennae of butterflies.",
+                                        "{@b Fairy Dust.} ou know the {@spell Dancing Lights|XPHB} cantrip. Starting at 3rd level, you can cast {@spell Faerie Fire|XPHB} once with this trait. Starting at 5th level, you can cast {@spell Fly|XPHB} once with this trait. You regain the ability to cast these spells when you finish a Long Rest. You can also cast them using any spell slots you have. Your spellcasting ability is the one you chose for your Innate Magic trait."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Dragonfly",
+                                    "entries": [
+                                        "Your wings are see through and you have a sheen that shows in a single color; the patterns your wings carry are often entrancing. Your skin has grown small patches of thin scales, matching the color of your wings.",
+                                        "{@b Wee Warrior.} When you make a melee attack with a weapon on your turn, your reach for it is 5 feet greater than normal. Additionally, once per turn when you hit with a weapon attack, you can reroll one of the weapon's damage dice, and you must use the new roll."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Moth",
+                                    "entries": [
+                                        "You carry soft, fluffy attributes. Your subrace has developed fluff around your neck, on your arms and a set of long fluffy antennae; your wings are large and also carry the soft fluffy attribute; they carry the same loose dust as your butterfly kin as well as range in a variety of colors and patterns.",
+                                        "{@b Fluffy Study.} Your thick, fluffy coat provides excellent protection against the elements. You have {@variantrule Resistance|XPHB} to Cold damage. Additionally, you know two cantrips of your choice from the Wizard spell list."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Beetle",
+                                    "entries": [
+                                        "You've developed a hard outer shell to protect your flimsy wings, this shell comes in a multitude of colors and often helps you defensively; your wings are transparent, and are not known to carry a color.",
+                                        "{@b Hardened Shell.} When you take damage from an attack, you can use your {@variantrule Reaction|XPHB} to magically harden your wings and shell, reducing the damage taken by {@dice 1d12} + your Constitution modifier. You can use this trait a number of times equal to your {@variantrule Proficiency|XPHB} Bonus, and you regain all expended uses when you finish a Long Rest."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Bee",
+                                    "entries": [
+                                        "You possess slender, transparent wings laced with delicate amber veins that emit a low, steady thrum when in motion; to complement them, you've developed a thick, coarse collar of golden or black fuzz around your neck and shoulders.",
+                                        "{@b For the Hive.} You have a hidden stinger or can coat your weapons in a naturally produced toxin. Once per turn, when you hit a creature with a melee attack or an unarmed strike, you can deal an extra {@dice 1d6} Poison damage to the target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. Additionally, Your instincts are wired for teamwork and protecting your allies. You can take the {@action Help|XPHB} action as a {@variantrule Bonus Action|XPHB}. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "_versions": [
+                {
+                    "name": "Feywild Fairy; Butterfly Lineage",
+                    "source": "DLA",
+                    "_mod": {
+                        "entries": [
+                            {
+                                "mode": "replaceArr",
+                                "replace": "Fairy Heritage",
+                                "items": {
+                                    "name": "Fairy Heritage (Butterfly)",
+                                    "type": "entries",
+                                    "entries": [
+                                        "Your wings have a fine loose powder that trails behind you in a color to match your wings; wings can range in many different shades and colors. Many patterns carry multiple colors while some only carry a single color in varying shades; your wings may also come in many designs that are both elegant and subtle. You carry a small amount of fuzz around your neck and on your arms, as well as the long elegant antennae of butterflies.",
+                                        "{@b Fairy Dust.} ou know the {@spell Dancing Lights|XPHB} cantrip. Starting at 3rd level, you can cast {@spell Faerie Fire|XPHB} once with this trait. Starting at 5th level, you can cast {@spell Fly|XPHB} once with this trait. You regain the ability to cast these spells when you finish a Long Rest. You can also cast them using any spell slots you have. Your spellcasting ability is the one you chose for your Innate Magic trait."
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "additionalSpells": [
+                        {
+                            "innate": {
+                                "1": {
+                                    "daily": {
+                                        "1": [
+                                            "Invisibility|XPHB"
+                                        ]
+                                    }
+                                },
+                                "3": {
+                                    "daily": {
+                                        "1": [
+                                            "Faerie Fire|XPHB"
+                                        ]
+                                    }
+                                },
+                                "5": {
+                                    "daily": {
+                                        "1": [
+                                            "Fly|XPHB"
+                                        ]
+                                    }
+                                }
+                            },
+                            "ability": {
+                                "choose": [
+                                    "int",
+                                    "wis",
+                                    "cha"
+                                ]
+                            },
+                            "known": {
+                                "1": [
+                                    "Dancing Lights|XPHB#C"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Feywild Fairy; Dragonfly Lineage",
+                    "source": "DLA",
+                    "_mod": {
+                        "entries": [
+                            {
+                                "mode": "replaceArr",
+                                "replace": "Fairy Heritage",
+                                "items": {
+                                    "name": "Fairy Heritage (Dragonfly)",
+                                    "type": "entries",
+                                    "entries": [
+                                        "Your wings are see through and you have a sheen that shows in a single color; the patterns your wings carry are often entrancing. Your skin has grown small patches of thin scales, matching the color of your wings.",
+                                        "{@b Wee Warrior.} When you make a melee attack with a weapon on your turn, your reach for it is 5 feet greater than normal. Additionally, once per turn when you hit with a weapon attack, you can reroll one of the weapon's damage dice, and you must use the new roll."
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "additionalSpells": [
+                        {
+                            "innate": {
+                                "1": {
+                                    "daily": {
+                                        "1": [
+                                            "Invisibility|XPHB"
+                                        ]
+                                    }
+                                }
+                            },
+                            "ability": {
+                                "choose": [
+                                    "int",
+                                    "wis",
+                                    "cha"
+                                ]
+                            }       
+                        }
+                    ]
+                },
+                {
+                    "name": "Feywild Fairy; Moth Lineage",
+                    "source": "DLA",
+                    "_mod": {
+                        "entries": [
+                            {
+                                "mode": "replaceArr",
+                                "replace": "Fairy Heritage",
+                                "items": {
+                                    "name": "Fairy Heritage (Moth)",
+                                    "type": "entries",
+                                    "entries": [
+                                        "You carry soft, fluffy attributes. Your subrace has developed fluff around your neck, on your arms and a set of long fluffy antennae; your wings are large and also carry the soft fluffy attribute; they carry the same loose dust as your butterfly kin as well as range in a variety of colors and patterns.",
+                                        "{@b Fluffy Study.} Your thick, fluffy coat provides excellent protection against the elements. You have {@variantrule Resistance|XPHB} to Cold damage. Additionally, you know two cantrips of your choice from the Wizard spell list."
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "resist": [
+                        "cold"
+                    ],
+                    "additionalSpells": [
+                        {
+                            "innate": {
+                                "1": {
+                                    "daily": {
+                                        "1": [
+                                            "Invisibility|XPHB"
+                                        ]
+                                    }
+                                }
+                            },
+                            "ability": {
+                                "choose": [
+                                    "int",
+                                    "wis",
+                                    "cha"
+                                ]
+                            },
+                            "known": {
+                                "1": {
+                                    "_": [
+                                        {
+                                            "choose": "level=0|class=Wizard",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Feywild Fairy; Beetle Lineage",
+                    "source": "DLA",
+                    "_mod": {
+                        "entries": [
+                            {
+                                "mode": "replaceArr",
+                                "replace": "Fairy Heritage",
+                                "items": {
+                                    "name": "Fairy Heritage (Beetle)",
+                                    "type": "entries",
+                                    "entries": [
+                                        "You've developed a hard outer shell to protect your flimsy wings, this shell comes in a multitude of colors and often helps you defensively; your wings are transparent, and are not known to carry a color.",
+                                        "{@b Hardened Shell.} When you take damage from an attack, you can use your {@variantrule Reaction|XPHB} to magically harden your wings and shell, reducing the damage taken by {@dice 1d12} + your Constitution modifier. You can use this trait a number of times equal to your {@variantrule Proficiency|XPHB} Bonus, and you regain all expended uses when you finish a Long Rest."
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Feywild Fairy; Bee Lineage",
+                    "source": "DLA",
+                    "_mod": {
+                        "entries": [
+                            {
+                                "mode": "replaceArr",
+                                "replace": "Fairy Heritage",
+                                "items": {
+                                    "name": "Fairy Heritage (Bee)",
+                                    "type": "entries",
+                                    "entries": [
+                                        "You possess slender, transparent wings laced with delicate amber veins that emit a low, steady thrum when in motion; to complement them, you've developed a thick, coarse collar of golden or black fuzz around your neck and shoulders.",
+                                        "{@b For the Hive.} You have a hidden stinger or can coat your weapons in a naturally produced toxin. Once per turn, when you hit a creature with a melee attack or an unarmed strike, you can deal an extra {@dice 1d6} Poison damage to the target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. Additionally, Your instincts are wired for teamwork and protecting your allies. You can take the {@action Help|XPHB} action as a {@variantrule Bonus Action|XPHB}. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+
+        }
+    ],
+    "raceFluff": [
+        {
+            "name": "Feywild Fairy",
+            "source": "DLA",
+            "entries": [
+                "While most mortals picture fairies as tiny, elusive tricksters darting through the undergrowth, the Feywild holds far older, heavier magic. Feywild Fairies are formidable entities, standing as tall as halflings or short humans. They are not born; they are forged in the crucible of wild magic or profound empathy, emerging from a magical chrysalis as specialized champions, guardians, and envoys of the fey.",
+                {
+                    "type": "entries",
+                    "name": "Born of the Royal Seed",
+                    "entries": [
+                        "Deep within the twilight groves of the Feywild, powerful Archfey fiercely guard leyline fractures—wounds in the plane where raw, unfiltered magic drips like golden sap. When a lesser fairy is chosen to consume this concentrated 'Royal Seed' they enter a hardened chrysalis state. Inside, the chaotic magic burns away their tiny forms, their former memories, and their past personalities. They emerge anew as Feywild Fairies: blank slates built with a singular purpose. These forged fairies serve as the perfect, unburdened soldiers and protectors of ancient forests, their loyalties bound entirely to the Archfey whose magic birthed them."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Awakened by Mortal Hearts",
+                    "entries": [
+                        "Not all Feywild Fairies are manufactured by Archfey. Occasionally, a tiny fey spirit observing the Material Plane will witness a moment of profound, earth-shattering mortal emotion—a barbarian’s dying rage, a mother’s overwhelming grief, or a paladin’s unbreakable resolve. The sheer resonance of this raw feeling acts as a catalyst, sparking a spontaneous chrysalis. These 'Awakened' fairies bind a fraction of their soul to that mortal’s emotion. Unlike their forged kin, they retain their minds, but their personalities are forever shifted by the feeling that birthed them, often leading them to become lifelong companions or secret guardians to the mortals who sparked their awakening."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Wings of Heritage",
+                    "entries": [
+                        "Whether forged by ancient leylines or awakened by mortal hearts, the chrysalis drastically alters a fairy's physical form. Their heritage manifests visibly in their wings and insectoid features, reflecting the specific magic of the Royal Seed they consumed or the nature of the mortal soul they bonded with. From the soft, frost-resistant fluff of the Moth heritage to the booming, translucent wings of the Bee skirmishers, a Feywild Fairy wears their history and their purpose directly on their back."
+                    ]
+                }
+            ],
+            "images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/DankoCremoso/Homebrew-Assets/refs/heads/main/img/race/FeywildFairy.png"
+					},
+					"credit": "AI Generated"
+				}
+			]
+        }
     ]
 }
